@@ -24,30 +24,44 @@ function ColorList({ colorText, colorImg, isHidden }) {
 
 export function A1Color() {
 	const [hid, setHid] = useState(false)
+
+	const colors = [
+		<ColorList colorText='Red' colorImg={red} isHidden={hid} />,
+		<ColorList colorText='Blue' colorImg={blue} isHidden={hid} />,
+		<ColorList colorText='Green' colorImg={green} isHidden={hid} />,
+		<ColorList colorText='Black' colorImg={black} isHidden={hid} />,
+		<ColorList colorText='White' colorImg={white} isHidden={hid} />,
+		<ColorList colorText='Yellow' colorImg={yellow} isHidden={hid} />,
+		<ColorList colorText='Orange' colorImg={orange} isHidden={hid} />,
+		<ColorList colorText='Pink' colorImg={pink} isHidden={hid} />,
+		<ColorList colorText='Purple' colorImg={purple} isHidden={hid} />,
+		<ColorList colorText='Brown' colorImg={brown} isHidden={hid} />,
+		<ColorList colorText='Cyan' colorImg={cyan} isHidden={hid} />,
+		<ColorList colorText='Gray' colorImg={gray} isHidden={hid} />
+	]
+
 	return (<>
 		<ul className='grid grid-cols-autoFit-2 gap-2  justify-items-center'>
-			<ColorList colorText='Red' colorImg={red} isHidden={hid} />
-			<ColorList colorText='Blue' colorImg={blue} isHidden={hid} />
-			<ColorList colorText='Green' colorImg={green} isHidden={hid} />
-			<ColorList colorText='Black' colorImg={black} isHidden={hid} />
-			<ColorList colorText='White' colorImg={white} isHidden={hid} />
-			<ColorList colorText='Yellow' colorImg={yellow} isHidden={hid} />
-			<ColorList colorText='Orange' colorImg={orange} isHidden={hid} />
-			<ColorList colorText='Pink' colorImg={pink} isHidden={hid} />
-			<ColorList colorText='Purple' colorImg={purple} isHidden={hid} />
-			<ColorList colorText='Brown' colorImg={brown} isHidden={hid} />
-			<ColorList colorText='Cyan' colorImg={cyan} isHidden={hid} />
-			<ColorList colorText='Gray' colorImg={gray} isHidden={hid} />
+			{randomize(colors)}
 		</ul >
-		<button onClick={() => setHid(!hid)} className='border-2 border-black p-1 mt-2 rounded-2xl text-center bg-cyan-200 text-black'> hide colors</button>
+		<div className='flex flex-rows gap-2 items-center justify-center'>
+			<button onClick={() => setHid(!hid)} className='border-2 border-black p-1 mt-2 rounded-2xl text-center bg-cyan-200 text-black'> {hid ? 'show' : 'hide'} colors and change order</button>
+		</div>
 	</>
 	)
 }
-// export default function Main(){
-// return(
-// 	<ul>
-// 	<ColorList colorText='red' colorImg={red} / >
-// 	<ColorList colorText='blue' colorImg={blue} / >
-// 	</ul>
-// )
-// }
+
+// improve this
+function randomize(arrayToRandomize) {
+	const lengthForRandomnes = arrayToRandomize.length
+	let newArray = arrayToRandomize
+	let newArrayWithAnotherOrder = [];
+	for (let index = lengthForRandomnes; index > 0; index--) {
+		let randomNumber = Math.floor(Math.random() * newArray.length)
+
+		newArrayWithAnotherOrder.push(newArray[randomNumber])
+		newArray.splice(randomNumber, 1)
+	}
+	return newArrayWithAnotherOrder;
+}
+
