@@ -13,7 +13,7 @@ import cyan from './color/cyan.png'
 function ColorList({colorText, colorImg}){
 return (<li className='w-full flex items-center justify-center text-center'>
 <figure className='w-full flex-col-reverse  flex items-center justify-center text-center'>
-<img className='w-11/12 border-black border-2 rounded-3xl' src={colorImg} alt={colorText}/>
+<img className='w-11/12 border-black border-2 rounded-3xl grid-cols-auto' src={colorImg} alt={colorText}/>
 <figcaption>{colorText}</figcaption>
 </figure>
 </li>
