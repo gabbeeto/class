@@ -1,4 +1,4 @@
-import returnContent from './hashAndContent'
+import ReturnContent from './hashAndContent'
 
 function Content({title,content}){
 return(<>
@@ -8,8 +8,8 @@ return(<>
 
 
 export default function Main(){
-const [classTile, classContent] = returnContent()
+const [classTile, ClassContent] = ReturnContent()
 return( <main>
-	<Content title={classTile} content={classContent}/>
+	<Content title={classTile} content={ClassContent}/>
 
 	</main>)}
