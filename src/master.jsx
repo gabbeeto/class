@@ -1,10 +1,13 @@
-import React from 'react'
+import Header from './Header'
+import Main from './Main'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-let rootElement = document.getElementById('root')
-let root = ReactDOM.createRoot(rootElement)
+const rootElement = document.getElementById('root')
+const root = ReactDOM.createRoot(rootElement)
 
-root.render(
-	<h1>hello</h1>
+root.render(<>
+<Header />
+<Main />
+</>
 )
