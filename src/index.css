@@ -49,6 +49,8 @@
 
 
 
+
+
 .grid-rows-autoFit-2 {
   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -58,6 +60,25 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+
+.grid-rows-autoFit-3 {
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+.grid-cols-autoFit-3 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+.grid-rows-autoFit-4 {
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+
+.grid-cols-autoFit-4 {
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
 
 
 .containerExtras {

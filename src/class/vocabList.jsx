@@ -8,10 +8,10 @@ let newList
 function WordList({ wordText, wordImg }) {
 	let randomNumber = Math.floor(Math.random() * wordImg.length)
 	let randomImg = wordImg[randomNumber]
-	return (<li className='w-full flex justify-center  text-center'>
-		<figure className='w-full flex-col-reverse flex text-center'>
-			< img className='w-full h-5/6 border-black border-2 rounded-3xl ' src={randomImg} alt={wordText} />
-			<figcaption >{wordText}</figcaption>
+	return (<li className='w-80 h-80 flex justify-center  text-center'>
+		<figure className='w-full h-full flex-col-reverse flex text-center'>
+			< img className='w-full h-5/6 border-black border-2 rounded-3xl' src={randomImg} alt={wordText} />
+			<figcaption className='h-1/6' >{wordText}</figcaption>
 		</figure >
 	</li >
 	)
@@ -23,10 +23,10 @@ export function ListOfWords({list, name}) {
 randomize()
 
 	return (<>
-		<ul id='listOfWords' className='grid grid-cols-autoFit-2 gap-2  justify-items-center'>
+		<ul id='listOfWords' className='flex gap-3  flex-wrap justify-center' >
 			{newList}
 		</ul >
-		<div className='flex flex-rows gap-2 items-center justify-center'>
+		<div className='flex flex-rows shrink-0 flex-grow-0 gap-2 my-2 items-center justify-center'>
 			<button  id="shower" onClick={() => hideOrUnHide(name)} className='border-2 border-black p-1 mt-2 rounded-2xl text-center bg-cyan-200 text-black'>hide {name}s</button>
 
 			<button onClick={regenerateWords} className='border-2 border-black p-1 mt-2 rounded-2xl text-center bg-cyan-200 text-black'>change order</button>
