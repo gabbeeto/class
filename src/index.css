@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .textSize-6 {
   font-size: clamp(0.6rem, calc(0.9vw + 0.2rem), 1.5rem);
   font-weight: 400;
