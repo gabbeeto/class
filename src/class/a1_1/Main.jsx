@@ -1,4 +1,5 @@
-import {TinyExplanation} from './../explanationUtilities'
+import { TinyExplanation } from './../explanationUtilities'
+import { ExplanationContainer } from './../explanationUtilities'
 
 export function A1_1() {
 return (<>
@@ -6,6 +7,12 @@ return (<>
 
 
 	<TinyExplanation title={['adjetive', 'adjetivo']} explanation={['what describes the noun','lo que describe el sustantivo']} color='orange'  example="blue" / >
+
+
+	< ExplanationContainer explanation="En Inglés, los adjetivos(lo que describen a la cosa) van hacia a la isquierda de los sustantivos(la cosa)" color="green"  example={<>
+<span className='bg-amber-700'>blue</span>  <span className='bg-indigo-700 '>cat</span>
+		</>} / >
+
 </>
 )
 }

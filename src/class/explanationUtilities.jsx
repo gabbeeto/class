@@ -1,8 +1,21 @@
 
 const purple = ['bg-indigo-800','bg-violet-700']
 const orange = ['bg-orange-800','bg-amber-700']
+const green = ['bg-green-800','bg-emerald-700']
 
-const allTheColors = {purple, orange};
+const allTheColors = {purple, orange, green};
+
+export function ExplanationContainer({explanation, color, example}){
+
+let currentColor = allTheColors[color]
+
+	return (<section className={`p-1 flex flex-col gap-1 items-center justify-center ${currentColor[0]} p-2 rounded-xl`}>
+	<p className={`textSize-3 ${currentColor[1]} rounded-xl p-2`}>{explanation}</p>
+	<p className={`textSize-6 ${currentColor[1]} rounded-xl p-2`}>{example}</p>
+	</ section>
+	)
+
+}
 
 
 export function TinyExplanation({title, explanation, example, color}){
