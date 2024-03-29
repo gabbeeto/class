@@ -9,13 +9,13 @@ return (<>
 	<TinyExplanation title={['adjetive', 'adjetivo']} explanation={['what describes the noun','lo que describe el sustantivo']} color='orange'  example="blue" / >
 
 
-	< ExplanationContainer explanation="En Inglés, los adjetivos(lo que describen a la cosa) siempre van hacia a la isquierda de los sustantivos(la cosa)" color="green"  example={<>
+	< ExplanationContainer explanation={(<> <span className='bg-red-600'>En Inglés</span>, los <span className='bg-amber-700'>adjetivos</span> (lo que describen a la cosa) <span className='bg-red-600'>siempre</span>  van hacia a la <span className='bg-red-600'>isquierda de</span> los <span className='bg-indigo-700'>sustantivos</span> (la cosa)</>)} color="green"  example={<>
 <span className='bg-amber-700'>blue</span>  <span className='bg-indigo-700 '>cat</span></>} />
 
 
 
 
-	< ExplanationContainer explanation="En Español, los adjetivos(lo que describen a la cosa) aveces van hacia a la derecha de los sustantivos(la cosa)" color="green"  example={(<div className='flex flex-col'>
+	< ExplanationContainer explanation={(<> <span className='bg-red-600'>En Español</span>, los <span className='bg-amber-700'>adjetivos</span>(lo que describen a la cosa) <span className='bg-red-600'>aveces</span> van hacia a la <span className='bg-red-600'>derecha  de</span>  los <span className='bg-indigo-700'>sustantivos</span>(la cosa)</>)} color="green"  example={(<div className='flex flex-col'>
 
 		<div>
 <span className='bg-indigo-700 '>gato</span>  <span className='bg-amber-700'>azul</span>  
