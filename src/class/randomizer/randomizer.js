@@ -32,20 +32,63 @@ export function randomSentence(currentClass, amount){
 			const animals = List['english']['a1_1']['animals']
 			const colors = List['english']['a1_1']['colors']
 			let phrases =  randomizeAmount([animals,colors],amount)
-			console.log(a1English_1['animals'])
-			console.log(a1Spanish_1['animals'])
 			let spanishPhrases = []
 			let englishPhrases = []
+
 			for(let index = 0; index < amount; index++){
-			spanishPhrases.push(`${a1Spanish_1['animals'][phrases[0][index]]} ${a1Spanish_1['colors'][phrases[1][index]]}`)
-			englishPhrases.push(`${a1English_1['colors'][phrases[1][index]]} ${a1English_1['animals'][phrases[0][index]]}`)
+			let randomAnimalForPhrase  = phrases[index][0]
+			let randomColorForPhrase  = phrases[index][1]
+			spanishPhrases.push(`${a1Spanish_1['animals'][randomAnimalForPhrase]} ${a1Spanish_1['colors'][randomColorForPhrase]}`)
+			englishPhrases.push(`${a1English_1['colors'][randomColorForPhrase]} ${a1English_1['animals'][randomAnimalForPhrase]}`)
 
 			}
 			return {spanishPhrases, englishPhrases}
+		case 'a1_2':
 
 	}
 }
 
+function returnPhrases(adjetive, noun, amount){
+			let spanishPhrases = []
+			let englishPhrases = []
+
+			let phrases =  randomizeAmount([noun,adjetive],amount)
+			for(let index = 0; index < amount; index++){
+			let randomNounForPhrase  = phrases[index][0]
+			let randomAdjetiveForPhrase  = phrases[index][1]
+			spanishPhrases.push(`${noun[randomNounForPhrase]} ${adjetive[randomColorForPhrase]}`)
+			englishPhrases.push(`${adjetive[randomAdjetiveForPhrase]} ${noun[randomNounForPhrase]}`)
+}
+
+const exceptionForPlural = ['fish', 'mouse', 'hero', 'echo', 'do']
+const exceptionForPluralInPlural = ['fish', 'mice', , 'heroes', 'echoes', 'does']
+const vowel = ['a', 'e', 'i', 'o', 'u']
+function convertToPlural(word){
+let indexIfException = exceptionForPlural.indexOf(word);
+
+if(indexIfException != -1){
+return exceptionForPluralInPlural
+}
+
+let splittedWord = word.split('');
+
+let lastLetter = splittedWord.length -1
+let letterBeforeLastLetter = splittedWord.length -2
+
+// rule one
+if(splittedWord(lastLetter) == 's' || splittedWord(lastLetter) == 'x' || splittedWord(lastLetter) == 'z' || (splittedWord(letterBeforeLastLetter) == 'c' && splittedWord(lastLetter) == 'h') || (splittedWord(letterBeforeLastLetter) == 's' && splittedWord(lastLetter) == 'h') || (splittedWord(letterBeforeLastLetter)  == 's' && splittedWord(lastLetter) == 's') || (vowel.indexOf(splittedWord(letterBeforeLastLetter)) == -1 && splittedWord(lastLetter) == 'o')) {return `${word}es`;}
+
+// rule 2
+else if(vowel.indexOf(splittedWord(letterBeforeLastLetter)) == -1 && splittedWord(lastLetter) == 'y'){
+splittedWord[lastLetter] = 'i'
+splittedWord.push('s')
+return splittedWord.join('')
+}
+
+else if(splittedWord(letterBeforeLastLetter) == 'f'  && splittedWord(lastLetter) == 'e'){
+
+
+}
 
 export function getNumberText(thisNumber, language, otherA = false){
 const textNumber = `${thisNumber}`
