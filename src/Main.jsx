@@ -1,6 +1,6 @@
 import ReturnContent from './hashAndContent'
-import {randomSentence} from './class/randomizer/randomizer.js'
 
+import {randomSentence} from './class/randomizer/randomizer'
 
 function Content({ title, content }) {
 	return (<div className='flex flex-col justify-center items-center gap-1 bg-sky-200 text-white text-center'>
@@ -11,9 +11,9 @@ function Content({ title, content }) {
 }
 
 
-export default function Main() {
-console.log(randomSentence('a1_1', 5))
 
+export default function Main() {
+	console.log(randomSentence('a1_2',5))
 	const [classTile, ClassContent] = ReturnContent()
 	return (<main>
 		<Content title={classTile} content={ClassContent} />
