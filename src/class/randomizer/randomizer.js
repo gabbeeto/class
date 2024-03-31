@@ -24,33 +24,16 @@ return arrayWithAmount
 
 // continue fixing this
 export function randomSentence(currentClass, amount){
+let englishAnimals = List['english']['a1_1']['animals']
+let englishColors = List['english']['a1_1']['colors']
+
+let spanishAnimals = List['spanish']['a1_1']['animals']
+let spanishColors = List['spanish']['a1_1']['colors']
+
 	switch( currentClass){
 		case 'a1_1':
-			const a1Spanish_1 = List['spanish']['a1_1'];
-			const a1English_1 = List['english']['a1_1'];
-
-			const animals = List['english']['a1_1']['animals']
-			const colors = List['english']['a1_1']['colors']
-			let phrases =  randomizeAmount([animals,colors],amount)
-			let spanishPhrases = []
-			let englishPhrases = []
-
-
-			for(let index = 0; index < amount; index++){
-
-			let randomAnimalForPhrase  = phrases[index][0];
-			let randomColorForPhrase  = phrases[index][1];
-			spanishPhrases.push(`${a1Spanish_1['animals'][randomAnimalForPhrase]} ${a1Spanish_1['colors'][randomColorForPhrase]}`);
-			englishPhrases.push(`${a1English_1['colors'][randomColorForPhrase]} ${a1English_1['animals'][randomAnimalForPhrase]}`)
-
-			};
-			return {spanishPhrases, englishPhrases};
+			return returnPhrases(englishColors, englishAnimals, spanishColors, spanishAnimals, amount, 1, 1)
 		case 'a1_2':
-			const englishAnimals = List['english']['a1_1']['animals']
-			const englishColors = List['english']['a1_1']['colors']
-
-			const spanishAnimals = List['spanish']['a1_1']['animals']
-			const spanishColors = List['spanish']['a1_1']['colors']
 			return returnPhrases(englishColors, englishAnimals, spanishColors, spanishAnimals, amount, 999)
 		default:
 			return 'no class'
@@ -60,7 +43,7 @@ export function randomSentence(currentClass, amount){
 
 
 // work on here and the plural converter
-function returnPhrases(adjetive, noun, spanishAdjetive, spanishNoun, amount, maxNumber){
+function returnPhrases(adjetive, noun, spanishAdjetive, spanishNoun, amount, maxNumber, noNumber =false){
 
 			let spanishPhrases = []
 			let englishPhrases = []
@@ -87,6 +70,11 @@ function returnPhrases(adjetive, noun, spanishAdjetive, spanishNoun, amount, max
 				spanishNounFemale = false
 			}
 
+			let vowelSoundInWord = false
+			if(vowelSound(englishAdjetive)){
+			vowelSoundInWord = true
+			}
+
 				// continue working on here
 			if(randomNumber > 1){
 			englishNoun = convertToPlural(englishNoun)
@@ -95,17 +83,41 @@ function returnPhrases(adjetive, noun, spanishAdjetive, spanishNoun, amount, max
 			}
 
 
-
+				if(noNumber){
+			spanishPhrases.push(`${getNumberText(1, 'spanish', spanishNounFemale)} ${SpanishNoun} ${SpanishAdjetive}`);
+			englishPhrases.push(`${getNumberText(1, 'english', false, vowelSoundInWord)} ${englishAdjetive} ${englishNoun}`);
+				}
+				else{
 			spanishPhrases.push(`${getNumberText(randomNumber, 'spanish', spanishNounFemale)} ${SpanishNoun} ${SpanishAdjetive}`);
-			englishPhrases.push(`${getNumberText(randomNumber, 'english')} ${englishAdjetive} ${englishNoun}`);
+			englishPhrases.push(`${getNumberText(randomNumber, 'english', false, vowelSoundInWord)} ${englishAdjetive} ${englishNoun}`);
+				}
+
 			}
 
 			return {spanishPhrases, englishPhrases};
 }
 
+export function vowelSound(word){
+
+const ExceptionOfTheRule = ['university', 'hour','f','honest','honor', 'x-ray','hiv', 'heiress','union', 'utopia', 'uterus', 'ufo', 'universal', 'unix']
+const vowelSound = [false, true, true, true, true, true, true, true, false, false, false, false, false, false];
+let indexIfException = ExceptionOfTheRule.indexOf(word);
+
+if(indexIfException != -1){
+return vowelSound[indexIfException]
+}
+
+const vowel = ['a', 'e', 'i', 'o', 'u']
+
+let splittedWord = word.split('');
+
+let wordStartsWithVowel = vowel.indexOf(splittedWord[0]) != -1;
+return wordStartsWithVowel ? true : false
+
+}
 
 export function switchToMale(word){
-const wordsThatDontChange = ['verde', 'azul', 'gris', 'presidente', 'violeta', 'rosa', 'intendente', 'celeste', 'purpura', 'cian', 'gris' ]
+const wordsThatDontChange = ['verde', 'azul', 'gris', 'presidente', 'violeta', 'rosa', 'intendente', 'celeste', 'purpura', 'cian', 'gris' , 'naranja' ]
 
 
 let indexIfException = wordsThatDontChange.indexOf(word);
@@ -117,6 +129,7 @@ return word
 if(! isFemale(word)){
 return word
 }
+
 else{
 return word.replace(/a(?=.?$)/, 'o')
 }
@@ -212,6 +225,7 @@ return false
 
 
 export function getNumberText(thisNumber, language, isFemale = false, otherA = false){
+
 		const textNumber = `${thisNumber}`
 		const textNumberArray = textNumber.split('')
 
@@ -220,18 +234,17 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 			english: 'zero'
 		}
 
-		let numberOne
-		if(otherA){
-			numberOne = {
-			spanish: 'una',
-			english: 'an'
-		}
-		}
-		else{
-			numberOne = {
+		let numberOne = {
 			spanish: 'un',
-			english: 'a'
+			english: 'a',
 		}
+
+		if(isFemale){
+			numberOne.spanish = 'una'
+		}
+
+		if(otherA){
+			numberOne.english = 'an'
 		}
 
 		const separatorFor10 = {
@@ -250,22 +263,27 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 		}
 
 
-		let number100End
-		if(isFemale){
-			number100End = {
-				spanish: 'ta ',
-				spanishPlural: 'tas ',
-				english: ' and '
-			}
-		}
-		else{
-			number100End = {
+		let number100End = {
 				spanish: 'to ',
-				spanishPlural: 'tos ',
+				spanishPlural: 'tos',
 				english: ' and '
-			}
-
 		}
+
+
+		// if(isFemale){
+		// 	number100End = {
+		// 		spanish: 'ta ',
+		// 		spanishPlural: 'tas ',
+		// 		english: ' and '
+		// 	}
+		// }
+		// else{
+		// 	number100End = {
+		// 		spanish: 'to ',
+		// 		spanishPlural: 'tos ',
+		// 		english: ' and '
+		// 	}
+		// }
 
 
 
@@ -296,16 +314,22 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 
 		if(firstNumberOnDigit > 1 && secondNumberOnDigit < 1 && thirdNumberOnDigit < 1 )
 			{
-
 				if (language == 'spanish'){
 						if(firstNumberOnDigit == 5){
-						firstNumberOnDigitText = `quiniento`
+						firstNumberOnDigitText = `quinientos`
+							if(isFemale){
+								firstNumberOnDigitText = `quinientas`
+							}
 						}
 						else if(firstNumberOnDigit == 9){
-						firstNumberOnDigitText = `noveciento`
+						firstNumberOnDigitText = `novecientos`
+							if(isFemale){
+								firstNumberOnDigitText = `novecientos`
+							}
 						}
 						else{
 				firstNumberOnDigitText = List[language]['a1_2']['numbers'][firstNumberOnDigit - 1];
+						if(isFemale){number100End[language + 'Plural'] = 'tas '}
 						firstNumberOnDigitText = `${firstNumberOnDigitText} ${number100[language]}${number100End[language + 'Plural']}`
 						}
 				}
@@ -313,6 +337,7 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 				firstNumberOnDigitText = List[language]['a1_2']['numbers'][firstNumberOnDigit - 1];
 						firstNumberOnDigitText = `${firstNumberOnDigitText}${number100Beginning[language]}`
 						}
+
 				}
 
 		else if(firstNumberOnDigit > 0){
