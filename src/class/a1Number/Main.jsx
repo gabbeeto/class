@@ -1,4 +1,5 @@
 import {ListOfWords} from './../list'
+import {ExplanationContainer} from './../explanationUtilities'
 
 const numbers = [
 	[(<><span className='text-red-300'>one</span></>),false],
@@ -41,6 +42,31 @@ const numbers = [
 
 
 export function A1Number(){
-return (<ListOfWords list={numbers} name={'number'} />
+return (<><ListOfWords list={numbers} name={'number'} />
+	<ExplanationContainer explanation={(<>ahora podés usar los numeros en el inglés para hablar de más de 1 animal. Solo tenés que usar el numero y tenés que  agregarle 's' al sustantivo como en Español
+		</>)}
+
+color='green'
+example={(<><div>three cow<span className='bg-orange-500'>s</span></div>
+<div>twenty five dogs<span className='bg-orange-500'>s</span></div>
+	</>)}
+	/>
+
+	<ExplanationContainer explanation={(<>ten en cuenta que en inglés solo los sustantivos se le agrega 's'. No es como el español que se le agrega 's' a los adjetivos</>)}
+color='green'
+example={(<><div>three green cow<span className='bg-orange-500'>s</span></div>
+<div>tres perro<span className='bg-orange-500'>s</span> verde<span className='bg-orange-500'>s</span></div>
+	</>)}
+	/>
+
+
+	<ExplanationContainer explanation={(<>y por alguna extraña razón a 'fish' no se le agrega 's'</>)}
+color='green'
+example={(<>three green fish
+	</>)}
+	/>
+
+
+	</>
 )
 }
