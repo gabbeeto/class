@@ -1,34 +1,31 @@
-import red from './color/red.png'
-import blue from './color/blue.png'
-import yellow from './color/yellow.png'
-import green from './color/green.png'
-import purple from './color/Purple.png'
-import black from './color/black.jpg'
-import white from './color/white.png'
-import brown from './color/brown.png'
-import orange from './color/orange.jpeg'
-import pink from './color/pink.png'
-import cyan from './color/cyan.png'
-import gray from './color/gray.png'
+import airplane from './vehicles/airplane.png'
+import bike from './vehicles/bike.jpeg'
+import boat from './vehicles/boat.jpg'
+import car from './vehicles/car.jpeg'
+import helicopter from './vehicles/helicopter.jpeg'
+import motorbike from './vehicles/motorbike.jpg'
+import ship from './vehicles/ship.jpeg'
+import truck from './vehicles/truck.jpg'
+import bus from './vehicles/bus.jpg'
+import skateboard from './vehicles/skateboard.jpg'
+
 import {ListOfWords} from './../../../vocabList'
 
-const colors = [
-		['Red', [red]],
-		['Blue', [blue]],
-		['Green', [green]],
-		['Black', [black]],
-		['White', [white]],
-		['Yellow', [yellow]],
-		['Orange', [orange]],
-		['Pink', [pink]],
-		['Purple', [purple]],
-		['Brown', [brown]],
-		['Cyan', [cyan]],
-		['Gray', [gray]],
+const vehicles = [
+		[(<>airplane  <span className='textSize-6'>aeroplane</span></>), [airplane]],
+		['bike', [bike]],
+		['boat', [boat]],
+		['car', [car]],
+		['helicopter', [helicopter]],
+		[(<>motorcycle <span className='textSize-6'>motorbike</span></>), [motorbike]],
+		['ship', [ship]],
+		['truck', [truck]],
+		['bus', [bus]],
+		['skateboard', [skateboard]],
 	]
 
 
-export function A1Color(){
-return (<ListOfWords list={colors} name={'color'} />
+export function A1Vehicle(){
+return (<ListOfWords list={vehicles} name={'vehicles'} />
 )
 }

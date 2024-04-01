@@ -5,7 +5,7 @@ const green = ['bg-green-800','bg-emerald-700']
 
 const allTheColors = {purple, orange, green};
 
-export function ExplanationContainer({explanation, color, example}){
+export function ExplanationContainer({explanation, color = 'green', example = 'example'}){
 
 let currentColor = allTheColors[color]
 
@@ -17,8 +17,16 @@ let currentColor = allTheColors[color]
 
 }
 
+export function Word({word, color = 'orange'}){
 
-export function TinyExplanation({title, explanation, example, color}){
+let currentColor = allTheColors[color]
+
+return (<section className={`p-1 flex  gap-2 items-center justify-center ${currentColor[0]} p-2 rounded-xl textSize-2 m-1`} >
+	<span className="text-cyan-200 ">{word[0]}</span> = <span className="text-purple-200">{word[1]}</span>
+	</section>)
+}
+
+export function TinyExplanation({title, explanation, example, color = 'green'}){
 
 let currentColor = allTheColors[color]
 
