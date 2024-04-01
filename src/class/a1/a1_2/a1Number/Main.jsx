@@ -1,5 +1,5 @@
-import {ListOfWords} from './../list'
-import {ExplanationContainer} from './../explanationUtilities'
+import {ListOfWords} from './../../../list'
+import {ExplanationContainer} from './../../../explanationUtilities'
 
 const numbers = [
 	[(<><span className='text-red-300'>one</span></>),false],

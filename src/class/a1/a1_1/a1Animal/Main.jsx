@@ -1,4 +1,4 @@
-import {ListOfWords} from './../vocabList'
+import {ListOfWords} from './../../../vocabList'
 import Dog from './animal/dog.jpg'
 import Cat from './animal/cat.jpg'
 import Chicken from './animal/chicken.jpg'

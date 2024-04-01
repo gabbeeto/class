@@ -1,7 +1,7 @@
-import { A1Color } from './class/a1Color/Main'
-import { A1Animal } from './class/a1Animal/Main'
-import { A1Number } from './class/a1Number/Main'
-import { A1_1 } from './class/a1_1/Main'
+import { A1Color } from './class/a1/a1_1/a1Color/Main'
+import { A1Animal } from './class/a1/a1_1/a1Animal/Main'
+import { A1Number } from './class/a1/a1_2/a1Number/Main'
+import { A1_1 } from './class/a1/a1_1/Main'
 import { Randomizer } from './class/randomizer/Main'
 
 const hashContent = {

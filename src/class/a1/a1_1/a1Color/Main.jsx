@@ -10,7 +10,7 @@ import orange from './color/orange.jpeg'
 import pink from './color/pink.png'
 import cyan from './color/cyan.png'
 import gray from './color/gray.png'
-import {ListOfWords} from './../vocabList'
+import {ListOfWords} from './../../../vocabList'
 
 const colors = [
 		['Red', [red]],
