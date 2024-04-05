@@ -5,8 +5,10 @@ import { A1_1 } from './class/a1/a1_1/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
 import { Randomizer } from './class/randomizer/Main'
+import { FirstClass } from './class/firstClass/Main'
 
 const hashContent = {
+	"#firstclass": ['Welcome to the first class', <FirstClass />],
 	"#randomizer": ['Randomizer', <Randomizer />],
 	"#a1color": ['Color', <A1Color />],
 	"#a1animal": ['Animal', <A1Animal />],
