@@ -53,7 +53,14 @@ return (<>
 	<ExplanationContainer  explanation={`en inglés no suelen cambiar(al menos con los pronombres 'I' y 'You')`} example={(<><div>I hate dogs</div> <div>you hate dogs</div></>)} / >
 
 
+
+	<ExplanationContainer  explanation={`los pronombres en español aveces son omitidos porque el verbo indica el pronombre indirectamente `} example={(<><div>odio perros</div> <div>odias perros</div></>)} / >
+
+
+	<ExplanationContainer  explanation={`en inglés, los pronombres siempre están incluido porque los verbos no indican quien ejecuta el verbo`} example={(<><div><span className='text-orange-400'>I</span> hate dogs</div> <div><span className='text-orange-400'>you</span> hate dogs</div></>)} / >
+
 	</>
+
 
 )
 }

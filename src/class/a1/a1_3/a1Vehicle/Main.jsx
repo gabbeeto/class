@@ -1,31 +1,28 @@
-import airplane from './vehicles/airplane.png'
-import bike from './vehicles/bike.jpeg'
-import boat from './vehicles/boat.jpg'
-import car from './vehicles/car.jpeg'
-import helicopter from './vehicles/helicopter.jpeg'
-import motorbike from './vehicles/motorbike.jpg'
-import ship from './vehicles/ship.jpeg'
-import truck from './vehicles/truck.jpg'
-import bus from './vehicles/bus.jpg'
-import skateboard from './vehicles/skateboard.jpg'
-
-import {ListOfWords} from './../../../vocabList'
+import Truck from './vehicles/truck.jpg';
+import Ship from './vehicles/ship.jpeg';
+import Bus from './vehicles/bus.jpg';
+import Car from './vehicles/car.jpeg';
+import Motorbike from './vehicles/motorbike.jpg';
+import Skateboard from './vehicles/skateboard.jpg';
+import Airplane from './vehicles/airplane.png';
+import Bike from './vehicles/bike.jpeg';
+import Helicopter from './vehicles/helicopter.jpeg';
+import Boat from './vehicles/boat.jpg';
+import {ListOfWords} from './../../../vocabList';
 
 const vehicles = [
-		[(<>airplane  <span className='textSize-6'>aeroplane</span></>), [airplane]],
-		['bike', [bike]],
-		['boat', [boat]],
-		['car', [car]],
-		['helicopter', [helicopter]],
-		[(<>motorcycle <span className='textSize-6'>motorbike</span></>), [motorbike]],
-		['ship', [ship]],
-		['truck', [truck]],
-		['bus', [bus]],
-		['skateboard', [skateboard]],
-	]
-
+ [Truck, 'Truck'],
+[Ship, 'Ship'],
+[Bus, 'Bus'],
+[Car, 'Car'],
+[Motorbike, 'Motorbike'],
+[Skateboard, 'Skateboard'],
+[Airplane, 'Airplane'],
+[Bike, 'Bike'],
+[Helicopter, 'Helicopter'],
+[Boat, 'Boat'],
+ ];
 
 export function A1Vehicle(){
-return (<ListOfWords list={vehicles} name={'vehicles'} />
-)
-}
+ return (<ListOfWords list={ vehicles } name={'vehicle'} /> 
+)}

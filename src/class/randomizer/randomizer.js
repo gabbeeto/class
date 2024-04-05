@@ -1,4 +1,4 @@
-import { List } from './list'
+import { List, GroupList, SelectedList } from './list'
 
 
 function randomizer(mainArray){
@@ -24,26 +24,43 @@ return arrayWithAmount
 
 // continue fixing this
 export function randomSentence(currentClass, amount){
-let englishAnimals = List['english']['a1_1']['animals']
-let englishColors = List['english']['a1_1']['colors']
 
-let spanishAnimals = List['spanish']['a1_1']['animals']
-let spanishColors = List['spanish']['a1_1']['colors']
+let words = [0,0,0,0];
+
+let maxNumber
 
 	switch( currentClass){
 		case 'a1_1':
-			return returnPhrases(englishColors, englishAnimals, spanishColors, spanishAnimals, amount, 1, 1)
+		case 'a1_1A':
+			maxNumber = 2;
+			words = SelectedList('a1_1', 'a1_1');
+			break;
+		case 'a1_2A':
 		case 'a1_2':
-			return returnPhrases(englishColors, englishAnimals, spanishColors, spanishAnimals, amount, 999)
-		default:
-			return 'no class'
+			maxNumber = 999;
+			words = SelectedList('a1_1', 'a1_1');
+			break;
+		case 'a1_3':
+			maxNumber = 999;
+			words = SelectedList('a1_3', 'a1_1');
+			break;
+		case 'a1_3A':
+			maxNumber = 1000
+			words = GroupList('a1_3');
+			break;
+
 	}
+
+			return returnPhrases(words[0], words[1], words[2], words[3], amount, maxNumber);
+	
+
+
 }
 
 
 
 // work on here and the plural converter
-function returnPhrases(adjetive, noun, spanishAdjetive, spanishNoun, amount, maxNumber, noNumber =false){
+function returnPhrases(adjetive, noun, spanishAdjetive, spanishNoun, amount, maxNumber, noNumber = false){
 
 			let spanishPhrases = []
 			let englishPhrases = []
