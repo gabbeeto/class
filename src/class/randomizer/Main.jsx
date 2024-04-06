@@ -51,3 +51,12 @@ ReactDOM.createRoot(contentElement).render((<ul className='flex items-center jus
 </details>
 </li>))}</ul>))
 }
+
+// continue with this later on
+export function compareEnglish(expectedEnglish, writtenEnglish){
+let waysOfWriting = [writtenEnglish]
+let hundredIsInsideWord = expectedEnglish.match('hundred') != null
+if(hundredIsInsideWord){
+waysOfWriting.push(expectedEnglish.split(' and ').join(''))
+}
+}

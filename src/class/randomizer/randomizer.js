@@ -3,7 +3,6 @@ import { List, GroupList, SelectedList } from './list'
 
 function randomizer(mainArray){
 let newArrayWithRandomValues = [];
-// get random number from array
 for(let crrArray of mainArray){
 let randomNumber = Math.random() * crrArray.length
 let current = Math.floor(randomNumber);
@@ -281,27 +280,10 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 
 
 		let number100End = {
-				spanish: 'to ',
+				spanish: 'tos ',
 				spanishPlural: 'tos',
 				english: ' and '
 		}
-
-
-		// if(isFemale){
-		// 	number100End = {
-		// 		spanish: 'ta ',
-		// 		spanishPlural: 'tas ',
-		// 		english: ' and '
-		// 	}
-		// }
-		// else{
-		// 	number100End = {
-		// 		spanish: 'to ',
-		// 		spanishPlural: 'tos ',
-		// 		english: ' and '
-		// 	}
-		// }
-
 
 
 		if(thisNumber == 0){
@@ -341,7 +323,7 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 						else if(firstNumberOnDigit == 9){
 						firstNumberOnDigitText = `novecientos`
 							if(isFemale){
-								firstNumberOnDigitText = `novecientos`
+								firstNumberOnDigitText = `novecientas`
 							}
 						}
 						else{
@@ -359,10 +341,13 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 
 		else if(firstNumberOnDigit > 0){
 			if(language == 'spanish' && firstNumberOnDigit == 5){
-			firstNumberOnDigitText = `quiniento `
+			firstNumberOnDigitText = `quinientos `
+			}
+			else if(language == 'spanish' && firstNumberOnDigit == 1){
+			firstNumberOnDigitText = `ciento `
 			}
 			else if(language == 'spanish' && firstNumberOnDigit == 9){
-			firstNumberOnDigitText = `noveciento `
+			firstNumberOnDigitText = `novecientos `
 			}
 			else if(firstNumberOnDigit > 1 ){
 				firstNumberOnDigitText = List[language]['a1_2']['numbers'][firstNumberOnDigit - 1];

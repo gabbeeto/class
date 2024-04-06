@@ -11,16 +11,16 @@ import Boat from './vehicles/boat.jpg';
 import {ListOfWords} from './../../../vocabList';
 
 const vehicles = [
- [Truck, 'Truck'],
-[Ship, 'Ship'],
-[Bus, 'Bus'],
-[Car, 'Car'],
-[Motorbike, 'Motorbike'],
-[Skateboard, 'Skateboard'],
-[Airplane, 'Airplane'],
-[Bike, 'Bike'],
-[Helicopter, 'Helicopter'],
-[Boat, 'Boat'],
+ ['Truck', [Truck]],
+['Ship', [Ship]],
+['Bus', [Bus]],
+['Car', [Car]],
+['Motorcycle', [Motorbike]],
+['Skateboard', [Skateboard]],
+['Airplane', [Airplane]],
+['Bike', [Bike]],
+['Helicopter', [Helicopter]],
+['Boat', [Boat]],
  ];
 
 export function A1Vehicle(){

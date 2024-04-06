@@ -1,3 +1,4 @@
+import { A1Food } from './class/a1/a1_4/a1Food/Main'
 import { A1Color } from './class/a1/a1_1/a1Color/Main'
 import { A1Animal } from './class/a1/a1_1/a1Animal/Main'
 import { A1Number } from './class/a1/a1_2/a1Number/Main'
@@ -16,6 +17,7 @@ const hashContent = {
 	"#a1_1": ['Nouns and adjetive', <A1_1 />],
 	"#a1vehicle": ['vehicles', < A1Vehicle />],
 	"#a1pronoun": ['pronoun and verbs', < A1Pronoun />],
+	'#a1food' : ['foods', < A1Food / >], 
 }
 
 
