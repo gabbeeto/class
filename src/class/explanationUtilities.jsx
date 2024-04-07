@@ -14,7 +14,16 @@ let currentColor = allTheColors[color]
 	<p className={`textSize-6 ${currentColor[1]} rounded-xl p-2`}>{example}</p>
 	</ section>
 	)
+}
 
+
+export function TitleContainer({title, color = 'purple', }){
+let currentColor = allTheColors[color]
+
+	return (<section className={`flex flex-col gap-2 m-2 items-center justify-center ${currentColor[0]}  rounded-xl`}>
+	<h2 className={`textSize-1 w-11/12 ${currentColor[1]} rounded-xl p-1`}>{title}</h2>
+	</ section>
+	)
 }
 
 export function Word({word, color = 'orange'}){
