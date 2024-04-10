@@ -39,30 +39,30 @@ return (<>
 		<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>You hate Minecraft</span><span>he hate<span className='text-emerald-200'>s</span> Minecraft</span></div>
 </>)} / >
 
-	<Word word={[(<>the</>), (<>El/La/Los/Las</>)]}/>
-	<Word word={[(<>the cat</>), (<>el gato</>)]}/>
-	<Word word={[(<>the cow</>), (<>la vaca</>)]}/>
-	<Word word={[(<>the dogs</>), (<>los perros</>)]}/>
-	<Word word={[(<>the dogs</>), (<>las perras</>)]}/>
-	<Word word={[(<>the fish</>), (<>él pez</>)]}/>
-	<Word word={[(<>the fish</>), (<>los peces</>)]}/>
+	<Word word={[(<>The</>), (<>El/La/Los/Las</>)]}/>
+	<Word word={[(<>The cat</>), (<>El gato</>)]}/>
+	<Word word={[(<>The cow</>), (<>La vaca</>)]}/>
+	<Word word={[(<>The dogs</>), (<>Los perros</>)]}/>
+	<Word word={[(<>The dogs</>), (<>Las perras</>)]}/>
+	<Word word={[(<>The fish</>), (<>Él pez</>)]}/>
+	<Word word={[(<>The fish</>), (<>Los peces</>)]}/>
 
 	<ListOfTest list={
 		[
-		[(<>ella come pizza</>), (<>she eats pizza</>)],
-		[(<>el gato toma agua</>), (<>the cat drinks water</>)],
-		[(<>los perros toman leche</>), (<>the dogs drink milk</>)],
-		[(<>como manzana</>), (<>I eat apple</>)],
-		[(<>él come banana</>), (<>he eats banana</>)],
-		[(<>comes banana</>), (<>you eat banana</>)],
-		[(<>el caballo y Maria comen carne</>), (<>the horse and Maria eat meat</>)],
-		[(<>los peces toman té</>), (<>the fish drink tea</>)],
-		[(<>él pez toma té</>), (<>the fish drinks tea</>)],
-		[(<>ella tiene 50 autos</>), (<>she has 50 cars</>)],
-		[(<>amo los aviones</>), (<>I love airplanes</>)],
-		[(<>ella ama las motos</>), (<>she loves motorbikes</>)],
-		[(<>odias Minecraft</>), (<>I hate Minecraft</>)],
-		[(<>él odia My Little Pony</>), (<>he hates My Little Pony</>)],
+		[(<>Ella come pizza</>), (<>She eats pizza</>)],
+		[(<>El gato toma agua</>), (<>The cat drinks water</>)],
+		[(<>Los perros toman leche</>), (<>The dogs drink milk</>)],
+		[(<>Como manzana</>), (<>I eat apple</>)],
+		[(<>Él come banana</>), (<>He eats banana</>)],
+		[(<>Comes banana</>), (<>You eat banana</>)],
+		[(<>El caballo y Maria comen carne</>), (<>The horse and Maria eat meat</>)],
+		[(<>Los peces toman té</>), (<>The fish drink tea</>)],
+		[(<>Él pez toma té</>), (<>The fish drinks tea</>)],
+		[(<>Ella tiene 50 autos</>), (<>She has 50 cars</>)],
+		[(<>Amo los aviones</>), (<>I love airplanes</>)],
+		[(<>Ella ama las motos</>), (<>She loves motorbikes</>)],
+		[(<>Odias Minecraft</>), (<>I hate Minecraft</>)],
+		[(<>Él odia My Little Pony</>), (<>He hates My Little Pony</>)],
 		]
 	} / >
 </>);
