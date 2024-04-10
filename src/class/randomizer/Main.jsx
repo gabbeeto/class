@@ -42,12 +42,12 @@ let langContent = randomSentence(value, valueForAmount)
 
 ReactDOM.createRoot(contentElement).render((<ul className='flex items-center justify-center gap-5 flex-col '>
 {langContent['englishPhrases'].map( (english, index) => (<li className='bg-emerald-700 p-4 rounded-2xl flex flex-col items-center justify-center gap-2' data-index={index}>
-	<input className='text-black rounded-xl p-1' data-index={index} onChange={(e) => {
+	<input spellCheck='true' className='text-black rounded-xl p-1' data-index={index} onChange={(e) => {
 		document.querySelectorAll('output')[e.target.dataset.index].innerHTML = document.querySelectorAll(`li[data-index] input`)[e.target.dataset.index].value}} type="text"/>
 <details className='bg-sky-500 p-2 flex flex-col gap-96'>
 <summary>{langContent['spanishPhrases'][index]}</summary>
 <p className='bg-cyan-800 p-2 rounded-3xl'>{english}</p>
-<output id='output' className='bg-amber-800 p-2 rounded-3xl'></output>
+<output spellCheck='true' id='output' className='bg-amber-800 p-2 rounded-3xl'></output>
 </details>
 </li>))}</ul>))
 }

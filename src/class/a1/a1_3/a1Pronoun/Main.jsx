@@ -1,5 +1,5 @@
 import {ListOfWords} from './../../../list'
-import {Word, TinyExplanation, ExplanationContainer} from './../../../explanationUtilities'
+import {Word, TinyExplanation, ExplanationContainer,  ListOfTest} from './../../../explanationUtilities'
 
 
 
@@ -59,8 +59,22 @@ return (<>
 
 	<ExplanationContainer  explanation={`en inglés, los pronombres siempre están incluido porque los verbos no indican quien ejecuta el verbo`} example={(<><div><span className='text-orange-400'>I</span> hate dogs</div> <div><span className='text-orange-400'>you</span> hate dogs</div></>)} / >
 
-	</>
+<ListOfTest list={
+	[
+	['a mí me gustan los tomates', 'I like tomatoes'],
+	['odio los perros', 'I hate dogs'],
+	['te gusta Minecraft', 'you like Minecraft'],
+	['tenés un cerdo azul', 'you have a blue pig'],
+	['tengo un avion verde', 'I have a green airplane'],
+	['odias los gatos marrones', 'you hate brown cats'],
+	['a mi me gustan los botes negros', 'I like black boats'],
+	['odio las motos purpuras', 'I hate purple motorbikes'],
+	['tengo 3 peces amarillos', 'I have 3 yellow fish'],
+	['tengo 4 perros verdes', 'I have 4 green dogs'],
+	['tienes un caballo blanco', 'you have a white horse'],
+		
+	]
+} / >
 
-
-)
+</>)
 }

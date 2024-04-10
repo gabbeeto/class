@@ -27,11 +27,12 @@ export function randomSentence(currentClass, amount){
 let words = [0,0,0,0];
 
 let maxNumber
-
+let noNumber = false
 	switch( currentClass){
 		case 'a1_1':
 		case 'a1_1A':
-			maxNumber = 2;
+			maxNumber = 1;
+			noNumber = true
 			words = SelectedList('a1_1', 'a1_1');
 			break;
 		case 'a1_2A':
@@ -47,10 +48,17 @@ let maxNumber
 			maxNumber = 1000
 			words = GroupList('a1_3');
 			break;
-
+		case 'a1_4':
+			maxNumber = 999;
+			words = SelectedList('a1_4', 'a1_1');
+			break;
+		case 'a1_4A':
+			maxNumber = 1000
+			words = GroupList('a1_4');
+			break;
 	}
 
-			return returnPhrases(words[0], words[1], words[2], words[3], amount, maxNumber);
+			return returnPhrases(words[0], words[1], words[2], words[3], amount, maxNumber, noNumber);
 	
 
 
@@ -134,7 +142,6 @@ return wordStartsWithVowel ? true : false
 
 export function switchToMale(word){
 const wordsThatDontChange = ['verde', 'azul', 'gris', 'presidente', 'violeta', 'rosa', 'intendente', 'celeste', 'purpura', 'cian', 'gris' , 'naranja' ]
-
 
 let indexIfException = wordsThatDontChange.indexOf(word);
 

@@ -5,6 +5,32 @@ const green = ['bg-green-800','bg-emerald-700']
 
 const allTheColors = {purple, orange, green};
 
+
+export function ListOfTest({list}){
+	console.log(list)
+	return (<>{list.map((currentList, index) => (<> <Test spanishPhrase={currentList[0]} expectedEnglish={currentList[1]} id={index} /> </>))}
+</>)
+
+}
+// continue here
+function Test({id, spanishPhrase, expectedEnglish}){
+
+return (<> 
+<section className="bg-blue-700 m-2 rounded-2xl gap-2 flex flex-col items-center justify-center text-center " data-sectionid={id}>
+<input className="text-black mt-1 rounded-xl p-1 border-black border-2" onChange={() => {
+let outputs = document.querySelectorAll('output');
+let inputs = document.querySelectorAll('input');
+outputs[id].innerHTML = inputs[id].value
+}} type="text"/>
+<details className=" flex gap-2 flex-col items-center justify-center text-center" >
+<summary >{spanishPhrase}</summary>
+<h2 className="bg-gray-700 p-2 rounded-2xl">{expectedEnglish}</h2>	
+<output className="bg-purple-700 p-2 rounded-2xl"></output>
+</details>
+</section>
+	</>);
+}
+
 export function ExplanationContainer({explanation, color = 'green', example = 'example'}){
 
 let currentColor = allTheColors[color]
