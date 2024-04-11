@@ -1,3 +1,4 @@
+import { A1Place } from './class/a1/a1_5/a1Place/Main'
 import { A1Food } from './class/a1/a1_4/a1Food/Main'
 import { A1Color } from './class/a1/a1_1/a1Color/Main'
 import { A1Animal } from './class/a1/a1_1/a1Animal/Main'
@@ -20,6 +21,7 @@ const hashContent = {
 	"#a1pronoun": ['pronoun and verbs', < A1Pronoun />],
 	'#a1food' : ['foods', < A1Food / >], 
 	"#a1_4": ['Food and Third Person Singular in present tense', <A1_4 />],
+	'#a1place' : ['places', < A1Place / >], 
 }
 
 

@@ -60,11 +60,34 @@ const a1_4 = {
     noun: a1_4Foods
 	};
 
+
+const a1_5Places = [
+'building',
+'city',
+'school',
+'road',
+'street',
+'beach',
+'square',
+'house',
+'forest',
+'sidewalk',
+'hospital',
+'river',
+'highway',
+];
+
+
+const a1_5 = {
+    noun: a1_5Places
+	};
+
 const english = {
 	a1_1,
 	a1_2,
 	a1_3,
 	a1_4,
+	a1_5,
 }
 
 
@@ -136,11 +159,36 @@ const a1Spanish_4 = {
     noun: a1Spanish_4Foods
 	};
 
+
+
+
+const a1Spanish_5Places = [
+'edificio',
+'ciudad',
+'escuela',
+'carretera',
+'calle',
+'playa',
+'plaza',
+'casa',
+'bosque',
+'vereda',
+'hospital',
+'rio',
+'autopista',
+];
+
+
+const a1Spanish_5 = {
+    noun: a1Spanish_5Places
+	};
+
 const spanish = {
 	a1_1: a1Spanish_1,
 	a1_2: a1Spanish_2,
 	a1_3: a1Spanish_3,
 	a1_4: a1Spanish_4,
+	a1_5: a1Spanish_5,
 }
 
 
@@ -219,6 +267,7 @@ let SpanishAdjective = spanish[lastListForAdjetive]['adjetive'] ;
 	
 return [EnglishAdjetive, EnglishNoun, SpanishAdjective, SpanishNoun]
 }
+
 
 
 
