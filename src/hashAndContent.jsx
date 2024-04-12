@@ -1,3 +1,4 @@
+import { A1Feeling } from './class/a1/a1_6/a1Feeling/Main'
 import { A1Place } from './class/a1/a1_5/a1Place/Main'
 import { A1Food } from './class/a1/a1_4/a1Food/Main'
 import { A1Color } from './class/a1/a1_1/a1Color/Main'
@@ -6,6 +7,7 @@ import { A1Number } from './class/a1/a1_2/a1Number/Main'
 import { A1_1 } from './class/a1/a1_1/Main'
 import { A1_4 } from './class/a1/a1_4/Main'
 import { A1_5 } from './class/a1/a1_5/Main'
+import { A1_6 } from './class/a1/a1_6/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
 import { Randomizer } from './class/randomizer/Main'
@@ -22,8 +24,10 @@ const hashContent = {
 	"#a1pronoun": ['pronoun and verbs', < A1Pronoun />],
 	'#a1food' : ['foods', < A1Food / >], 
 	"#a1_4": ['Food and Third Person Singular in present tense', <A1_4 />],
-	"#a1_5": ['Food and Third Person Singular in present tense', <A1_5 />],
+	"#a1_5": ['the movement class', <A1_5 />],
 	'#a1place' : ['places', < A1Place / >], 
+	'#a1feeling' : ['feelings', < A1Feeling / >], 
+	"#a1_6": ['feelings', <A1_6 />],
 }
 
 

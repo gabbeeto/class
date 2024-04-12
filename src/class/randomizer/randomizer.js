@@ -49,13 +49,30 @@ let noNumber = false
 			words = GroupList('a1_3');
 			break;
 		case 'a1_4':
-			maxNumber = 999;
+			maxNumber = 1000;
 			words = SelectedList('a1_4', 'a1_1');
 			break;
 		case 'a1_4A':
 			maxNumber = 1000
 			words = GroupList('a1_4');
 			break;
+		case 'a1_5A':
+			maxNumber = 1000
+			words = GroupList('a1_5');
+			break;
+		case 'a1_5':
+			maxNumber = 1000
+			words = SelectedList('a1_5', 'a1_1');
+			break;
+		case 'a1_6A':
+			maxNumber = 1000
+			words = GroupList('a1_6');
+			break;
+		case 'a1_6':
+			maxNumber = 1000
+			words = SelectedList('a1_1', 'a1_6');
+			break;
+
 	}
 
 			return returnPhrases(words[0], words[1], words[2], words[3], amount, maxNumber, noNumber);
@@ -141,7 +158,7 @@ return wordStartsWithVowel ? true : false
 }
 
 export function switchToMale(word){
-const wordsThatDontChange = ['verde', 'azul', 'gris', 'presidente', 'violeta', 'rosa', 'intendente', 'celeste', 'purpura', 'cian', 'gris' , 'naranja' ]
+const wordsThatDontChange = ['verde', 'azul', 'gris', 'presidente', 'violeta', 'rosa', 'intendente', 'celeste', 'purpura', 'cian', 'gris' , 'naranja', 'preocupante', 'decepcionante', 'shockeante', 'avergozante', 'cansante','triste']
 
 let indexIfException = wordsThatDontChange.indexOf(word);
 

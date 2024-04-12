@@ -63,6 +63,15 @@ return (<>
 		[(<>Ella ama las motos</>), (<>She loves motorbikes</>)],
 		[(<>Odias Minecraft</>), (<>I hate Minecraft</>)],
 		[(<>Él odia My Little Pony</>), (<>He hates My Little Pony</>)],
+		[(<>tengo empanadas</>), (<>I have empanadas</>)],
+		[(<>él tiene empanadas</>), (<>he has empanadas</>)],
+		[(<>Mario tiene arroz</>), (<>Mario has empanadas</>)],
+		[(<>Maria y Luis tienen pan</>), (<>Mario has empanadas</>)],
+		[(<>A mí me gustan los huevos</>), (<>I like eggs</>)],
+		[(<>al cerdo amarillo le gusta el café</>), (<>the yellow pig likes coffe</>)],
+		[(<>a la mosca le gusta el queso</>), (<>the fly likes cheese</>)],
+		[(<>las papas y los tomates</>), (<>the potatoes and the tomatoes</>)],
+		[(<>al caballo le gusta el fideo</>), (<>the horse likes noodles</>)],
 		]
 	} / >
 </>);

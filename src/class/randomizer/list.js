@@ -82,12 +82,41 @@ const a1_5 = {
     noun: a1_5Places
 	};
 
+
+const a1_6Feelings = [
+'tired',
+'angry',
+'worried',
+'sick',
+'afraid',
+'shocked',
+'surprised',
+'bored',
+'sad',
+'confused',
+'embarrased',
+'dissapointed',
+'worrying',
+'shocking',
+'boring',
+'surprising',
+'confusing',
+'embarrasing',
+'tiring',
+];
+
+
+const a1_6 = {
+		adjetive: a1_6Feelings,
+	};
+
 const english = {
 	a1_1,
 	a1_2,
 	a1_3,
 	a1_4,
 	a1_5,
+	a1_6,
 }
 
 
@@ -183,12 +212,46 @@ const a1Spanish_5 = {
     noun: a1Spanish_5Places
 	};
 
+
+const a1Spanish_6Feelings = [
+'cansada',
+'enojada',
+'preocupada',
+'enferma',
+'asustada',
+'shockeada',
+'sorprendida',
+'aburrida',
+'triste',
+'confundida',
+'avergonzada',
+'decepcionada',
+'preocupante',
+'schockeante',
+'aburrida',
+'sorprendente',
+'confuso',
+'avergozante',
+'cansante',
+];
+
+
+
+
+
+
+
+const a1Spanish_6 = {
+		adjetive: a1Spanish_6Feelings,
+	};
+
 const spanish = {
 	a1_1: a1Spanish_1,
 	a1_2: a1Spanish_2,
 	a1_3: a1Spanish_3,
 	a1_4: a1Spanish_4,
 	a1_5: a1Spanish_5,
+	a1_6: a1Spanish_6,
 }
 
 
@@ -267,9 +330,5 @@ let SpanishAdjective = spanish[lastListForAdjetive]['adjetive'] ;
 	
 return [EnglishAdjetive, EnglishNoun, SpanishAdjective, SpanishNoun]
 }
-
-
-
-
 
 
