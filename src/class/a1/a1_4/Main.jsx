@@ -5,10 +5,10 @@ export function A1_4(){
 return (<>
 
 	<TitleContainer  title={(<>Verbs</>)}  / >
-	<Word word={[(<><span classname="textSize-3">To</span> Drink</>), (<>Beber</>)]}/>
+	<Word word={[(<><span className="textSize-3">To</span> Drink</>), (<>Beber</>)]}/>
 
 
-	<Word word={[(<><span classname="textSize-3">To</span> Eat</>), (<>Comer</>)]}/>
+	<Word word={[(<><span className="textSize-3">To</span> Eat</>), (<>Comer</>)]}/>
 
 <TitleContainer  title={<>Pronoun</>} / >
 

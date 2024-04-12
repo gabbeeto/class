@@ -5,6 +5,7 @@ import { A1Animal } from './class/a1/a1_1/a1Animal/Main'
 import { A1Number } from './class/a1/a1_2/a1Number/Main'
 import { A1_1 } from './class/a1/a1_1/Main'
 import { A1_4 } from './class/a1/a1_4/Main'
+import { A1_5 } from './class/a1/a1_5/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
 import { Randomizer } from './class/randomizer/Main'
@@ -21,6 +22,7 @@ const hashContent = {
 	"#a1pronoun": ['pronoun and verbs', < A1Pronoun />],
 	'#a1food' : ['foods', < A1Food / >], 
 	"#a1_4": ['Food and Third Person Singular in present tense', <A1_4 />],
+	"#a1_5": ['Food and Third Person Singular in present tense', <A1_5 />],
 	'#a1place' : ['places', < A1Place / >], 
 }
 
