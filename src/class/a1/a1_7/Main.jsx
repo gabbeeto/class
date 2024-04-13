@@ -125,7 +125,7 @@ return (<>
 	<Word word={[(<>they are</>), (<>they're</>)]}/>
 	<Word word={[(<>we are</>), (<>we're</>)]}/>
 
-	<TitleContainer  title={<>new words</>} / >
+	<TitleContainer  title={<>possesive pronouns</>} / >
 		<Word word={[(<>my</>), (<>mi(de mí)</>)]}/>
 		<Word word={[(<>your</>), (<>tu(de vos)</>)]}/>
 		<Word word={[(<>my cat</>), (<>mi casa(casa de mí)</>)]}/>
