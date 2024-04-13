@@ -8,6 +8,7 @@ import { A1_1 } from './class/a1/a1_1/Main'
 import { A1_4 } from './class/a1/a1_4/Main'
 import { A1_5 } from './class/a1/a1_5/Main'
 import { A1_6 } from './class/a1/a1_6/Main'
+import { A1_7 } from './class/a1/a1_7/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
 import { Randomizer } from './class/randomizer/Main'
@@ -28,6 +29,7 @@ const hashContent = {
 	'#a1place' : ['places', < A1Place / >], 
 	'#a1feeling' : ['feelings', < A1Feeling / >], 
 	"#a1_6": ['feelings', <A1_6 />],
+	"#a1_7": ['verb to be and parts of the house', <A1_7 />],
 }
 
 
