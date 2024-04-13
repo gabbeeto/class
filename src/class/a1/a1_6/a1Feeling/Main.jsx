@@ -7,6 +7,7 @@ import Shocked from './feelings/shocked.png';
 import Surprised from './feelings/surprised.png';
 import Bored from './feelings/bored.png';
 import Sad from './feelings/sad.png';
+import Happy from './feelings/happy.png';
 import Confused from './feelings/confused.png';
 import Embarrased from './feelings/embarrased.png';
 import Dissapointed from './feelings/dissapointed.png';
@@ -22,6 +23,7 @@ const feelings = [
 ['Surprised', [Surprised] ],
 ['Bored', [Bored] ],
 ['Sad', [Sad] ],
+['Happy', [Happy] ],
 ['Confused', [Confused] ],
 ['Embarrased', [Embarrased] ],
 ['Dissapointed', [Dissapointed] ],

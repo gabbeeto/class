@@ -158,7 +158,7 @@ return wordStartsWithVowel ? true : false
 }
 
 export function switchToMale(word){
-const wordsThatDontChange = ['verde', 'azul', 'gris', 'presidente', 'violeta', 'rosa', 'intendente', 'celeste', 'purpura', 'cian', 'gris' , 'naranja', 'preocupante', 'decepcionante', 'shockeante', 'avergozante', 'cansante','triste']
+const wordsThatDontChange = ['verde', 'azul', 'gris', 'presidente', 'violeta', 'rosa', 'intendente', 'celeste', 'purpura', 'cian', 'gris' , 'naranja', 'preocupante', 'decepcionante', 'shockeante', 'avergozante', 'cansante','triste', 'feliz']
 
 let indexIfException = wordsThatDontChange.indexOf(word);
 

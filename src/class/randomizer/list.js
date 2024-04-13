@@ -103,6 +103,7 @@ const a1_6Feelings = [
 'confusing',
 'embarrasing',
 'tiring',
+'happy'
 ];
 
 
@@ -233,6 +234,7 @@ const a1Spanish_6Feelings = [
 'confuso',
 'avergozante',
 'cansante',
+'feliz',
 ];
 
 

@@ -12,27 +12,27 @@ return (<>
 	<Word word={[(<>they</>), (<>ellos/ellas(hablando de otras personas pero más de 1)</>)]}/>
 
 	<TitleContainer  title={<>adjetivos que terminan con -ed y -ing</>} / >
-	<ExplanationContainer  explanation={<>adjetivos que terminan con -ed como:tired, bored, worried, surprised, confused, etc.. Pueden convertirse en otras palabras terminando con 'ing' para decir que ese sentimiento le causan a otras personas como: boring, worrying, surprising, confusing </>} example={(<><div>boring dog</div>
-<div>bored dog</div></>)} / >
+	<ExplanationContainer  explanation={<>adjetivos que terminan con -ed como:tir<span className='text-orange-500'>ed</span>, bor<span className='text-orange-500'>ed</span>, worr<span className='text-orange-500'>ied</span>, surpris<span className='text-orange-500'>ed</span>, confus<span className='text-orange-500'>ed</span>, etc.. Pueden convertirse en otras palabras terminando con 'ing' para decir que ese sentimiento le causan a otras personas como: bor<span className='text-sky-500'>ing</span>, worry<span className='text-sky-500'>ing</span>, surpris<span className='text-sky-500'>ing</span>, confus<span className='text-sky-500'>ing</span> </>} example={(<><div>bor<span className='text-sky-500'>ing</span>  dog</div>
+<div>bor<span className='text-orange-500'>ed</span> dog</div></>)} / >
 
-<ExplanationContainer  explanation={<>'boring dog'(perro aburrido) es un perro que hace sentir 'bored'(aburrido) a otros perros,mientras que 'bored cat' significa que el gato está aburrido, no que hace sentir a los demas aburrido</>} example={(<>I feel tired. The dog is tiring</>)} / >
+<ExplanationContainer  explanation={<>'boring dog'(perro aburrido) es un perro que hace sentir 'bored'(aburrido) a otros perros,mientras que 'bored cat' significa que el gato está aburrido, no que hace sentir a los demas aburrido</>} example={(<>I feel tir<span className='text-orange-500'>ed</span>. The dog is tir<span className='text-sky-500'>ing</span></>)} / >
 
 	<ExplanationContainer  explanation={<>lo mismo con las otras palabras, 'a worrying fish' significa 'un pez preocupante' porque preocupa a los demas mientras que 'a worried fish' es un pescado que está aburrido, no aburre a los demas.</>} example={(<>
-<div>the bored cat hates the boring dog</div>
-<div>the surprising cat surprises the surprised fly</div>
+<div>the bor<span className='text-orange-500'>ed</span> cat hates the bor<span className='text-sky-500'>ing</span> dog</div>
+<div>the surpris<span className='text-sky-500'>ing</span> cat surprises the surpris<span className='text-orange-500'>ed</span> fly</div>
 		</>)} / >
 
 	<TitleContainer  title={<>list of adjetives</>} / >
-	<ul> <li><Word word={[(<>tired</>), (<>tiring</>)]}/></li>
-	<li><Word word={[(<>worried</>), (<>worrying</>)]}/></li>
-	<li><Word word={[(<>concerned</>), (<>concerning</>)]}/></li>
-	<li><Word word={[(<>surprised</>), (<>surprising</>)]}/></li>
-	<li><Word word={[(<>bored</>), (<>boring</>)]}/></li>
-	<li><Word word={[(<>interested</>), (<>interesting</>)]}/></li>
-	<li><Word word={[(<>dissapointed</>), (<>dissapointing</>)]}/></li>
-	<li><Word word={[(<>shocked</>), (<>shocking</>)]}/></li>
-	<li><Word word={[(<>embarrased</>), (<>embarrasing</>)]}/></li>
-	<li><Word word={[(<>confused</>), (<>confusing</>)]}/></li>
+	<ul> <li><Word word={[(<span className="text-white">tir<span className='text-orange-500'>ed</span></span>), (<span className="text-white">tir<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">worr<span className='text-orange-500'>ied</span></span>), (<span className="text-white">worry<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">concern<span className='text-orange-500'>ed</span></span>), (<span className="text-white">concern<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">surpris<span className='text-orange-500'>ed</span></span>), (<span className="text-white">surpris<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">bor<span className='text-orange-500'>ed</span></span>), (<span className="text-white">bor<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">interest<span className='text-orange-500'>ed</span></span>), (<span className="text-white">interest<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">dissapoint<span className='text-orange-500'>ed</span></span>), (<span className="text-white">dissapoint<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">shock<span className='text-orange-500'>ed</span></span>), (<span className="text-white">shock<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">embarras<span className='text-orange-500'>ed</span></span>), (<span className="text-white">embarras<span className='text-sky-500'>ing</span></span>)]}/></li>
+	<li><Word word={[(<span className="text-white">confus<span className='text-orange-500'>ed</span></span>), (<span className="text-white">confus<span className='text-sky-500'>ing</span></span>)]}/></li>
 	</ul>
 <TitleContainer  title={<>exersices</>} / >
 	<ListOfTest list={
@@ -43,6 +43,7 @@ return (<>
 		[(<>me siento cansado en el bosque verde</>), (<>I feel tired in the green forest</>)],
 		[(<>el gato preocupante se preocupa</>), (<>the worrying cat worries </>)],
 		[(<>la gallina purpura confunde</>), (<>the purple chicken confuses </>)],
+		[(<> nos sentimos feliz </>), (<>we feel happy</>)],
 		[(<>el shockea </>), (<>he shocks </>)],
 		[(<>ellos schockean </>), (<>they shock </>)],
 		[(<>ella shockea </>), (<>she shocks </>)],
@@ -57,6 +58,9 @@ return (<>
 		[(<>me siento avergonzado. </>), (<>I feel embarrasing</>)],
 		[(<> la abeja preocupa el perro. el perro se siente asustado </>), (<>the bee worries the dog. the dog feels afraid</>)],
 		[(<> tengo veinte obejas asustadas </>), (<>I have twenty afraid sheeps</>)],
+		[(<> los gatos felices cocinan </>), (<>the happy cats cook</>)],
+		[(<> el perro feliz cocina un pescado </>), (<>the happy dog cook a fish</>)],
+		[(<> me siento feliz </>), (<>I feel happy</>)],
 		]
 	} / >
 </>);}
