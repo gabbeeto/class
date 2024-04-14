@@ -27,15 +27,19 @@ return (<>
 		<div>you can <span className='text-sky-400'>eat</span> rice</div>
 		<div>puedes <span className='text-sky-400'>comer</span> arroz</div>
 </div>
-
 		<div>
 		<div>you must <span className='text-sky-400'>eat</span> rice</div>
 		<div>debes <span className='text-sky-400'>comer</span> arroz</div>
 </div>
 		</div>)} / >
 
+	<ExplanationContainer  explanation={<>esto no tiene nada que ver con el verbo infinitivo pero esos mismos verbos('to can', 'to must', 'to may') funcionan de manera diferente en otros aspectos. en tercera persona singular, no se le agrega s como los otros verbos</>} example={(<>
 
-	<ExplanationContainer  explanation={<>pero cuando está al principio, para usar el infinitivo, tenés que agregar 'ing' al verbo </>} example={(<>
+<div>he can eat rice</div>
+<div>he eat<span className='text-red-400'>s</span> a house</div>
+		</>)} / >
+
+	<ExplanationContainer  explanation={<>la segunda excepcion es cuando el verbo está en el principio de la oracion, para usar el infinitivo, tenés que agregar 'ing' al verbo </>} example={(<>
 		<div><span className='text-sky-400'>eating</span> rice is cool</div>
 		<div><span className='text-sky-400'>comer</span> arroz es cool</div>
 		</>)} / >
@@ -61,6 +65,8 @@ return (<>
 	[(<>you can drink milk</>), (<>podés tomar leche</>)],
 	[(<>puedes comer en la cama</>), (<> you can eat on the bed</>)],
 	[(<>Quiero tomar agua</>), (<>I want to drink water</>)],
+	[(<>she wants to run </>), (<>ella quiere correr</>)],
+	[(<>she can run </>), (<>ella puede correr</>)],
 	[(<>tomar leche es cool</>), (<>drinking milk is cool</>)],
 	[(<>this car needs water</>), (<>este auto necesita agua</>)],
 	[(<>he is happy because he likes toys</>), (<>él está feliz porque a él le gustan los juguetes</>)],
@@ -82,6 +88,8 @@ return (<>
 	[(<>I must use the computer</>), (<>debes usar la computadora</>)],
 	[(<>the bathroom needs to have a toilet and a bathtub</>), (<>el baño necesita tener un inodoro y una bañera</>)],
 	[(<>la cocina tiene tres mesas</>), (<>the kitchen has three tables</>)],
+	[(<>el quiere caminar</>), (<>he wants to walk</>)],
+	[(<>el puede caminar</>), (<>he can walk</>)],
 	[(<>Maria wants to drive a car on the highway</>), (<>Maria quiere manejar un auto en el autopista</>)],
 	[(<>odio las heladeras grises. las heladeras tienen que ser purpura</>), (<>I hate gray fridges. the friges have to be purple</>)],
 	[(<>she is happy because she likes brown door</>), (<>ella es feliz porque a ella le gustan las puertas marrones.</>)],

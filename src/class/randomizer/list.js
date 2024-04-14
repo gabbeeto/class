@@ -147,6 +147,23 @@ const a1_8 = {
 		noun: a1_8Items,
 	};
 
+
+const a1_9Schoolsupplies = [
+'pencil',
+'eraser',
+'pen',
+'pencil sharperner',
+'book',
+'folder',
+'scissor',
+'glue stick',
+];
+
+
+const a1_9 = {
+		noun: a1_9Schoolsupplies,
+	};
+
 const english = {
 	a1_1,
 	a1_2,
@@ -156,6 +173,7 @@ const english = {
 	a1_6,
 	a1_7,
 	a1_8,
+	a1_9,
 }
 
 
@@ -323,6 +341,27 @@ const a1Spanish_8 = {
 		noun: a1Spanish_8Items,
 	};
 
+
+
+ const a1Spanish_9Schoolsupplies = [
+'lapiz',
+'borrador',
+'lapicera',
+'saca punta',
+'libro',
+'carpeta',
+'tijera',
+'pegamento',
+];
+
+
+const a1Spanish_9 = {
+	noun: a1Spanish_9Schoolsupplies
+}
+
+
+
+
 const spanish = {
 	a1_1: a1Spanish_1,
 	a1_2: a1Spanish_2,
@@ -332,6 +371,7 @@ const spanish = {
 	a1_6: a1Spanish_6,
 	a1_7: a1Spanish_7,
 	a1_8: a1Spanish_8,
+	a1_9: a1Spanish_9,
 }
 
 
@@ -410,6 +450,7 @@ let SpanishAdjective = spanish[lastListForAdjetive]['adjetive'] ;
 	
 return [EnglishAdjetive, EnglishNoun, SpanishAdjective, SpanishNoun]
 }
+
 
 
 
