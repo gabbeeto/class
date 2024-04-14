@@ -88,6 +88,14 @@ export function randomSentence(currentClass, amount){
 			maxNumber = 1000
 			words = SelectedList('a1_8', 'a1_1');
 			break;
+		case 'a1_9A':
+			maxNumber = 1000
+			words = GroupList('a1_9');
+			break;
+		case 'a1_9':
+			maxNumber = 1000
+			words = SelectedList('a1_9', 'a1_1');
+			break;
 	}
 
 	return returnPhrases(words[0], words[1], words[2], words[3], amount, maxNumber, noNumber);
