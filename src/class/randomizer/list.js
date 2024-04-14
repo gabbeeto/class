@@ -111,6 +111,42 @@ const a1_6 = {
 		adjetive: a1_6Feelings,
 	};
 
+
+const a1_7PartsOfHouses = [
+'atic',
+'hallway',
+'bedroom',
+'living room',
+'bathroom',
+'kitchen',
+];
+
+
+const a1_7 = {
+		noun: a1_7PartsOfHouses,
+	};
+
+
+const a1_8Items = [
+'bed',
+'phone',
+'television',
+'window',
+'chair',
+'toy',
+'table',
+'bathtub',
+'fridge',
+'toilet',
+'door',
+'computer',
+];
+
+
+const a1_8 = {
+		noun: a1_8Items,
+	};
+
 const english = {
 	a1_1,
 	a1_2,
@@ -118,6 +154,8 @@ const english = {
 	a1_4,
 	a1_5,
 	a1_6,
+	a1_7,
+	a1_8,
 }
 
 
@@ -247,6 +285,44 @@ const a1Spanish_6 = {
 		adjetive: a1Spanish_6Feelings,
 	};
 
+
+
+const a1Spanish_7PartsOfHouses = [
+'atico',
+'pasillo',
+'cuarto',
+'living',
+'baño',
+'cocina',
+];
+
+
+const a1Spanish_7 = {
+		noun: a1Spanish_7PartsOfHouses,
+	};
+
+
+
+const a1Spanish_8Items = [
+'cama',
+'celular',
+'television',
+'ventana',
+'cilla',
+'juguete',
+'mesa',
+'bañera',
+'heladera',
+'inodoro',
+'puerta',
+'computadora',
+];
+
+
+const a1Spanish_8 = {
+		noun: a1Spanish_8Items,
+	};
+
 const spanish = {
 	a1_1: a1Spanish_1,
 	a1_2: a1Spanish_2,
@@ -254,6 +330,8 @@ const spanish = {
 	a1_4: a1Spanish_4,
 	a1_5: a1Spanish_5,
 	a1_6: a1Spanish_6,
+	a1_7: a1Spanish_7,
+	a1_8: a1Spanish_8,
 }
 
 
@@ -332,5 +410,6 @@ let SpanishAdjective = spanish[lastListForAdjetive]['adjetive'] ;
 	
 return [EnglishAdjetive, EnglishNoun, SpanishAdjective, SpanishNoun]
 }
+
 
 
