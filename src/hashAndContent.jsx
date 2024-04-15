@@ -12,8 +12,8 @@ import { A1_5 } from './class/a1/a1_5/Main'
 import { A1_6 } from './class/a1/a1_6/Main'
 import { A1_7 } from './class/a1/a1_7/Main'
 import { A1_8 } from './class/a1/a1_8/Main'
-
 import { A1_9 } from './class/a1/a1_9/Main'
+import { A1_10 } from './class/a1/a1_10/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
 import { Randomizer } from './class/randomizer/Main'
@@ -39,6 +39,7 @@ const hashContent = {
 	"#a1_9": ['there is/are and how to say no', <A1_9 />],
 	'#a1item' : ['items', < A1Item / >], 
 	'#a1schoolsupply' : ['school supplies', < A1Schoolsupplie / >], 
+	"#a1_10": ['the \'it\' class', <A1_10 />],
 }
 
 

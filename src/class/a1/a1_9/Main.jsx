@@ -80,24 +80,36 @@ return (<>
 
 <TitleContainer  title={<>abbreviations</>} / >
 
-	<Word word={[(<>there is a cow</>), (<>there's a cow</>)]}/>
-	<Word word={[(<>he can not eat</>), (<>he can't eat</>)]}/>
-	<Word word={[(<>he is not happy</>), (<>he isn't happy</>)]}/>
-	<Word word={[(<>they are not confusing</>), (<>they aren't confusing</>)]}/>
-	<Word word={[(<>this does not feel shocking</>), (<>this doesn't feel shocking</>)]}/>
-	<Word word={[(<>these dogs do not feel surprised</>), (<>these dogs don't feel surprised</>)]}/>
+	<Word word={[(<><span className='text-white'>there is</span> a cow</>), (<><span className='text-white'>there's</span> a cow</>)]}/>
+	<Word word={[(<>he <span className='text-white'>can not</span> eat</>), (<>he <span className='text-white'>can't</span> eat</>)]}/>
+	<Word word={[(<>he <span className='text-white'>is not</span> happy</>), (<>he <span className='text-white'>isn't</span> happy</>)]}/>
+	<Word word={[(<>they <span className='text-white'>are not</span> confusing</>), (<>they <span className='text-white'>aren't</span> confusing</>)]}/>
+	<Word word={[(<>this <span className='text-white'>does not</span> feel shocking</>), (<>this <span className='text-white'>doesn't</span> feel shocking</>)]}/>
+	<Word word={[(<>these dogs <span className='text-white'>do not</span> feel surprised</>), (<>these dogs <span className='text-white'>don't</span> feel surprised</>)]}/>
 
 	<TitleContainer  title={<>exercise with abbreviations</>} / >
 
-		//continue with this later on
 		<ListOfTest list={
 			[
+			[(<>Mike doesn't need to sleep</>), (<>Mike no necesita dormir</>)],
 			[(<>hay una vaca verde en el bosque</>), (<>there's a green cow in the forest</>)],
 			[(<>esas gatas no son felices acá</>), (<>those cats are not happy here</>)],
 			[(<>no voy ahí</>), (<> I don't go there</>)],
 			[(<>los gatos no están aqúí</>), (<> the cats aren't here</>)],
 			[(<>ella no come pescado</>), (<> she doesn't eat fish</>)],
 			[(<>los caballos no vienen a esta casa</>), (<> the horses don't come to this house</>)],
+			[(<>ese gato está ahí </>), (<> that cat is there</>)],
+			[(<>here is the book you want </>), (<> acá está el libro que querés</>)],
+			[(<>querer ir a la playa no es cool  </>), (<> wanting to go to the beach is not cool</>)],
+			[(<>I don't want to escape the forest  </>), (<> no me quiero escapar del bosque</>)],
+			[(<>I don't need to eat cheese, the dog needs to  </>), (<> yo no necesito comer queso, el perro necesita</>)],
+			[(<>no quiero ir a mi casa  </>), (<> I don't want to go to my house</>)],
+			[(<>Maria no quiere comer  </>), (<> Maria doesn't want to eat</>)],
+			[(<>nosotros no queremos manzanas cianes </>), (<> we don't want cyan apples</>)],
+			[(<>Julia and Mario don't need pizza</>), (<>Julia y Mario no necesita pizza</>)],
+			[(<>the cyan cat doesn't like potatoes</>), (<>el gato cian no le gusta las papas</>)],
+			[(<>the purple cat likes potatoes</>), (<>el gato purpura le gusta las papas</>)],
+			[(<>eating potato is not embarrasing</>), (<>comer papas no es avergozante</>)],
 			]
 		} / >
 
