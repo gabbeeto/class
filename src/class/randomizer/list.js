@@ -164,6 +164,26 @@ const a1_9 = {
 		noun: a1_9Schoolsupplies,
 	};
 
+
+const a1_10Foods = [
+'lettuce',
+'watermelon',
+'carrot',
+'ice cream',
+'hot dog',
+'pineapple',
+'strawberry',
+'french fry',
+'grape',
+'onion',
+'hamburger',
+]
+
+
+const a1_10 = {
+		noun: a1_10Foods,
+	};
+
 const english = {
 	a1_1,
 	a1_2,
@@ -174,6 +194,7 @@ const english = {
 	a1_7,
 	a1_8,
 	a1_9,
+	a1_10,
 }
 
 
@@ -360,6 +381,24 @@ const a1Spanish_9 = {
 }
 
 
+ const a1Spanish_10Foods = [
+'lechuga',
+'sandia',
+'zanahoria',
+'helado',
+'pancho',
+'ananá',
+'frutilla',
+'papas frita',
+'uva',
+'cebolla',
+'hamburguesa',
+];
+
+
+const a1Spanish_10 = {
+	noun: a1Spanish_10Foods
+}
 
 
 const spanish = {
@@ -372,7 +411,10 @@ const spanish = {
 	a1_7: a1Spanish_7,
 	a1_8: a1Spanish_8,
 	a1_9: a1Spanish_9,
+	a1_10: a1Spanish_10,
 }
+
+
 
 
 
@@ -450,6 +492,7 @@ let SpanishAdjective = spanish[lastListForAdjetive]['adjetive'] ;
 	
 return [EnglishAdjetive, EnglishNoun, SpanishAdjective, SpanishNoun]
 }
+
 
 
 

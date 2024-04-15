@@ -43,7 +43,7 @@ const numbers = [
 
 export function A1Number(){
 return (<><ListOfWords list={numbers} name={'number'} />
-	<ExplanationContainer explanation={(<>ahora podés usar los numeros en el inglés para hablar de más de 1 animal. Solo tenés que usar el numero y tenés que  agregarle 's' al sustantivo como en Español
+	<ExplanationContainer explanation={(<>ahora podés usar los numeros en el inglés para hablar de más de 1 animal. Solo tenés que usar el numero y tenés que  agregarle <span className='bg-orange-500'>s</span> al sustantivo como en Español
 		</>)}
 
 color='green'
@@ -52,7 +52,7 @@ example={(<><div>three cow<span className='bg-orange-500'>s</span></div>
 	</>)}
 	/>
 
-	<ExplanationContainer explanation={(<>ten en cuenta que en inglés solo los sustantivos se le agrega 's'. No es como el español que se le agrega 's' a los adjetivos</>)}
+	<ExplanationContainer explanation={(<>ten en cuenta que en inglés solo los sustantivos se le agrega <span className='bg-orange-500'>s</span>. No es como el español que se le agrega <span className='bg-orange-500'>s</span> a los adjetivos</>)}
 color='green'
 example={(<><div>three green cow<span className='bg-orange-500'>s</span></div>
 <div>tres perro<span className='bg-orange-500'>s</span> verde<span className='bg-orange-500'>s</span></div>
@@ -60,7 +60,7 @@ example={(<><div>three green cow<span className='bg-orange-500'>s</span></div>
 	/>
 
 
-	<ExplanationContainer explanation={(<>y por alguna extraña razón a 'fish' no se le agrega 's'</>)}
+	<ExplanationContainer explanation={(<>y por alguna extraña razón a 'fish' no se le agrega <span className='bg-orange-500'>s</span></>)}
 color='green'
 example={(<>three green fish
 	</>)}

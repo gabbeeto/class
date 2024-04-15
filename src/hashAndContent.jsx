@@ -1,3 +1,4 @@
+import { A1Food2 } from './class/a1/a1_10/a1Food2/Main'
 import { A1Schoolsupplie } from './class/a1/a1_9/a1SchoolSupply/Main'
 import { A1Item } from './class/a1/a1_8/a1Item/Main'
 import { A1Feeling } from './class/a1/a1_6/a1Feeling/Main'
@@ -40,6 +41,7 @@ const hashContent = {
 	'#a1item' : ['items', < A1Item / >], 
 	'#a1schoolsupply' : ['school supplies', < A1Schoolsupplie / >], 
 	"#a1_10": ['the \'it\' class', <A1_10 />],
+	'#a1food2' : ['foods', < A1Food2 / >], 
 }
 
 
