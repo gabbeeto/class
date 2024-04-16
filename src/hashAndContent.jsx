@@ -40,7 +40,7 @@ const hashContent = {
 	"#a1_9": ['There is/are and how to say no', <A1_9 />],
 	'#a1item' : ['Items', < A1Item / >], 
 	'#a1schoolsupply' : ['School supplies', < A1Schoolsupplie / >], 
-	"#a1_10": ['The \'it\' class', <A1_10 />],
+	"#a1_10": ['Plurarity and the \'it\' class', <A1_10 />],
 	'#a1food2' : ['Foods', < A1Food2 / >], 
 }
 

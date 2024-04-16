@@ -246,5 +246,52 @@ return (<>
 </div>
 
 	</div>)} / >
+<TitleContainer  title={<>the 'it' pronoun</>} / >
+
+	<ExplanationContainer  explanation={<><span className='text-sky-400'>he</span>(él) se usa para remplazar una persona o animal con genero masculino. Especialmente cuando ya sabemos de quien hablamos para evitar repeticion </>} example={(<div>
+<div><span className='text-sky-400'>Gabriel</span> is happy</div>
+<div><span className='text-sky-400'>He</span> is happy</div>
+		</div>)} / >
+
+	<ExplanationContainer  explanation={<>lo mismo con <span className='text-sky-400'>she</span>(ella) pero se usa para remplazar a una persona/animal de genero femenino </>} example={(<div>
+<div><span className='text-sky-400'>Gabriela</span> is happy</div>
+<div><span className='text-sky-400'>She</span> is happy</div>
+		</div>)} / >
+
+
+	<ExplanationContainer  explanation={<> <span className='text-sky-400'>it</span> es como <span className='text-sky-400'>she</span> o <span className='text-sky-400'>he</span> que se usa cuando ya sabemos de que se habla pero <span className='text-sky-400'>it</span> es usado para remplazar cosas sin genero como un animal en la cual el genero es desconocido, un objeto o un concepto/termino. Basicamente casi todo lo que no tiene genero, por esto.. Esta pronombre es mucho más usado que los otros pronombres</>} example={(
+		<div className="flex flex-col items-center justify-center text-center gap-2"><div>
+<div><span className='text-sky-400'>the computer</span> is happy</div>
+<div><span className='text-sky-400'>it</span> is happy</div>
+		</div>
+
+
+		<div>
+<div><span className='text-sky-400'>depression</span> is not ok</div>
+<div><span className='text-sky-400'>it</span> is not ok</div>
+		</div>
+	
+
+		<div>
+<div><span className='text-sky-400'>this car</span> is not in my house</div>
+<div><span className='text-sky-400'>it</span> is not in my house</div>
+		</div>
+
+
+		<div>
+<div><span className='text-sky-400'>the weather</span> is cold</div>
+<div><span className='text-sky-400'>it</span> is cold</div>
+		</div>
+
+
+		<div>
+<div> I love <span className='text-sky-400'>the music</span></div>
+<div>I love <span className='text-sky-400'>it</span></div>
+		</div>
+</div>
+
+	)} / >
+
+	// continue explaining: it doesn't exist in spanish
 	</>);
 }
