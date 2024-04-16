@@ -201,8 +201,8 @@ export function switchToMale(word){
 
 export function convertToPlural(word){
 
-	const exceptionForPlural = ['fish', 'mouse', 'child', 'man', 'woman','fisherman']
-	const exceptionForPluralInPlural = ['fish', 'mice', 'children', 'men', 'women', 'fishermen']
+	const exceptionForPlural = ['fish', 'mouse', 'child', 'man', 'woman','fisherman', 'goose', 'sheep','deer','foot','tooth']
+	const exceptionForPluralInPlural = ['fish', 'mice', 'children', 'men', 'women', 'fishermen', 'geese', 'sheep', 'deer', 'feet','teeth']
 	const vowel = ['a', 'e', 'i', 'o', 'u']
 
 	let indexIfException = exceptionForPlural.indexOf(word);
