@@ -2,21 +2,24 @@
 const purple = ['bg-indigo-800','bg-violet-700']
 const orange = ['bg-orange-800','bg-amber-700']
 const green = ['bg-green-800','bg-emerald-700']
+const blue = ['bg-sky-800','bg-blue-700']
 
-const allTheColors = {purple, orange, green};
+const allTheColors = {purple, orange, green, blue};
 
 
-export function ListOfTest({list}){
-	console.log(list)
-	return (<>{list.map((currentList, index) => (<> <Test spanishPhrase={currentList[0]} expectedEnglish={currentList[1]} id={index} /> </>))}
+export function ListOfTest({list,color = "blue"}){
+
+let currentColor = allTheColors[color][1]
+
+	return (<>{list.map((currentList, index) => (<> <Test testColor={currentColor} spanishPhrase={currentList[0]} expectedEnglish={currentList[1]} id={index} /> </>))}
 </>)
 
 }
 // continue here
-function Test({id, spanishPhrase, expectedEnglish}){
+function Test({id, spanishPhrase, expectedEnglish, testColor}){
 
 return (<> 
-<section className="bg-blue-700 m-2 rounded-2xl gap-2 flex flex-col items-center justify-center text-center " data-sectionid={id}>
+<section className={`${testColor} m-2 rounded-2xl gap-2 flex flex-col items-center justify-center text-center `} data-sectionid={id}>
 <input className="text-black mt-1 rounded-xl p-1 border-black border-2" onChange={() => {
 let outputs = document.querySelectorAll('output');
 let inputs = document.querySelectorAll('input');

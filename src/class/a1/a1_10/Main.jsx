@@ -279,7 +279,7 @@ return (<>
 
 
 		<div>
-<div><span className='text-sky-400'>the weather</span> is cold</div>
+<div><span className='text-sky-400'>the temperature</span> is cold</div>
 <div><span className='text-sky-400'>it</span> is cold</div>
 		</div>
 
@@ -288,10 +288,165 @@ return (<>
 <div> I love <span className='text-sky-400'>the music</span></div>
 <div>I love <span className='text-sky-400'>it</span></div>
 		</div>
-</div>
 
+
+		<div>
+<div> I hate <span className='text-sky-400'>happiness</span></div>
+<div>I hate <span className='text-sky-400'>it</span></div>
+		</div>
+
+</div>
 	)} / >
 
-	// continue explaining: it doesn't exist in spanish
+	<ExplanationContainer  explanation={<><span className='text-sky-400'>it</span> no existe en español, pero lo más parecido es <span className='text-sky-400'>eso</span> o <span className='text-sky-400'>esto</span> . Sí necesitas una traduccion, podés usar <span className='text-sky-400'>eso</span> o <span className='text-sky-400'>esto</span>  como traduccion</>} example={(<div className="flex flex-col items-center justify-center gap-5 text-center">
+
+		<div>
+<div className='bg-black p-2 rounded-2xl'><span className='text-sky-400'>the temperature</span> is cold</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'><span className='text-sky-400'>it</span> is cold</div>
+<div className='bg-black p-2 rounded-2xl'><span className='text-sky-400'>el temperatura</span> es frio</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'>hace frio</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'><span className='text-sky-400'>esto</span> es frio</div>
+		</div>
+
+
+		<div>
+<div className='bg-black p-2 rounded-2xl'><span className='text-sky-400'>depression</span> is not ok</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'><span className='text-sky-400'>it</span> is not ok</div>
+<div className='bg-black p-2 rounded-2xl'><span className='text-sky-400'>la depresíon</span> no está bien</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'>no está bien</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'><span className='text-sky-400'>eso</span> no está bien</div>
+		</div>
+
+
+		<div>
+<div className='bg-black p-2 rounded-2xl'> I love <span className='text-sky-400'>the music</span></div>
+<div className='bg-cyan-900 p-2 rounded-2xl'>I love <span className='text-sky-400'>it</span></div>
+<div className='bg-black p-2 rounded-2xl'>me encanta <span className='text-sky-400'>la musica</span></div>
+<div className='bg-cyan-900 p-2 rounded-2xl'>me encanta</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'>me encanta <span className='text-sky-400'>eso</span></div>
+		</div>
+
+
+		<div>
+<div className='bg-black p-2 rounded-2xl'> I hate <span className='text-sky-400'>happiness</span></div>
+<div className='bg-cyan-900 p-2 rounded-2xl'>I hate <span className='text-sky-400'>it</span></div>
+
+<div className='bg-black p-2 rounded-2xl'>odio <span className='text-sky-400'>la felicidad</span></div>
+<div className='bg-cyan-900 p-2 rounded-2xl'><span className='text-sky-400'>lo</span> odio</div>
+<div className='bg-cyan-900 p-2 rounded-2xl'>odio <span className='text-sky-400'>eso</span></div>
+		</div>
+
+		</div>)} / >
+
+<div><span className='text-sky-400'>it</span> tiene 3 diferencias comparado con <span className='text-sky-400'>this</span>(<span className='text-sky-400'>esto</span>) y <span className='text-sky-400'>that</span>(<span className='text-sky-400'>eso</span>)</div>	
+
+	<ExplanationContainer  explanation={<>
+<span className='text-sky-400'>this</span> y <span className='text-sky-400'>that</span> tiene una distancia. <span className='text-sky-400'>this</span> se usa cuando está cerca mientras que <span className='text-sky-400'>that</span> se usa cuando algo está lejos pero <span className='text-sky-400'>it</span> no tiene ninguna distancia.		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+			<div>
+<div><span className='text-sky-400'>this</span> is my house(la casa está cerca de vos, es muy probable que digas esto estando adentro de la casa o muy cerca)</div>
+<div><span className='text-sky-400'>that</span> is my house(la casa un poquito más lejos de vos, es muy probable que digas esto en la vereda un poquito más lejos)</div>
+<div><span className='text-sky-400'>it</span> is my house(no especifica ninguna distancia, usualmente usamos 'it' cuando ni si quiera estamos en el lugar casi siempre)</div>
+</div>
+
+<div>
+<div>Eating dogs is terrifying. <span className='text-sky-400'>This</span> is not ok('esto no está bien' se usa cuando la distancia es menor que 'eso no está bien', está mal pero hay una distancia mayor en lo que esa persona hace y lo que le afecta)</div>
+<div>Eating dogs is terrifying. <span className='text-sky-400'>It</span> is not ok(no especifica ninguna distancia.. es como la gente que dice 'no está bien' y no tiene ninguna distancia. Usualmente usamos 'it' cuando ni si quiera te afecta)</div>
+</div>
+
+
+			</div>)} / >
+
+	<ExplanationContainer  explanation={<><span className='text-sky-400'>this</span> y <span className='text-sky-400'>that</span> tiene mayor énfasis e importancia</>} example={(<div className="flex flex-col items-center justify-center text-center gap-3">
+			<div>
+<div><span className='text-sky-400'>this</span> is wonderful</div>
+<div><span className='text-sky-400'>esto</span> es maravilloso</div>
+			</div>
+
+
+			<div>
+<div><span className='text-sky-400'>it</span> is wonderful</div>
+<div> es maravilloso</div>
+			</div>
+
+			</div>)} / >
+
+
+	<ExplanationContainer  explanation={<> <span className='text-sky-400'>this</span> y <span className='text-sky-400'>that</span> pueden ser mesclado con un <span className='text-orange-400'>sustantivo</span> mientras que <span className='text-sky-400'>it</span> no
+		</>} example={(<>
+<div><span className='text-sky-400'>this </span> <span className='text-orange-400'>car</span> is good</div>
+<div><span className='text-sky-400'>that </span> <span className='text-orange-400'>dog</span> is good</div>
+<div><span className='text-sky-400'>it </span> is good</div>
+			</>)} / >
+
+	<ExplanationContainer  explanation={<>en español <span className='text-sky-400'>it</span> suele ser invisible</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+<div><span className='text-sky-400'>it</span> is good</div>
+<div>es bueno</div>
+</div>
+
+
+<div>
+<div>I love <span className='text-sky-400'>it</span></div>
+<div>me encanta</div>
+</div>
+
+		</div>)} / >
+
+	<ExplanationContainer  explanation={<><span className='text-sky-400'>it</span> es como <span className='text-sky-400'>she</span> y <span className='text-sky-400'>he</span> tambien en el sentido que es singular, que solo se usa cuando hablas de una cosa. cuando hablás de más de un objeto/cosa/concepto.. Se usa <span className='text-sky-400'>they</span> </>} example={(<div className="flex flex-col items-center justify-center text-center gap-3">
+<div>
+<div><span className='text-sky-400'>the computer</span> is good</div>
+<div><span className='text-sky-400'>it</span> is good</div>
+</div>
+
+
+<div>
+<div><span className='text-sky-400'>the computers</span> are good</div>
+<div><span className='text-sky-400'>they</span> are good</div>
+</div>
+		</div>)} / >
+
+
+
+<TitleContainer  title={<>exercise </>} / >
+<div className='bg-red-800 rounded-xl'>write the pronoun replacement in the orange containers</div>
+<div className='bg-green-800 rounded-xl'>translate in the green containers</div>
+
+<ListOfTest list={
+	[
+	[(<div>the orange carrot is wonderful</div>), (<div>la zanahoria naranja es maravillosa</div>)],
+	[(<div>comer sandia no es cool</div>), (<div>eating watermelon is not cool</div>)],
+	[(<div>hay cebollas en la cocina</div>), (<div>there are onions in the kitchen</div>)],
+	]
+} / >
+
+<ListOfTest color='orange' list={
+	[
+	[(<>Luis eats carrot</>), (<>he eats carrot</>)],
+	[(<>Maria wants to eat rice</>), (<>she wants to eat rice</>)],
+	[(<>Luis and Maria drink water</>), (<>they drink water</>)],
+	[(<>Maria and I drink water</>), (<>we drink water</>)],
+	]
+} / >
+
+<ListOfTest list={
+	[
+	[(<div>the grapes are delicious</div>), (<div>las uvas son deliciosas</div>)],
+	[(<div>eating strawberries is good</div>), (<div>comer frutillas es bueno</div>)],
+	[(<div>no quiero comer papas fritas</div>), (<div>I don't want to eat french fries</div>)],
+	[(<div>nosotros necesitamos comer helado</div>), (<div>we need to eat ice cream</div>)],
+	]
+} / >
+
+
+<ListOfTest color='orange' list={
+	[
+	[(<>the computer is not a vegetable</>), (<>it is not a vegetable</>)],
+	[(<>happiness is wonderful</>), (<>it is wonderful</>)],
+	[(<>happiness and depression are a false dichotomy</>), (<>they are a false dochotomy</>)],
+	[(<>the computer and I kill people</>), (<>we kill people</>)],
+	]
+} / >
+
+	// add more exercises
 	</>);
 }
