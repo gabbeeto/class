@@ -15,6 +15,7 @@ import { A1_7 } from './class/a1/a1_7/Main'
 import { A1_8 } from './class/a1/a1_8/Main'
 import { A1_9 } from './class/a1/a1_9/Main'
 import { A1_10 } from './class/a1/a1_10/Main'
+import { A1_11 } from './class/a1/a1_11/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
 import { Randomizer } from './class/randomizer/Main'
@@ -43,10 +44,11 @@ const hashContent = {
 	'#a1schoolsupply' : ['School supplies', < A1Schoolsupplie / >], 
 	'#a1food2' : ['Foods', < A1Food2 / >], 
 	"#a1_10": ['Plurarity and the \'it\' class', <A1_10 />],
+	"#a1_11": ['How to make question', <A1_11 />],
 }
 
 function ClassPortal({hash,title}){
-return (<div className='bg-orange-800 p-2 rounded-xl'><a className="hover:text-blue-400" href={`https://gabbeeto.github.io/class/${hash}`}>{title}</a></div>)
+return (<div className='bg-orange-800 p-2 rounded-xl'><a target='_blank' className="hover:text-blue-400" href={`https://gabbeeto.github.io/class/${hash}`}>{title}</a></div>)
 }
 
 function AllTheClasses(){

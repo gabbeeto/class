@@ -452,16 +452,17 @@ return (<>
 	<Word word={[(<>like</>), (<>como</>)]}/>
 	<Word word={[(<>you fly like Batman</>), (<>vuelas como batban</>)]}/>
 	<Word word={[(<>to write</>), (<>escribir</>)]}/>
+	<Word word={[(<>to read</>), (<>leer</>)]}/>
 <ListOfTest list={
 	[
 	[(<div>the computers are fast but they're don't run like sonic</div>), (<div>las computadoras son rapidas pero no son como sonic</div>)],
 	[(<div>el lapiz es rojo pero no está enojado</div>), (<div>the pen is red but it's not angry</div>)],
 	[(<div>me gusta escribir con el lapiz</div>), (<div>I like to write with the pen</div>)],
 	[(<div>she doesn't like to write with pencil because it's black</div>), (<div>a ella no le gusta escribir con la lapicera porque es negro</div>)],
+	[(<div>she reads the black book but it's not a good book</div>), (<div>ella lee el libro negro pero no es un buen libro</div>)],
 	]
 } / >
 
 
-	// add more exercises
 	</>);
 }
