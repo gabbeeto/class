@@ -21,6 +21,7 @@ import { Randomizer } from './class/randomizer/Main'
 import { FirstClass } from './class/firstClass/Main'
 
 const hashContent = {
+	"#secret": ['Welcome to the dark side of this website', <AllTheClasses />],
 	"#firstclass": ['Welcome to the first class', <FirstClass />],
 	"#randomizer": ['Randomizer', <Randomizer />],
 	"#a1color": ['Color', <A1Color />],
@@ -40,10 +41,53 @@ const hashContent = {
 	"#a1_9": ['There is/are and how to say no', <A1_9 />],
 	'#a1item' : ['Items', < A1Item / >], 
 	'#a1schoolsupply' : ['School supplies', < A1Schoolsupplie / >], 
-	"#a1_10": ['Plurarity and the \'it\' class', <A1_10 />],
 	'#a1food2' : ['Foods', < A1Food2 / >], 
+	"#a1_10": ['Plurarity and the \'it\' class', <A1_10 />],
 }
 
+function ClassPortal({hash,title}){
+return (<div className='bg-orange-800 p-2 rounded-xl'><a className="hover:text-blue-400" href={`https://gabbeeto.github.io/class/${hash}`}>{title}</a></div>)
+}
+
+function AllTheClasses(){
+return (
+<>
+	< ClassPortal hash="#randomizer" title='Randomizer'/>
+	<div>first class</div>
+	< ClassPortal hash="#firstclass" title='first class'/>
+	< ClassPortal hash="#a1color" title='Color'/>
+	<div>a1_1</div>
+	< ClassPortal hash="#a1animal" title='Animal'/>
+	< ClassPortal hash="#a1_1" title='Nouns and adjetive'/>
+	<div>a1_2</div>
+	< ClassPortal hash="#a1number" title='Number'/>
+	<div>a1_3</div>
+	< ClassPortal hash="#a1vehicle" title='Vehicles'/>
+	< ClassPortal hash="#a1pronoun" title='Pronoun and verbs'/>
+	<div>a1_4</div>
+	< ClassPortal hash='#a1food' title='Foods' />
+	< ClassPortal hash="#a1_4" title='Food and Third Person Singular in present tense'/>
+	<div>a1_5</div>
+	< ClassPortal hash='#a1place' title='Places' />
+	< ClassPortal hash="#a1_5" title='The movement class'/>
+	<div>a1_6</div>
+	< ClassPortal hash='#a1feeling' title='Feelings' />
+	< ClassPortal hash="#a1_6" title='difference between similar adjetives'/>
+	<div>a1_7</div>
+	< ClassPortal hash="#a1_7" title='Verb to be and parts of the house'/>
+	<div>a1_8</div>
+	< ClassPortal hash='#a1item' title='Items' />
+	< ClassPortal hash="#a1_8" title='Infinitive in the English language'/>
+	<div>a1_9</div>
+	< ClassPortal hash='#a1schoolsupply' title='School supplies' />
+	< ClassPortal hash="#a1_9" title='There is/are and how to say no'/>
+	<div>a1_10</div>
+	< ClassPortal hash='#a1food2' title='Foods' />
+	< ClassPortal hash='#a1_10' title="Plurarity and the 'it' pronoun class" />
+	</>
+)
+
+}
 
 export default function ReturnContent() {
 	const hash = window.location.hash

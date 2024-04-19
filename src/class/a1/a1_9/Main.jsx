@@ -71,10 +71,12 @@ return (<>
 	[
 	[(<>ella no bebe agua</>), (<>she does not drink water</>)],
 	[(<>nosotros no comemos en el edificio</>), (<>we do not eat inside building</>)],
+	[(<>nosotros no usamos sacapuntas</>), (<>we do not use pencil sharperner</>)],
 	[(<>they eat in the forest</>), (<>ellos comen en el bosque</>)],
 	[(<>they do not eat in the forest</>), (<>ellos no comen en el bosque</>)],
 	[(<>el no puede tomar agua</>), (<>he can not drink water</>)],
 	[(<>there is a dog in the house</>), (<>hay un perro en la casa</>)],
+	[(<>she does not need to erase with the eraser</>), (<>ella no necesita borrar con el borrador</>)],
 	]
 } / >
 
@@ -91,7 +93,8 @@ return (<>
 
 		<ListOfTest list={
 			[
-			[(<>Mike doesn't need to sleep</>), (<>Mike no necesita dormir</>)],
+			[(<>I don't have pens</>), (<> no tengo lapizeras</>)],
+			[(<>Mike doesn't need scissor</>), (<>Mike no necesita tijeras</>)],
 			[(<>hay una vaca verde en el bosque</>), (<>there's a green cow in the forest</>)],
 			[(<>esas gatas no son felices acá</>), (<>those cats are not happy here</>)],
 			[(<>no voy ahí</>), (<> I don't go there</>)],
@@ -108,8 +111,9 @@ return (<>
 			[(<>nosotros no queremos manzanas cianes </>), (<> we don't want cyan apples</>)],
 			[(<>Julia and Mario don't need pizza</>), (<>Julia y Mario no necesita pizza</>)],
 			[(<>the cyan cat doesn't like potatoes</>), (<>el gato cian no le gusta las papas</>)],
-			[(<>the purple cat likes potatoes</>), (<>el gato purpura le gusta las papas</>)],
+			[(<>the purple cat likes to read the book</>), (<>el gato purpura le gusta leer el libro</>)],
 			[(<>eating potato is not embarrasing</>), (<>comer papas no es avergozante</>)],
+			[(<>you don't want gluestick</>), (<> no quieres pegamento</>)],
 			]
 		} / >
 

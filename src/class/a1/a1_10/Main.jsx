@@ -416,6 +416,7 @@ return (<>
 	[(<div>the orange carrot is wonderful</div>), (<div>la zanahoria naranja es maravillosa</div>)],
 	[(<div>comer sandia no es cool</div>), (<div>eating watermelon is not cool</div>)],
 	[(<div>hay cebollas en la cocina</div>), (<div>there are onions in the kitchen</div>)],
+	[(<div>there is ice cream  on the folder</div>), (<div>hay helado en la carpeta</div>)],
 	]
 } / >
 
@@ -446,6 +447,20 @@ return (<>
 	[(<>the computer and I kill people</>), (<>we kill people</>)],
 	]
 } / >
+
+	<Word word={[(<>but</>), (<>pero</>)]}/>
+	<Word word={[(<>like</>), (<>como</>)]}/>
+	<Word word={[(<>you fly like Batman</>), (<>vuelas como batban</>)]}/>
+	<Word word={[(<>to write</>), (<>escribir</>)]}/>
+<ListOfTest list={
+	[
+	[(<div>the computers are fast but they're don't run like sonic</div>), (<div>las computadoras son rapidas pero no son como sonic</div>)],
+	[(<div>el lapiz es rojo pero no está enojado</div>), (<div>the pen is red but it's not angry</div>)],
+	[(<div>me gusta escribir con el lapiz</div>), (<div>I like to write with the pen</div>)],
+	[(<div>she doesn't like to write with pencil because it's black</div>), (<div>a ella no le gusta escribir con la lapicera porque es negro</div>)],
+	]
+} / >
+
 
 	// add more exercises
 	</>);
