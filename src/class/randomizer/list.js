@@ -201,11 +201,13 @@ const a1_12Family = [
 'wife',
 'husband',
 'spouse',
+'nephew',
+'niece',
 ]
 
 const a1_12 = {
 		noun: a1_12Family,
-	};
+};
 
 const english = {
 	a1_1,
@@ -428,21 +430,23 @@ const a1Spanish_10 = {
 
 
 const a1Spanish_12Family = [
-'brother',
-'sister',
-'sibling',
-'parent',
-'father',
-'mother',
-'child',
-'son',
-'daughter',
-'aunt',
-'uncle',
-'cousin',
-'wife',
-'husband',
-'spouse',
+'hermano',
+'hermana',
+'hermano/a',
+'padre/madre',
+'padre',
+'madre',
+'chico/a',
+'hijo',
+'hija',
+'tia',
+'tio',
+'primo',
+'esposa',
+'marido',
+'marido/esposa',
+'sobrino',
+'sobrina',
 ]
 
 

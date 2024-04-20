@@ -100,17 +100,17 @@ return (<>
 
 	<ListOfTest list={
 		[
-		[(<>my cat's house is not good </>), (<>la casa de mi gato no es bueno</>)],
-		[(<>your sister's brother is your brother</>), (<>el hermano de tu hermana es tu hermano</>)],
+		[(<>"my cat's house is not good "</>), (<>la casa de mi gato no es bueno</>)],
+		[(<>"your sister's brother is your brother"</>), (<>el hermano de tu hermana es tu hermano</>)],
 		[(<>I like to read on computers but their text is not visible for me</>), (<>me gusta leer en la computadora pero sus textos no son visible para mi</>)],
-		[(<>I don't like your parents. their vocabulary are embarrasing</>), (<>no me gusta tus padres. el vocabulario de ellos no es bueno</>)],
+		[(<>"I don't like your parents. their vocabulary are embarrasing"</>), (<>no me gusta tus padres. el vocabulario de ellos no es bueno</>)],
 		[(<>her brother-in-law is really nice</>), (<>el cuñado de ella es agradable</>)],
 		[(<>his aunt is confused</>), (<>la tia de el está confundida</>)],
-		[(<>our house is good because it's purple</>), (<>nuestra casa es buena porque es violeta</>)],
-		[(<>I like green computers but I don't like this computer because its mouse is not green</>), (<>me gustan las computadoras verdes pero no me gusta esta porque su mouse no es verde</>)],
+		[(<>"our house is good because it's purple"</>), (<>nuestra casa es buena porque es violeta</>)],
+		[(<>"I like green computers but I don't like this computer because its mouse is not green"</>), (<>me gustan las computadoras verdes pero no me gusta esta porque su mouse no es verde</>)],
 		[(<>my grandmother gives cookies to her granddaughter</>), (<>mi abuela da galletitas a su nieta</>)],
 		[(<>my nephew is not confused, he is embarrased</>), (<>mi sobrino no está confundido, el está avergonzado</>)],
-		[(<>her aunt doesn't want to eat cookies</>), (<>la tia de ella no quiere comer galletita</>)],
+		[(<>"her aunt doesn't want to eat cookies"</>), (<>la tia de ella no quiere comer galletita</>)],
 		[(<>his niece is angry</>), (<>la sobrina de él está enojado</>)],
 		[(<>our cousins are in the forest</>), (<>nuestros primos están en el bosque</>)],
 		[(<>my great-grandmother is happy</>), (<>my bisa-abuela está feliz</>)],
@@ -118,5 +118,6 @@ return (<>
 		[(<>my uncle is sad</>), (<>mi tio está triste</>)],
 		]
 	} / >
+	
 	</>);
 }
