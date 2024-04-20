@@ -184,6 +184,29 @@ const a1_10 = {
 		noun: a1_10Foods,
 	};
 
+
+const a1_12Family = [
+'brother',
+'sister',
+'sibling',
+'parent',
+'father',
+'mother',
+'child',
+'son',
+'daughter',
+'aunt',
+'uncle',
+'cousin',
+'wife',
+'husband',
+'spouse',
+]
+
+const a1_12 = {
+		noun: a1_12Family,
+	};
+
 const english = {
 	a1_1,
 	a1_2,
@@ -195,6 +218,7 @@ const english = {
 	a1_8,
 	a1_9,
 	a1_10,
+	a1_12,
 }
 
 
@@ -401,6 +425,31 @@ const a1Spanish_10 = {
 }
 
 
+
+
+const a1Spanish_12Family = [
+'brother',
+'sister',
+'sibling',
+'parent',
+'father',
+'mother',
+'child',
+'son',
+'daughter',
+'aunt',
+'uncle',
+'cousin',
+'wife',
+'husband',
+'spouse',
+]
+
+
+const a1Spanish_12 = {
+		noun: a1Spanish_12Family,
+};
+
 const spanish = {
 	a1_1: a1Spanish_1,
 	a1_2: a1Spanish_2,
@@ -412,6 +461,7 @@ const spanish = {
 	a1_8: a1Spanish_8,
 	a1_9: a1Spanish_9,
 	a1_10: a1Spanish_10,
+	a1_12: a1Spanish_12,
 }
 
 

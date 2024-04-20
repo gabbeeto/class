@@ -16,6 +16,7 @@ import { A1_8 } from './class/a1/a1_8/Main'
 import { A1_9 } from './class/a1/a1_9/Main'
 import { A1_10 } from './class/a1/a1_10/Main'
 import { A1_11 } from './class/a1/a1_11/Main'
+import { A1_12 } from './class/a1/a1_12/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
 import { Randomizer } from './class/randomizer/Main'
@@ -45,6 +46,7 @@ const hashContent = {
 	'#a1food2' : ['Foods', < A1Food2 / >], 
 	"#a1_10": ['Plurarity and the \'it\' class', <A1_10 />],
 	"#a1_11": ['How to make question', <A1_11 />],
+	"#a1_12": ['family members and the possesive pronoun', <A1_12 />],
 }
 
 function ClassPortal({hash,title}){
@@ -84,8 +86,12 @@ return (
 	< ClassPortal hash='#a1schoolsupply' title='School supplies' />
 	< ClassPortal hash="#a1_9" title='There is/are and how to say no'/>
 	<div>a1_10</div>
-	< ClassPortal hash='#a1food2' title='Foods' />
+	< ClassPortal hash='#a1food2' title='Foods 2' />
 	< ClassPortal hash='#a1_10' title="Plurarity and the 'it' pronoun class" />
+	<div>a1_11</div>
+	< ClassPortal hash='#a1_11' title="how to make question" />
+	<div>a1_11</div>
+	< ClassPortal hash='#a1_12' title="family members and the possesive pronoun" />
 	</>
 )
 

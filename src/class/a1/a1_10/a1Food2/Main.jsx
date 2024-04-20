@@ -19,7 +19,7 @@ const foods = [
 ['Hotdog', [Hotdog] ],
 ['Pineapple', [Pineapple] ],
 ['Strawberry', [Strawberry] ],
-['Frenchfries', [Frenchfries] ],
+['French fries', [Frenchfries] ],
 ['Grape', [Grape] ],
 ['Onion', [Onion] ],
 ['Hamburger', [Hamburger] ],
