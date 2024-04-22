@@ -209,6 +209,24 @@ const a1_12 = {
 		noun: a1_12Family,
 };
 
+
+const a1_13Insideplaces = [
+'Grocery Store',
+'Supermarket',
+'Produce Store',
+'Apartment',
+'Bakery',
+'Hair Salon',
+'Butcher Shop',
+'Barber Shop',
+];
+
+const a1_13 = {
+		noun: a1_13Insideplaces,
+};
+
+
+
 const english = {
 	a1_1,
 	a1_2,
@@ -221,6 +239,7 @@ const english = {
 	a1_9,
 	a1_10,
 	a1_12,
+	a1_13,
 }
 
 
@@ -454,6 +473,22 @@ const a1Spanish_12 = {
 		noun: a1Spanish_12Family,
 };
 
+
+ const a1Spanish_13Insideplaces = [
+'grocerystore',
+'supermarket',
+'producestore',
+'apartment',
+'bakery',
+'hairsalon',
+'butchershop',
+'barbershop',
+];
+
+const a1Spanish_13 = {
+		noun: a1Spanish_13Insideplaces,
+};
+
 const spanish = {
 	a1_1: a1Spanish_1,
 	a1_2: a1Spanish_2,
@@ -466,6 +501,7 @@ const spanish = {
 	a1_9: a1Spanish_9,
 	a1_10: a1Spanish_10,
 	a1_12: a1Spanish_12,
+	a1_13: a1Spanish_13,
 }
 
 
@@ -546,6 +582,7 @@ let SpanishAdjective = spanish[lastListForAdjetive]['adjetive'] ;
 	
 return [EnglishAdjetive, EnglishNoun, SpanishAdjective, SpanishNoun]
 }
+
 
 
 

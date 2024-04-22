@@ -60,12 +60,16 @@ example={(<><div>three green cow<span className='bg-orange-500'>s</span></div>
 	/>
 
 
-	<ExplanationContainer explanation={(<>y por alguna extraña razón a 'fish' no se le agrega <span className='bg-orange-500'>s</span></>)}
+	<ExplanationContainer explanation={(<>y por alguna extraña razón a <span className='text-purple-400'>fish</span> y <span className='text-purple-400'>sheep</span> no se le agrega <span className='bg-orange-500'>s</span></>)}
 color='green'
-example={(<>three green fish
+example={(<>
+
+<div>
+	three green  <span className='text-purple-400'>fish</span>
+	</div>
+<div>four violet <span className='text-purple-400'>sheep</span></div>
 	</>)}
 	/>
-
 
 	</>
 )
