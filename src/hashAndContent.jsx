@@ -52,7 +52,7 @@ const hashContent = {
 	"#a1_11": ['How to make question', <A1_11 />],
 	"#a1_12": ['family members and the possesive pronoun', <A1_12 />],
 	'#a1insideplace' : ['Inside the Places', < A1InsidePlace / >], 
-	"#a1_13": ['adverb of frequency', <A1_13 />],
+	"#a1_13": ['the adverb class(adverb of frequency and the adverb ly)', <A1_13 />],
 	"#a1_14": ['comparison', <A1_14 />],
 	"#a1_15": ['how to talk about time', <A1_15 />],
 }
