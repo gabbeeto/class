@@ -310,6 +310,121 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	<Word word={[(<>who is</>), (<>who's</>)]}/>
 	<Word word={[(<>where is</>), (<>where's</>)]}/>
 
+	<TitleContainer  title={<>prepositions at the end of questions</>} / >
+
+		<ExplanationContainer  explanation={<>cuando hacemos las preguntas en español, <span className='text-orange-400'>las preposiciones</span> están en el principio</>} example={(<div className="flex flex-col items-center justify-center text-center"><div> <span className='text-orange-400'>con</span> quien estás?
+</div>
+			<div>
+			<span className='text-orange-400'>de</span> donde vienes?
+			</div>
+			<div>
+			<span className='text-orange-400'>con</span> quien haces la tarea?
+			</div>
+			<div>
+			<span className='text-orange-400'>a</span> que odias?
+			</div>
+			</div>)} / >
+
+		<ExplanationContainer  explanation={<>en inglés, <span className='text-orange-400'>las preposiciones</span>  están al final</>} example={(<div className="flex flex-col items-center justify-center text-center">
+
+
+			<div>
+			who are you <span className='text-orange-400'>with</span>?
+			</div>
+
+			<div>
+			where do you come <span className='text-orange-400'>from</span>?
+			</div>
+			<div>
+			who do you do the homework <span className='text-orange-400'>with</span>?
+			</div>
+			<div>
+			what do you hate <span className='text-orange-400'>to</span>?
+			</div>
+			</div>)} / >
+
+		<ExplanationContainer  explanation={<>se pregunta con las preposiciones cuando esperas que la respuesta incluya esa preposicion</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+<div>
+	<div>
+		where are you <span className='text-orange-400'>from</span>?
+	</div>
+	<div>
+		I'm <span className='text-orange-400'>from</span> Argentina
+	</div>
+</div>
+
+
+<div>
+	<div>
+		where are you?
+	</div>
+	<div>
+		I'm here
+	</div>
+</div>
+
+
+<div>
+	<div>
+		who are you <span className='text-orange-400'>with</span>?
+	</div>
+	<div>
+		I'm <span className='text-orange-400'>with</span> Gabriel
+	</div>
+</div>
+
+
+
+<div>
+	<div>
+		who are you ?
+	</div>
+	<div>
+		I'm Alan
+	</div>
+</div>
+
+
+<div>
+	<div>
+		what do you hate <span className='text-orange-400'>to</span>?
+	</div>
+	<div>
+		I hate <span className='text-orange-400'>to</span> this cat
+	</div>
+</div>
+
+
+<div>
+	<div>
+		what do you hate?
+	</div>
+	<div>
+		I hate dogs
+	</div>
+</div>
+
+			</div>)} / >
+
+		<TitleContainer  title={<>list of prepositions</>} / >
+
+	<Word word={[(<>with</>), (<>con</>)]}/>
+	<Word word={[(<>about</>), (<>acerca de/ sobre /de</>)]}/>
+	<Word word={[(<>from</>), (<>desde / de</>)]}/>
+	<Word word={[(<>to</>), (<>hacia / a</>)]}/>
+	<Word word={[(<>for</>), (<>para</>)]}/>
+	<Word word={[(<>at/in/on</>), (<>en</>)]}/>
+	<Word word={[(<>into</>), (<>in / to</>)]}/>
+	<Word word={[(<>onto</>), (<>on / to</>)]}/>
+
+	<TitleContainer  title={<>examples of prepositions</>} / >
+	<Word word={[(<>what does your friend talk about</>), (<>acerca de que habla tu amigo? / de que habla tu amigo</>)]}/>
+	<Word word={[(<>which university is your friend from?</>), (<>de cual universidad es tu amigo?</>)]}/>
+	<Word word={[(<>what do you eat with?</>), (<>con que comes?</>)]}/>
+	<Word word={[(<>who do you do this for?</>), (<>para quien haces esto?</>)]}/>
+	<Word word={[(<>where do you go to?</>), (<>a donde vas?</>)]}/>
+	<Word word={[(<>where is the pen on?</>), (<>en donde está la lapicera?</>)]}/>
+	<Word word={[(<>where does the train go onto?</>), (<>en donde va el tren?</>)]}/>
 
 	<TitleContainer  title={<>exercise</>} / >
 	
@@ -318,19 +433,25 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	[
 	[(<>where is the car?</>), (<>donde está el auto?</>)],
 	[(<>when do you go to your house?</>), (<>cuando vas a tu casa?</>)],
+	[(<>who is this for?</>), (<>para quien es esto?</>)],
 	[(<>how many buildings are there?</>), (<>cuantos edificios hay?</>)],
 	[(<>how long does it take to create this Minecraft House?</>), (<>cuanto tiempo toma en crear esta casa de Minecraft</>)],
+	[(<>which city is the square in?</>), (<>en cual ciudad está la plaza?</>)],
 	[(<>how much salt do you want?</>), (<>cuanta sal querés?</>)],
 	[(<>how many hamburguers do you need to cook</>), (<>cuantas hamburguesas necesitas cocinar?</>)],
 	[(<>is eating carrot bad for you</>), (<>es comer zanahoria malo para vos?</>)],
 	[(<>do you read books?</>), (<>lees libros?</>)],
 	[(<>how does he write books?</>), (<>como él escribe libros?</>)],
 	[(<>why do we study English?</>), (<>porque aprendemos inglés?</>)],
+	[(<>where is the book on?</>), (<>en donde está el libro?</>)],
+	[(<>what does your teacher teach about?</>), (<>acerca de que enseña tu profesor?</>)],
 	[(<>how happy are they?</>), (<>que tan feliz están ellos?</>)],
 	[(<>whose pencil is this?</>), (<>de quien es este lapiz?</>)],
+	[(<>who do you like to be with</>), (<>porque quiere andar en vici en el autopista?</>)],
 	[(<>who is the green princess?</>), (<>quien es la princesa verde?</>)],
 	[(<>why does he want to ride a bike on the highway</>), (<>porque quiere andar en vici en el autopista?</>)],
 	[(<>who wants to walk on the road?</>), (<>quien quiere caminar en la carretera?</>)],
+	[(<>which forest do you go into?</>), (<>a cual bosque vas?</>)],
 	[(<>where is the hospital?</>), (<>donde está el hospital?</>)],
 	[(<>are there pinapple on the sidewalk?</>), (<>hay anana en la vereda?</>)],
 	[(<>do you like to eat lettuce and strawberry?</>), (<>te gusta comer lechuga y frutilla?</>)],
@@ -340,25 +461,11 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	<div>answer(don't expect the answer to be the same)</div>
 <ListOfTest list={
 	[
-	[(<>where's the car?</>), (<>the car is on the square!</>)],
-	[(<>when do you go to your house?</>), (<>I go at half past six</>)],
-	[(<>how many buildings are there?</>), (<>there are five buildings</>)],
-	[(<>how long does it take to create this Minecraft House?</>), (<>it takes twenty hours</>)],
-	[(<>how much salt do you want?</>), (<>just a little</>)],
-	[(<>how many hamburguers do you need to cook</>), (<>four hamburguers</>)],
-	[(<>is eating carrot bad for you</>), (<>yes, it is</>)],
-	[(<>do you read books?</>), (<>No, I don't</>)],
-	[(<>how does he write books?</>), (<>by reading</>)],
-	[(<>why do we study English?</>), (<>because we like to</>)],
-	[(<>how happy are they?</>), (<>very happy</>)],
-	[(<>whose pencil is this?</>), (<>this is my pencil</>)],
-	[(<>who's the green princess?</>), (<>the green princess is my sister</>)],
-	[(<>why does he want to ride a bike on the highway</>), (<>because he is crazy</>)],
-	[(<>who wants to walk on the road?</>), (<>me</>)],
-	[(<>where's the hospital?</>), (<>it's in front of school</>)],
-	[(<>are there pinapple on the sidewalk?</>), (<>no, there are not</>)],
-	[(<>do you like to eat french fries?</>), (<>yes, I do</>)],
-	[(<>Maria doesn't like to eat grape. Why does he?</>), (<>because it is delicious for him</>)],
+	[(<>do you read books?</>), (<>No, I do not read books</>)],
+	[(<>do you like to eat french fries?</>), (<>yes, I do read books</>)],
+	[(<>does your teacher like to teach?</>), (<>yes, he does like to teach</>)],
+	[(<>do I exist?</>), (<>no, you do not exist</>)],
+	[(<>does bart simpson eat apple?</>), (<>no, he does not</>)],
 	]
 } / >
 
