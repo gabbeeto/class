@@ -9,9 +9,9 @@ function WordList({ wordText, wordImg }) {
 	let randomNumber = Math.floor(Math.random() * wordImg.length)
 	let randomImg = wordImg[randomNumber]
 	return (<li className='w-80 h-80 flex justify-center  text-center'>
-		<figure className='w-full h-full flex-col-reverse flex text-center'>
+		<figure className='w-full h-full flex-col-reverse flex text-center border-black p-2 rounded-xl bg-gradient-to-t from-sky-300 to-purple-300  border-2'>
 			< img className='w-full h-5/6 border-black border-2 rounded-3xl' src={randomImg} alt={wordText} />
-			<figcaption className='h-1/6' >{wordText}</figcaption>
+			<figcaption className='h-1/6 text-black  text-center' >{wordText}</figcaption>
 		</figure >
 	</li >
 	)
@@ -23,7 +23,7 @@ export function ListOfWords({list, name}) {
 randomize()
 
 	return (<>
-		<ul id='listOfWords' className='flex gap-3  flex-wrap justify-center' >
+		<ul id='listOfWords' className='flex gap-4 mt-3  flex-wrap justify-center' >
 			{newList}
 		</ul >
 		<div className='flex flex-rows shrink-0 flex-grow-0 gap-2 my-2 items-center justify-center'>

@@ -58,7 +58,7 @@ const hashContent = {
 }
 
 function ClassPortal({hash,title}){
-return (<div className='bg-orange-800 p-2 rounded-xl'><a target='_blank' className="hover:text-blue-400" href={`https://gabbeeto.github.io/class/${hash}`}>{title}</a></div>)
+return (<div className='bg-gradient-to-tr from-orange-900 to-purple-900 m-1 p-2 rounded-xl hover:from-purple-950 hover:to-sky-950 '><a target='_blank' className="hover:text-blue-400 " href={`https://gabbeeto.github.io/class/${hash}`}>{title}</a></div>)
 }
 
 function AllTheClasses(){

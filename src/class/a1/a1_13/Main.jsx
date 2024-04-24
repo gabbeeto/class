@@ -4,6 +4,11 @@ import adverbOfFrequency from './adverbOfFrequency.png'
 
 export function A1_13() {
 	return (<>
+		<TitleContainer  title={<>words that will come in handy later on</>} / >
+		<Word word={[(<>to show</>), (<>mostrar</>)]} />
+		<Word word={[(<>after</>), (<>despues de</>)]} />
+		<Word word={[(<>before</>), (<>antes de</>)]} />
+
 		<TitleContainer  title={<>the adverbs that end with -ly</>} / >
 
 		<Word word={[(<>in a <span className='text-blue-400'>beautiful</span> way</>), (<>de manera/modo hermoso</>)]}/>
@@ -17,9 +22,6 @@ export function A1_13() {
 		<Word word={[(<>slow<span className='text-blue-400'>ly</span></>), (<>lenta<span className='text-blue-400'>mente</span></>)]}/>
 
 		<TitleContainer title={<>adverb of frequency</>} />
-		<Word word={[(<>to show</>), (<>mostrar</>)]} />
-		<Word word={[(<>after</>), (<>despues de</>)]} />
-		<Word word={[(<>before</>), (<>antes de</>)]} />
 		<div>Adverbs of frequency show you how frequent our verbs is ocurring</div>
 		<img src={adverbOfFrequency} alt="adverbs of frequency" className='p-2 rounded-xl' />
 
@@ -74,5 +76,25 @@ export function A1_13() {
 			</div>
 
 		</div>)} />
+
+
+		<TitleContainer  title={<>exercises</>} / >
+		<ListOfTest list={
+			[
+			[(<>aveces, voy a mi casa</>), (<>sometimes, I go to my house</>)],
+			[(<>we always have to eat fruits</>), (<>siempre tenemos que comer frutas</>)],
+			[(<>I often hate it when we have to go to buy groceries in the grocery store</>), (<>a menudo odio cuando tenemos que ir a comprar comestibles en la tienda de comestibles</>)],
+			[(<>I rarely eat ice cream in the butcher shop</>), (<>raramente como helado en la carniceria</>)],
+			[(<>unfortunately, the supermarket doesn't have car toys</>), (<>desafortunadamente, el supermercado no tiene juguetes de auto</>)],
+			[(<>he can occasionally kill enemies on Minecraft</>), (<>él ocacionalmente puede matar enemigos en Minecraft</>)],
+			[(<>I forget to turn on the television sometimes</>), (<>me olvido de prender la television aveces</>)],
+			[(<>you're seldom happy</>), (<>raramente estás feliz</>)],
+			[(<>generally, I can play videogames</>), (<>generalmente, puedo jugar videojuegos</>)],
+			[(<>they're usually happy with the results</>), (<>usualmente están feliz con los resultados</>)],
+			[(<>she doesn't go to the produce store to buy oranges</>), (<>ella no va a la verduleria para comprar naranja</>)],
+			[(<>this dog is not going to get a cut in the barber shop</>), (<>este perro no va a obtener un corte en la barberia</>)],
+			[(<>you must literally be a superhero</>), (<>literalmente debes ser un super heroe</>)],
+			]
+} / >
 	</>);
 }
