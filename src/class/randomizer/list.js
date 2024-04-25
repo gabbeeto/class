@@ -211,14 +211,14 @@ const a1_12 = {
 
 
 const a1_13Insideplaces = [
-'Grocery Store',
-'Supermarket',
-'Produce Store',
-'Apartment',
-'Bakery',
-'Hair Salon',
-'Butcher Shop',
-'Barber Shop',
+'grocery store',
+'supermarket',
+'produce Store',
+'apartment',
+'bakery',
+'hair salon',
+'butcher shop',
+'barber shop',
 ];
 
 const a1_13 = {
@@ -475,14 +475,14 @@ const a1Spanish_12 = {
 
 
  const a1Spanish_13Insideplaces = [
-'grocerystore',
-'supermarket',
-'producestore',
-'apartment',
-'bakery',
-'hairsalon',
-'butchershop',
-'barbershop',
+'tienda de comestibles',
+'supermercado',
+'verduleria',
+'apartamento',
+'panaderia',
+'peluqueria',
+'carniceria',
+'barberia',
 ];
 
 const a1Spanish_13 = {

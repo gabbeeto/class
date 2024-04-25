@@ -110,7 +110,7 @@ export function randomSentence(currentClass, amount){
 			break;
 		case 'a1_13':
 			maxNumber = 1000
-			words = SelectedList('a1_13', 'a1_6');
+			words = SelectedList('a1_13', 'a1_1');
 			break;
 	}
 
@@ -253,6 +253,15 @@ export function convertToPlural(word){
 }
 
 export function convertToPluralForSpanish(word){
+	const exception = ['tienda de comestibles']
+	const exceptionRespose = ['tiendas de comestibles']
+
+
+	let indexIfException = exception.indexOf(word);
+
+	if(indexIfException != -1){
+		return exceptionRespose[indexIfException]
+	}
 
 	const vowel = ['a', 'e', 'i', 'o', 'u']
 

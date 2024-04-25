@@ -53,7 +53,7 @@ const hashContent = {
 	"#a1_12": ['family members and the possesive pronoun', <A1_12 />],
 	'#a1insideplace' : ['Inside the Places', < A1InsidePlace / >], 
 	"#a1_13": ['the adverb class(adverb of frequency and the adverb ly)', <A1_13 />],
-	"#a1_14": ['comparison', <A1_14 />],
+	"#a1_14": ['adjetives and comparison', <A1_14 />],
 	"#a1_15": ['how to talk about time', <A1_15 />],
 }
 
@@ -102,7 +102,7 @@ return (
 	< ClassPortal hash='#a1_12' title="family members and the possesive pronoun" />
 	<div>a1_13</div>
 	< ClassPortal hash="#a1insideplace" title="Inside the Places" />  
-	< ClassPortal hash="#a1_13" title="adverb of frequency(working on making these)" />  
+	< ClassPortal hash="#a1_13" title="adverb of frequency" />  
 	<div>a1_14</div>
 	< ClassPortal hash="#a1_14" title="comparison(working on this class)" />  
 	<div>a1_15</div>

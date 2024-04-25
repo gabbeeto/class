@@ -3,9 +3,20 @@
 @tailwind utilities;
 
 
+.textSize-05 {
+  font-size: clamp(2.0rem, calc(3.4vw + 0.6rem), 3.7rem);
+  font-weight: 750;
+}
+
 .textSize-1 {
   font-size: clamp(1.8rem, calc(3.2vw + 0.5rem), 3.5rem);
   font-weight: 700;
+}
+
+
+.textSize-15 {
+  font-size: clamp(1.6rem, calc(3.0vw + 0.5rem), 3.2rem);
+  font-weight: 600;
 }
 
 
@@ -14,22 +25,39 @@
   font-weight: 500;
 }
 
+
+.textSize-25 {
+  font-size: clamp(1.4rem, calc(2.3vw + 0.5rem), 2.5rem);
+  font-weight: 500;
+}
+
 .textSize-3 {
   font-size: clamp(1.2rem, calc(1.6vw + 0.5rem), 2.2rem);
   font-weight: 450;
 }
 
-
-
+.textSize-35 {
+  font-size: clamp(1.1rem, calc(1.4vw + 0.5rem), 2rem);
+  font-weight: 450;
+}
 
 .textSize-4 {
   font-size: clamp(1rem, calc(1.3vw + 0.4rem), 1.9rem);
   font-weight: 420;
 }
 
+.textSize-45 {
+  font-size: clamp(0.9rem, calc(1.2vw + 0.35rem), 1.8rem);
+  font-weight: 420;
+}
 
 .textSize-5{
   font-size: clamp(0.8rem, calc(1.1vw + 0.3rem), 1.7rem);
+  font-weight: 410;
+}
+
+.textSize-55{
+  font-size: clamp(0.7rem, calc(1.0vw + 0.25rem), 1.6rem);
   font-weight: 410;
 }
 
@@ -39,6 +67,11 @@
   font-weight: 400;
 }
 
+
+.textSize-65 {
+  font-size: clamp(0.55rem, calc(0.8vw + 0.15rem), 1.4rem);
+  font-weight: 400;
+}
 
 
 
@@ -90,7 +123,382 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
-
-.containerExtras {
-  max-width: 93%;
+.width-100 {
+width: 100vw;
 }
+
+.width-100h {
+width: 100vh;
+}
+
+.height-100 {
+height: 100vh;
+}
+
+.height-100w {
+height: 100vw;
+}
+
+
+
+
+.width-95 {
+width: 95vw;
+}
+
+.width-95h {
+width: 95vh;
+}
+
+.height-95 {
+height: 95vh;
+}
+
+.height-95w {
+height: 95vw;
+}
+
+
+
+
+.width-90 {
+width: 90vw;
+}
+
+.width-90h {
+width: 90vh;
+}
+
+.height-90 {
+height: 90vh;
+}
+
+.height-90w {
+height: 90vw;
+}
+
+
+
+
+.width-85 {
+width: 85vw;
+}
+
+.width-85h {
+width: 85vh;
+}
+
+.height-85 {
+height: 85vh;
+}
+
+.height-85w {
+height: 85vw;
+}
+
+
+
+
+.width-80 {
+width: 80vw;
+}
+
+.width-80h {
+width: 80vh;
+}
+
+.height-80 {
+height: 80vh;
+}
+
+.height-80w {
+height: 80vw;
+}
+
+
+
+
+.width-75 {
+width: 75vw;
+}
+
+.width-75h {
+width: 75vh;
+}
+
+.height-75 {
+height: 75vh;
+}
+
+.height-75w {
+height: 75vw;
+}
+
+
+
+
+.width-70 {
+width: 70vw;
+}
+
+.width-70h {
+width: 70vh;
+}
+
+.height-70 {
+height: 70vh;
+}
+
+.height-70w {
+height: 70vw;
+}
+
+
+
+
+
+.width-65 {
+width: 65vw;
+}
+
+.width-65h {
+width: 65vh;
+}
+
+.height-65 {
+height: 65vh;
+}
+
+.height-65w {
+height: 65vw;
+}
+
+
+
+
+.width-60 {
+width: 60vw;
+}
+
+.width-60h {
+width: 60vh;
+}
+
+.height-60 {
+height: 60vh;
+}
+
+.height-60w {
+height: 60vw;
+}
+
+
+
+
+.width-55 {
+width: 55vw;
+}
+
+.width-55h {
+width: 55vh;
+}
+
+.height-55 {
+height: 55vh;
+}
+
+.height-55w {
+height: 55vw;
+}
+
+
+
+
+.width-50 {
+width: 50vw;
+}
+
+.width-50h {
+width: 50vh;
+}
+
+.height-50 {
+height: 50vh;
+}
+
+.height-50w {
+height: 50vw;
+}
+
+
+
+
+.width-45 {
+width: 45vw;
+}
+
+.width-45h {
+width: 45vh;
+}
+
+.height-45 {
+height: 45vh;
+}
+
+.height-45w {
+height: 45vw;
+}
+
+
+
+
+.width-40 {
+width: 40vw;
+}
+
+.width-40h {
+width: 40vh;
+}
+
+.height-40 {
+height: 40vh;
+}
+
+.height-40w {
+height: 40vw;
+}
+
+
+
+
+.width-35 {
+width: 35vw;
+}
+
+.width-35h {
+width: 35vh;
+}
+
+.height-35 {
+height: 35vh;
+}
+
+.height-35w {
+height: 35vw;
+}
+
+
+
+
+.width-30 {
+width: 30vw;
+}
+
+.width-30h {
+width: 30vh;
+}
+
+.height-30 {
+height: 30vh;
+}
+
+.height-30w {
+height: 30vw;
+}
+
+
+
+
+.width-25 {
+width: 25vw;
+}
+
+.width-25h {
+width: 25vh;
+}
+
+.height-25 {
+height: 25vh;
+}
+
+.height-25w {
+height: 25vw;
+}
+
+
+
+
+.width-20 {
+width: 20vw;
+}
+
+.width-20h {
+width: 20vh;
+}
+
+.height-20 {
+height: 20vh;
+}
+
+.height-20w {
+height: 20vw;
+}
+
+
+
+
+.width-15 {
+width: 15vw;
+}
+
+.width-15h {
+width: 15vh;
+}
+
+.height-15 {
+height: 15vh;
+}
+
+.height-15w {
+height: 15vw;
+}
+
+
+
+
+
+.width-10 {
+width: 10vw;
+}
+
+.width-10h {
+width: 10vh;
+}
+
+.height-10 {
+height: 10vh;
+}
+
+.height-10w {
+height: 10vw;
+}
+
+
+
+
+.width-5 {
+width: 5vw;
+}
+
+.width-5h {
+width: 5vh;
+}
+
+.height-5 {
+height: 5vh;
+}
+
+.height-5w {
+height: 5vw;
+}
+

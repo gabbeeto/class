@@ -8,6 +8,8 @@ export function A1_13() {
 		<Word word={[(<>to show</>), (<>mostrar</>)]} />
 		<Word word={[(<>after</>), (<>despues de</>)]} />
 		<Word word={[(<>before</>), (<>antes de</>)]} />
+		<Word word={[(<>to be about to</>), (<>estar apunto de</>)]} />
+		<Word word={[(<>to buy</>), (<>comprar</>)]} />
 
 		<TitleContainer  title={<>the adverbs that end with -ly</>} / >
 
@@ -94,6 +96,10 @@ export function A1_13() {
 			[(<>she doesn't go to the produce store to buy oranges</>), (<>ella no va a la verduleria para comprar naranja</>)],
 			[(<>this dog is not going to get a cut in the barber shop</>), (<>este perro no va a obtener un corte en la barberia</>)],
 			[(<>you must literally be a superhero</>), (<>literalmente debes ser un super heroe</>)],
+			[(<>the world is slowly about to die</>), (<>lentamente el mundo está a punto de morir</>)],
+			[(<>loving the supermarket does not have to be weird</>), (<>amar el supermercado no tiene que ser raro</>)],
+			[(<>she needs to go to the hair salon</>), (<>ella necesita ir a la peluqueria</>)],
+			[(<>the bakery bread is fantastic</>), (<>el pan de la panaderia es fantastico</>)],
 			]
 } / >
 	</>);
