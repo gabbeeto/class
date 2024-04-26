@@ -15,8 +15,8 @@ let currentColor = allTheColors[color][1]
 </>)
 
 }
-// continue here
-function Test({id, spanishPhrase, expectedEnglish, testColor}){
+
+export function Test({id, spanishPhrase, expectedEnglish, testColor}){
 
 return (<> 
 <section className={`${testColor} m-2 rounded-2xl gap-2 flex flex-col items-center justify-center text-center `} data-sectionid={id}>

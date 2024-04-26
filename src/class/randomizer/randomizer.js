@@ -312,7 +312,7 @@ export function isFemale(word){
 }
 
 
-export function getNumberText(thisNumber, language, isFemale = false, otherA = false){
+export function getNumberText(thisNumber, language, isFemale = false, otherA = false, theNumber1){
 
 	const textNumber = `${thisNumber}`
 	const textNumberArray = textNumber.split('')
@@ -322,9 +322,19 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 		english: 'zero'
 	}
 
+
 	let numberOne = {
 		spanish: 'un',
 		english: 'a',
+
+	}
+
+	if(theNumber1) {
+	 numberOne = {
+		spanish: 'uno',
+		english: 'one',
+
+	}
 	}
 
 	if(isFemale){
@@ -366,7 +376,7 @@ export function getNumberText(thisNumber, language, isFemale = false, otherA = f
 		return numberOne[language]
 	}
 	else if(thisNumber < 30){
-		return List[language]['a1_2']['numbers'][thisNumber + 1]
+		return List[language]['a1_2']['numbers'][thisNumber - 1]
 	}
 	else if(thisNumber == 100){
 		return number100[language]

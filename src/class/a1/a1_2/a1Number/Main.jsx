@@ -1,5 +1,6 @@
 import {ListOfWords} from './../../../list'
 import {ExplanationContainer, TitleContainer} from './../../../explanationUtilities'
+import { getNumberText } from './../../../randomizer/randomizer.js'
 
 const numbers = [
 	[(<><span className='text-red-300'>one</span></>),false],
@@ -49,8 +50,23 @@ const numbers = [
 
 
 export function A1Number(){
+
+console.log(getNumberText(1, 'english', false, false, true ))
+
+
 return (<>
 	<ListOfWords list={numbers} name={'number'} />
+<TitleContainer  title={<>test number</>} / >
+	<detail className="flex flex-col items-center justify-center text-center rounded-3xl bg-purple-400 p-2 text-black">
+		<summary>
+	    Type your number:<input onChange={(e) => {
+			console.log(getNumberText(Number(e.target.value), 'english', false, false, true ))
+			let output = document.querySelector('output');
+			output.innerHTML =  getNumberText(Number(e.target.value), 'english', false, false, true );
+		}} id='number' className='p-2 rounded-3xl border-black border-2' type="number"/></summary>
+		<output className='bg-purple-500 p-2 rounded-xl m-2' />
+	</detail>
+	{}
 	<TitleContainer  title={<>basics of plurarity</>} / >
 	<ExplanationContainer explanation={(<>ahora podés usar los numeros en el inglés para hablar de más de 1 animal. Solo tenés que usar el numero y tenés que  agregarle <span className='bg-orange-500'>s</span> al sustantivo como en Español
 		</>)}
