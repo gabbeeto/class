@@ -1,5 +1,5 @@
 import {ListOfWords} from './../../../list'
-import {ExplanationContainer} from './../../../explanationUtilities'
+import {ExplanationContainer, TitleContainer} from './../../../explanationUtilities'
 
 const numbers = [
 	[(<><span className='text-red-300'>one</span></>),false],
@@ -34,6 +34,13 @@ const numbers = [
 	[(<>a <span className='text-red-300'>hundred</span></>), 100],
 	[(<>one <span className='text-red-300'>hundred</span></>), 100],
 	[(<>two <span className='text-red-300'>hundred</span></>), 200],
+	[(<>three <span className='text-red-300'>hundred</span></>), 300],
+	[(<>four <span className='text-red-300'>hundred</span></>), 400],
+	[(<>five <span className='text-red-300'>hundred</span></>), 500],
+	[(<>six <span className='text-red-300'>hundred</span></>), 600],
+	[(<>seven <span className='text-red-300'>hundred</span></>), 700],
+	[(<>eight <span className='text-red-300'>hundred</span></>), 800],
+	[(<>nine <span className='text-red-300'>hundred</span></>), 900],
 	[(<><span className='text-red-300'>one hundred</span> and twenty four</>), 124],
 	[(<><span className='text-red-300'>one hundred</span> twenty four</>), 124],
 	[(<><span className='text-red-300'>three hundred</span> and sixty nine</>), 369],
@@ -42,7 +49,9 @@ const numbers = [
 
 
 export function A1Number(){
-return (<><ListOfWords list={numbers} name={'number'} />
+return (<>
+	<ListOfWords list={numbers} name={'number'} />
+	<TitleContainer  title={<>basics of plurarity</>} / >
 	<ExplanationContainer explanation={(<>ahora podés usar los numeros en el inglés para hablar de más de 1 animal. Solo tenés que usar el numero y tenés que  agregarle <span className='bg-orange-500'>s</span> al sustantivo como en Español
 		</>)}
 
