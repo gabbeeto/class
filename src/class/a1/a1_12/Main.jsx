@@ -53,21 +53,46 @@ return (<>
 
 
 
-	<ExplanationContainer  explanation={<><span className='text-orange-400'>the house of your cat</span> puede convertirse en <span className='text-blue-400'>your cats house</span></>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+	<ExplanationContainer  explanation={<><span className='text-orange-400'>the house of your cat</span> puede convertirse en <span className='text-blue-400'>your cat's house</span>. </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 	<div>
-		<div>the airplane of your dog</div>
-		<div>your dog's airplane</div>
+		<div>The <span className='text-blue-400'>airplane</span> of <span className='text-orange-400'>your dog</span></div>
+		<div> <span className='text-orange-400'>your dog</span>'s <span className='text-blue-400'>airplane</span> </div>
 	</div>
+
 	<div>
-		<div>the airplane of your dog</div>
-		<div>your dog's airplane</div>
+		<div>The <span className='text-blue-400'>fish</span> of <span className='text-orange-400'>our dog</span></div>
+		<div> <span className='text-orange-400'>your dog</span>'s <span className='text-blue-400'>fish</span> </div>
 	</div>
+
+
 	<div>
-		<div>the cat of your fish</div>
-		<div>your fish's dog</div>
+		<div>The <span className='text-blue-400'>house</span> of <span className='text-orange-400'>Maria</span></div>
+		<div> <span className='text-orange-400'>Maria</span>'s <span className='text-blue-400'>house</span> </div>
 	</div>
+
+
+	<div>
+		<div>The <span className='text-blue-400'>pen</span> of <span className='text-orange-400'>Marco</span></div>
+		<div> <span className='text-orange-400'>Marco</span>'s <span className='text-blue-400'>pen</span> </div>
+	</div>
+
+
 			</div>)} / >
 
+	<ExplanationContainer  explanation={<>Pero cuando el poseedor es un objeto, <span className='text-orange-400'>'s</span> no es agregado. Entonces palabra como  <span className='text-blue-400'>The House of Minecraft</span>  pueden ser transformado en <span className='text-orange-400'>The Minecraft House</span> </>} example={(<div className="flex gap-2 flex-col items-center justify-center text-center">
+
+	<div>
+		<div>The <span className='text-blue-400'>table</span> of the <span className='text-orange-400'>house</span></div>
+		<div>The <span className='text-orange-400'>house</span> <span className='text-blue-400'>table</span> </div>
+	</div>
+
+
+	<div>
+		<div>the <span className='text-blue-400'>character</span> of <span className='text-orange-400'>roblox</span> of  <span className='text-purple-400'>me</span></div>
+		<div> <span className='text-purple-400'>my</span>  <span className='text-orange-400'>roblox</span> <span className='text-blue-400'>character</span> </div>
+	</div>
+
+	</div>)} / >
 
 	<TitleContainer  title={<>family members</>} / >
 	<div className="flex flex-col items-center justify-center text-center gap-2">

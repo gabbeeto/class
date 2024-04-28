@@ -92,5 +92,92 @@ export function A1_14() {
 <Word word={[(<span className='text-red-400' >terrible</span>), (<span className='text-red-300'>2/22</span>)]}/>
 
 <TitleContainer  title={<>comparisons</>} / >
-	// continue here
+
+<Word word={[(<>instead</>), (<>en vez/ en vez de</>)]}/>
+<Word word={[(<>more</>), (<>más</>)]}/>
+<Word word={[(<>less</>), (<>menos</>)]}/>
+
+	<ExplanationContainer  explanation={<>usually, spanish sentences like <span className='text-purple-400'>mi casa es más azul que tu casa</span> are translated as <span className='text-purple-400'>my house is bluer than your house</span>. <span className='text-blue-400'>Que</span> means <span className='text-blue-400'>than</span> when comparing </>} example={(<div className="flex flex-col items-center justify-center text-center">
+
+<div>
+<div>my cat is angrier <span className='text-blue-400'>than</span> your cat</div>
+<div>mi gato está más enojado <span className='text-blue-400'>que</span> tu gata</div>
+</div>
+
+	</div>)} / >
+
+	<ExplanationContainer  explanation={<>
+usually,  you have to add <span className='text-blue-400'>er</span> at the end of the adjetives if they're short when comparing the adjetive(like the spanish equivalent for <span className='text-blue-400'>más</span>)
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+<div>
+<div>My Minecraft house is <span className='text-blue-400'><span className='text-orange-400'>great</span>er</span> than  your Minecraft house</div>
+<div>Mi casa de Minecraft es <span className='text-blue-400'>más <span className='text-orange-400'>genial</span></span> que tu casa de Minecraft</div>
+</div>
+
+<div>
+<div>this table has <span className='text-blue-400'><span className='text-orange-400'>green</span>er</span> color than my mother's table</div>
+<div>esta mesa tiene color <span className='text-blue-400'>más <span className='text-orange-400'>verde</span></span> que la mesa de mi mama</div>
+</div>
+
+
+<div>
+<div>My dog is <span className='text-orange-400'>sad</span><span className='text-blue-400'>der</span> than  your cow</div>
+<div>Mi perra está <span className='text-blue-400'>más <span className='text-orange-400'>triste</span></span> que tu vaca</div>
+</div>
+
+
+<div>
+<div>My house is <span className='text-blue-400'><span className='text-orange-400'>big</span>ger</span> than  Maria's house</div>
+<div>Mi casa es <span className='text-blue-400'>más <span className='text-orange-400'>grande</span></span> que la casa de Maria</div>
+</div>
+
+
+<div>
+<div>my dog is <span className='text-blue-400'><span className='text-orange-400'>happ</span>ier</span> than  Kyle's cat</div>
+<div>Mi perro es <span className='text-blue-400'>más <span className='text-orange-400'>feliz</span></span> que el gato de Kyle</div>
+</div>
+
+
+<div>
+<div>I'm <span className='text-blue-400'><span className='text-orange-400'>angr</span>ier</span> than  you</div>
+<div>estoy <span className='text-blue-400'>más <span className='text-orange-400'>enojado</span></span> que vos</div>
+</div>
+
+	</div>)} / >
+
+<ExplanationContainer  explanation={<>
+but when words are long(it has more than five letter and two syllables) we add the <span className='text-blue-400'>more</span> word instead
+	</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+
+<div>
+<div>My Roblox house is <span className='text-blue-400'>more <span className='text-orange-400'>beautiful</span></span> than  Marco's </div>
+<div>Mi casa de Roblox es <span className='text-blue-400'>más <span className='text-orange-400'>hermosa</span></span> que la de Marco</div>
+</div>
+
+
+<div>
+<div>this city is <span className='text-blue-400'>more <span className='text-orange-400'>wonderful</span></span> than my home city </div>
+<div>esta ciudad es <span className='text-blue-400'>más <span className='text-orange-400'>maravillosa</span></span> que la ciudad de mi hogar</div>
+</div>
+
+
+<div>
+<div>this puzzle is <span className='text-blue-400'>more <span className='text-orange-400'>confusing</span></span> than the previous puzzle </div>
+<div>este puzzle es <span className='text-blue-400'>más <span className='text-orange-400'>confuso</span></span> que el puzzle anterior</div>
+</div>
+
+
+<div>
+<div>this puzzle is <span className='text-blue-400'>more <span className='text-orange-400'>confusing</span></span> than the previous puzzle </div>
+<div>este puzzle es <span className='text-blue-400'>más <span className='text-orange-400'>confuso</span></span> que el puzzle anterior</div>
+</div>
+
+
+<div>
+<div>my aunt has <span className='text-blue-400'>more <span className='text-orange-400'>embarrasing</span></span> face than what you think she has </div>
+<div>mi tia tiene cara <span className='text-blue-400'>más <span className='text-orange-400'>avergozante</span></span> que lo que te imaginas que ella tiene</div>
+</div>
+
+</div>)} / >
+
 	</>)}
