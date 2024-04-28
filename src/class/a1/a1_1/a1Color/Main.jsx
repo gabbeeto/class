@@ -22,8 +22,8 @@ const colors = [
 		['Orange', [orange]],
 		['Pink', [pink]],
 		['Purple', [purple]],
-		['Brown', [brown]],
-		['Cyan', [cyan]],
+		// ['Brown', [brown]],
+		// ['Cyan', [cyan]],
 		['Gray', [gray]],
 	]
 
