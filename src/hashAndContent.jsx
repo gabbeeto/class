@@ -21,6 +21,7 @@ import { A1_13 } from './class/a1/a1_13/Main'
 import { A1_14 } from './class/a1/a1_14/Main'
 import { A1_15 } from './class/a1/a1_15/Main'
 import { A1_16 } from './class/a1/a1_16/Main'
+import { A1_17 } from './class/a1/a1_17/Main'
 import { A1InsidePlace } from './class/a1/a1_13/a1InsidePlace/Main'
 import { A1Vehicle } from './class/a1/a1_3/a1Vehicle/Main'
 import { A1Pronoun } from './class/a1/a1_3/a1Pronoun/Main'
@@ -54,9 +55,10 @@ const hashContent = {
 	"#a1_12": ['family members and the possesive pronoun', <A1_12 />],
 	'#a1insideplace' : ['Inside the Places', < A1InsidePlace / >], 
 	"#a1_13": ['the adverb class(adverb of frequency and the adverb ly)', <A1_13 />],
-	"#a1_14": ['adjetives and comparison', <A1_14 />],
-	"#a1_15": ['how to talk about time', <A1_15 />],
-	"#a1_16": ['the date class', <A1_16 />],
+	"#a1_14": ['', <A1_14 />],
+	"#a1_15": ['adjetives and comparison', <A1_15 />],
+	"#a1_16": ['how to talk about time', <A1_16 />],
+	"#a1_17": ['the date class', <A1_17 />],
 }
 
 function ClassPortal({hash,title}){
@@ -106,11 +108,13 @@ return (
 	< ClassPortal hash="#a1insideplace" title="Inside the Places" />  
 	< ClassPortal hash="#a1_13" title="adverb of frequency" />  
 	<div>a1_14</div>
-	< ClassPortal hash="#a1_14" title="comparison(working on this class)" />  
+	< ClassPortal hash="#a1_14" title="the one class(working on this class)" />  
 	<div>a1_15</div>
-	< ClassPortal hash="#a1_15" title="How to talk about time(working on this class)" />  
+	< ClassPortal hash="#a1_15" title="comparison(working on this class)" />  
 	<div>a1_16</div>
-	< ClassPortal hash="#a1_16" title="the date class(working on this class)" />  
+	< ClassPortal hash="#a1_16" title="How to talk about time(working on this class)" />  
+	<div>a1_17</div>
+	< ClassPortal hash="#a1_17" title="the date class(working on this class)" />  
 	</>
 )
 

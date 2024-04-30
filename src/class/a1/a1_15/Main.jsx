@@ -1,121 +1,287 @@
-import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest} from './../../explanationUtilities'
+import {useState} from 'react';
+import { Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest } from './../../explanationUtilities'
+import rating1 from './rating1.png'
+import rating2 from './rating2.png'
 
-import timeImage from './timeImage.png'
-import tellingTime from './tellingTime.png'
+function BlackButton({content, isActivated, clickFunc}){
+let extraClasses = '';
+if(isActivated){
+extraClasses = 'bg-purple-200 rounded-xl p-2'
+}
 
-export function A1_15(){
-return (<> 
-	<TitleContainer  title={<>parts of the day</>} / >
-	<img className='p-2 rounded-xl' src={timeImage} />
-	<TitleContainer  title={<>how to talk about time inside the 12 hour period</>} / >
-	<img className='p-2 rounded-xl' src={tellingTime} />
-	<div className="flex flex-col items-center gap-2 justify-center text-center">
+return( <div onClick={clickFunc} className={extraClasses}> <button className='border-2 border-white bg-black rounded-3xl p-2 hover:bg-white hover:border-black hover:text-black '>{content}</button> </div>)
+}
 
-	<div>
-	<div>you can say <span className='text-blue-400'>the time is 5 o'clock</span> or you can just replace <span className='text-orange-400'>the time</span> with <span className='text-orange-400'>it</span> and just say <span className='text-blue-400'> <span className='text-orange-400'>it</span>'s 5 o'clock</span>  </div>
+export function A1_15() {
+	const [sizeIsSmall,changeSize] = useState(true);
+	const [divSize,changeDivSize] = useState('h-3/6 w-3/6');
+	const [lengthIsSmall,changeLength] = useState(true);
+	const [divLength,changeDivLength] = useState('w-2/6');
+	const [heightIsSmall,changeHeight] = useState(true);
+	const [divHeight,changeDivHeight] = useState('h-2/6');
 
-	<Word word={[(<>it's five o'clock</>), (<>it's 3:00</>)]}/>
-	<Word word={[(<>the time is five o'clock</>), (<>it's 3:00</>)]}/>
-	</div>
+	return (<>
+		<TitleContainer  title={<>size</>} / >
+		<article className=' bg-sky-200 p-1 rounded-xl w-screen width-100 height-95 grid grid-cols-6 sm:grid-cols-3 sm:grid-rows-3 text-center'> 
 
-	<div>
-you can either say <span className='text-blue-400'>on the dot</span> or <span className='text-blue-400'>o'clock</span> if 
-		the minutes are precisely 0.
+		
+		<div  className='flex flex-col items-center justify-center text-center col-start-1 sm:col-end-3  sm:row-start-1 sm:row-end-4 col-end-4 bg-white rounded-2xl'>
+		<div className={`p-2 ${divSize} flex flex-col items-center justify-center text-center transition-all delay-100`} >
 
-	<Word word={[(<>it's six <span className='text-blue-400'>o'clock</span></>), (<>it's 6:<span className='text-blue-400'>00</span></>)]}/>
-	<Word word={[(<>it's six <span className='text-blue-400'>on the dot</span></>), (<>it's 6:<span className='text-blue-400'>00</span></>)]}/>
-	</div>
+		<div className={` rounded-2xl bg-amber-500 flex flex-col items-center justify-center text-center transition-all delay-75 ${divLength} ${divHeight}`}></div>
 
-	<div>you don't have to tell the minutes if you don't want to</div>
-		<div>
-	<Word word={[(<>it's five p.m</>), (<>it's from 5:00 p.m to 5:50 p.m</>)]}/>
-	<Word word={[(<>it's five in the afternoon</>), (<>it's from 5:00 p.m 5:50 p.m</>)]}/>
 		</div>
 
-	<div>In english, there are two ways in which you can tell the time when you also mention minutes</div>
-	<div >the analog way:</div>
-	<div>
-	<div> you often mention the <span className='text-orange-400'>minutes</span>  first and then the <span className='text-blue-400'>hour</span> </div>
-	<Word word={[(<>it's <span className='text-orange-400'>five</span> past <span className='text-blue-400'>three</span></>), (<>it's <span className='text-blue-400'>3</span>:<span className='text-orange-400'>05</span></>)]}/>
-	</div>
-	<div>
-if the minutes are less than 30, you can say <span className='text-blue-400'>it's [minute] <span className='text-orange-400'>past</span> [hour]</span> or <span className='text-blue-400'>it's [minute] <span className='text-orange-400'>after</span> [hour]</span>
-		</div>
-		<div>
-<Word word={[(<>it's five <span className='text-orange-400'>after</span> two</>), (<>it's 2:05</>)]}/>
-<Word word={[(<>it's twenty-five <span className='text-orange-400'>after</span> two</>), (<>it's 2:25</>)]}/>
 
-
-<Word word={[(<>it's five <span className='text-orange-400'>past</span> two</>), (<>it's 2:05</>)]}/>
-<Word word={[(<>it's twenty-five <span className='text-orange-400'>past</span> two</>), (<>it's 2:25</>)]}/>
 		</div>
 
-		<div>you can also use <span className='text-orange-400'>a quarter</span> to mean <span className='text-orange-400'>fifteen</span></div>
-	<div>
+		<div className='col-start-4 col-end-7 sm:col-start-3  sm:col-end-4 sm:row-start-1 sm:row-end-4 p-2 rounded-2xl bg-black flex w-full h-full flex-col'>
 
-<Word word={[(<>it's <span className='text-orange-400'>a quarter</span> after five</>), (<>5:<span className='text-orange-400'>15</span></>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>fifteen</span> after five</>), (<>5:<span className='text-orange-400'>15</span></>)]}/>
-		</div>	
-<div>when we reach the minute 30, we use <span className='text-orange-400'>half past</span> or <span className='text-orange-400'>thirty past</span> or <span className='text-orange-400'>thirty after</span>(do not say <span className='text-orange-400'>half after</span>) </div>
-	<div>
-<Word word={[(<>it's <span className='text-orange-400'>half</span> past nine</>), (<>it's 9:<span className='text-orange-400'>30</span></>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>thirty</span> past nine</>), (<>it's 9:<span className='text-orange-400'>30</span></>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>thirty after</span> nine</>), (<>it's 9:<span className='text-orange-400'>30</span></>)]}/>
-	</div>
+		<p  classname="textsize-2 ">length:</p>
+		<div className="flex items-center gap-2 justify-center text-center ">
 
-<div>after minute 30 we go backward. we count the minutes need to reach the next hour. you can either use <span className='text-orange-400'>to</span> or <span className='text-orange-400'>'till</span> which is a little bit more casual</div>	
+		<BlackButton  clickFunc={() => {changeLength(true); changeDivLength('w-2/6')}} isActivated={lengthIsSmall} content={(<>short</>)} / > 
+		<BlackButton  clickFunc={() => {changeLength(false); changeDivLength('w-full')}} isActivated={!lengthIsSmall} content={(<>long</>)} / > 
+		</div>
+		<p  classname="textsize-2 ">height:</p>
+		<div className="flex items-center gap-2 justify-center text-center ">
+		<BlackButton  clickFunc={() => {changeHeight(true); changeDivHeight('h-2/6')}} isActivated={heightIsSmall} content={(<>short</>)} / > 
+		<BlackButton  clickFunc={() => {changeHeight(false); changeDivHeight('h-full')}} isActivated={!heightIsSmall} content={(<>tall</>)} / > 
+		</div>
+		<p  classname="textsize-2 ">size:</p>
+		<div className="flex items-center gap-2 justify-center text-center ">
+		<BlackButton  clickFunc={() => {changeSize(true);  changeDivSize('h-3/6 w-3/6')}} isActivated={sizeIsSmall} content={(<>small</>)} / > 
+		<BlackButton  clickFunc={() => {changeSize(false);  changeDivSize('h-full w-full')}}isActivated={!sizeIsSmall} content={(<>big</>)} / > 
+		</div>
 
-<div>
-	<Word word={[(<>it's five <span className='text-orange-400'>to</span> three</>), (<>it's 2:55</>)]}/>
-	<Word word={[(<>it's five <span className='text-orange-400'>'till</span> three</>), (<>it's 2:55</>)]}/>
 </div>
 
 
-<div>you can also use <span className='text-orange-400'>a quarter</span> to mean <span className='text-orange-400'>fifteen</span> right here</div>	
+
+		</article>
+
+<TitleContainer  title={<>rating</>} / >
+<Word word={[(<><span className="textSize-3">To</span> to rate</>), (<>calificar</>)]}/>
+<Word word={[(<>rate the shrek movie on a scale of one to twenty</>), (<>califica la pelicula de shrek en una escala de uno a viente</>)]}/>
+<Word word={[(<>I rate the shrek movie five out of twenty because I don't like it</>), (<>califico la pelicula de shrek 5 de 10 porque no me gusta</>)]}/>
+<Word word={[(<>I rate the shrek movie five out of twenty because I don't like it</>), (<>califico la pelicula de shrek 5 de 10 porque no me gusta</>)]}/>
+<Word word={[(<>5/20</>), (<>five out of twenty</>)]}/>
+	
+	<div className="flex flex-col items-center justify-center text-center">
+<img src={rating1} className='width-95 height-50w'/>
+<img src={rating2} className='width-95 height-50w'/>
+
+	</div>
+
+	<TitleContainer  title={<>from rating to adjetives</>} / >
+<Word word={[(<span className='text-lime-400' >Perfect</span>), (<span className='text-lime-400'>22/22</span>)]}/>
+<Word word={[(<span className='text-lime-400'>Flawless</span>), (<span className='text-lime-400'>22/22 <span className='text-white'>or</span> 21/22</span>)]}/>
+<Word word={[(<span className='text-lime-300' >Phenomenal</span>), (<span className='text-lime-300'>20/22</span>)]}/>
+<Word word={[(<span className='text-lime-300' >amazing</span>), (<span className='text-lime-300'>19/22</span>)]}/>
+<Word word={[(<span className='text-lime-200' >wonderful</span>), (<span className='text-lime-200'>18/22</span>)]}/>
+<Word word={[(<span className='text-lime-200' >fantastic</span>), (<span className='text-lime-200'>17/22</span>)]}/>
+<Word word={[(<span className='text-lime-200' >excellent</span>), (<span className='text-lime-200'>16/22</span>)]}/>
+<Word word={[(<span className='text-lime-100' >great</span>), (<span className='text-lime-100'>15/22</span>)]}/>
+<Word word={[(<span className='text-lime-100' >good</span>), (<span className='text-lime-100'>13/22</span>)]}/>
+<Word word={[(<span className='text-lime-50' >decent</span>), (<span className='text-lime-50'>12/22</span>)]}/>
+<Word word={[(<span className='text-white' >ok</span>), (<span className='text-white'>11/22</span>)]}/>
+<Word word={[(<span className='text-red-50' >mediocre</span>), (<span className='text-red-50'>9/22</span>)]}/>
+<Word word={[(<span className='text-red-100' >bad</span>), (<span className='text-red-100'>7/22</span>)]}/>
+<Word word={[(<span className='text-red-200' >awful</span>), (<span className='text-red-200'>4/22</span>)]}/>
+<Word word={[(<span className='text-red-300' >horrendous</span>), (<span className='text-red-300'>3/22</span>)]}/>
+<Word word={[(<span className='text-red-400' >terrible</span>), (<span className='text-red-300'>2/22</span>)]}/>
+
+<TitleContainer  title={<>comparisons</>} / >
+
+<Word word={[(<>instead</>), (<>en vez/ en vez de</>)]}/>
+<Word word={[(<>more</>), (<>más</>)]}/>
+<Word word={[(<>less</>), (<>menos</>)]}/>
+
+	<ExplanationContainer  explanation={<>usually, spanish sentences like <span className='text-purple-400'>mi casa es más azul que tu casa</span> are translated as <span className='text-purple-400'>my house is bluer than your house</span>. <span className='text-blue-400'>Que</span> means <span className='text-blue-400'>than</span> when comparing </>} example={(<div className="flex flex-col items-center justify-center text-center">
+
+
 <div>
-<Word word={[(<>it's <span className='text-orange-400'>a quarter</span> 'till five</>), (<>4:45</>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>fifteen</span> 'till five</>), (<>4:45</>)]}/>
+<div>my cat is angrier <span className='text-blue-400'>than</span> your cat</div>
+<div>mi gato está más enojado <span className='text-blue-400'>que</span> tu gata</div>
 </div>
 
-<div>the digital way:</div>
-<div>in the digital way, we start with the <span className='text-blue-400'>hour</span> and then say the <span className='text-orange-400'>minutes</span></div>
-
-<Word word={[(<>it's <span className='text-blue-400'>five</span> <span className='text-orange-400'>twenty five</span></>), (<>it's <span className='text-blue-400'>5</span>:<span className='text-orange-400'>25</span> </>)]}/>
-		<div>when the minutes are below ten, we use <span className='text-blue-400'>Oh</span> to mean 0</div>
-<Word word={[(<>it's eight <span className='text-blue-400'>oh</span> six</>), (<>it's 8:<span className='text-blue-400'>0</span>6</>)]}/>
-	<TitleContainer  title={<>how to speficy further time</>} / >
-<ExplanationContainer  explanation={<>the day takes 24 hours but we divide them in 12 hours and use p.m or a.m to talk about which section of day we're talking about. Just like spanish, from 00:00(military time) to noon(12:00 in military time) we use a.m and for the remaning hours we use the p.m the talk about  time</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
-<div>
-<div>4 p.m</div>
-<div>16:00(military time)</div></div>
-
-<div>
-<div>2 a.m</div>
-<div>2:00(military time)</div></div>
 	</div>)} / >
 
-<div> parts of the day </div>
-<Word word={[(<>morning</>), (<>from 2 a.m or the hour you wake up to noon</>)]}/>
-<Word word={[(<>noon</>), (<>12 p.m</>)]}/>
-<Word word={[(<>midday</>), (<>from 12 p.m 2 p.m</>)]}/>
-<Word word={[(<>afternoon</>), (<>from 12 p.m 6 p.m</>)]}/>
-<Word word={[(<>evening</>), (<>from 6 p.m or 9 p.m or when you go to sleep</>)]}/>
-<Word word={[(<>night</>), (<>where the sun sets to where the sun rises</>)]}/>
-<Word word={[(<>midnight</>), (<>12 a.m to 2 a.m</>)]}/>
+	<ExplanationContainer  explanation={<>
+in comparisons we often use <span className='text-orange-400'>more</span>  or <span className='text-orange-400'>less</span> which are the English equivalent for  <span className='text-orange-400'>más</span> and <span className='text-orange-400'>menos</span>  in spanish
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
 
-<div>You can use parts of the day  like <span className='text-blue-400'>morning</span>, <span className='text-blue-400'>afternoon</span>, <span className='text-blue-400'>evening</span> to talk about time with the hours and minutes</div>
+			<div>
+			<div>my cat is <span className='text-orange-400'>more</span> beautiful than your cat</div>
+			<div>mi gato es <span className='text-orange-400'>más</span> hermoso que tu gato</div>
+			</div>
 
-		<div>
-<Word word={[(<>it's ten in the morning</>), (<>it's 10 a.m</>)]}/>
-<Word word={[(<>it's ten in the evening</>), (<>it's 10 p.m</>)]}/>
+
+			<div>
+			<div>my cat is <span className='text-orange-400'>less</span> beautiful than your cat</div>
+			<div>mi gato es <span className='text-orange-400'>menos</span> hermoso que tu gato</div>
+			</div>
+
+	</div>)} / >
+
+<TitleContainer  title={<>the <span className='text-orange-400'>positive</span> comparison</>} / >
+	<ExplanationContainer  explanation={<>
+usually,  you have to add <span className='text-blue-400'>er</span> at the end of the adjetives if they're short when comparing the adjetive(like the spanish equivalent for <span className='text-blue-400'>más</span>)
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+<div>
+<div>My Minecraft house is <span className='text-blue-400'><span className='text-orange-400'>great</span>er</span> than  your Minecraft house</div>
+<div>Mi casa de Minecraft es <span className='text-blue-400'>más <span className='text-orange-400'>genial</span></span> que tu casa de Minecraft</div>
 </div>
 
-		<div>
-<Word word={[(<>it's three in the morning</>), (<>it's 3 a.m</>)]}/>
-<Word word={[(<>it's three in the evening</>), (<>it's 3 a.m</>)]}/>
-<Word word={[(<>it's three in the afternoon</>), (<>it's 3 p.m</>)]}/>
+<div>
+<div>this table has <span className='text-blue-400'><span className='text-orange-400'>green</span>er</span> color than my mother's table</div>
+<div>esta mesa tiene color <span className='text-blue-400'>más <span className='text-orange-400'>verde</span></span> que la mesa de mi mama</div>
 </div>
 
+
+<div>
+<div>My dog is <span className='text-orange-400'>sad</span><span className='text-blue-400'>der</span> than  your cow</div>
+<div>Mi perra está <span className='text-blue-400'>más <span className='text-orange-400'>triste</span></span> que tu vaca</div>
 </div>
-	</>);
-}
+
+
+<div>
+<div>My house is <span className='text-blue-400'><span className='text-orange-400'>big</span>ger</span> than  Maria's house</div>
+<div>Mi casa es <span className='text-blue-400'>más <span className='text-orange-400'>grande</span></span> que la casa de Maria</div>
+</div>
+
+
+<div>
+<div>my dog is <span className='text-blue-400'><span className='text-orange-400'>happ</span>ier</span> than  Kyle's cat</div>
+<div>Mi perro es <span className='text-blue-400'>más <span className='text-orange-400'>feliz</span></span> que el gato de Kyle</div>
+</div>
+
+
+<div>
+<div>I'm <span className='text-blue-400'><span className='text-orange-400'>angr</span>ier</span> than  you</div>
+<div>estoy <span className='text-blue-400'>más <span className='text-orange-400'>enojado</span></span> que vos</div>
+</div>
+
+	</div>)} / >
+
+<ExplanationContainer  explanation={<>
+but when words are long(it has more than five letter and two syllables) we add the <span className='text-blue-400'>more</span> word instead
+	</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+
+<div>
+<div>My Roblox house is <span className='text-blue-400'>more <span className='text-orange-400'>beautiful</span></span> than  Marco's </div>
+<div>Mi casa de Roblox es <span className='text-blue-400'>más <span className='text-orange-400'>hermosa</span></span> que la de Marco</div>
+</div>
+
+
+<div>
+<div>this city is <span className='text-blue-400'>more <span className='text-orange-400'>wonderful</span></span> than my home city </div>
+<div>esta ciudad es <span className='text-blue-400'>más <span className='text-orange-400'>maravillosa</span></span> que la ciudad de mi hogar</div>
+</div>
+
+
+<div>
+<div>this puzzle is <span className='text-blue-400'>more <span className='text-orange-400'>confusing</span></span> than the previous puzzle </div>
+<div>este puzzle es <span className='text-blue-400'>más <span className='text-orange-400'>confuso</span></span> que el puzzle anterior</div>
+</div>
+
+
+<div>
+<div>this puzzle is <span className='text-blue-400'>more <span className='text-orange-400'>confusing</span></span> than the previous puzzle </div>
+<div>este puzzle es <span className='text-blue-400'>más <span className='text-orange-400'>confuso</span></span> que el puzzle anterior</div>
+</div>
+
+
+<div>
+<div>my aunt has <span className='text-blue-400'>more <span className='text-orange-400'>embarrasing</span></span> face than what you think she has </div>
+<div>mi tia tiene cara <span className='text-blue-400'>más <span className='text-orange-400'>avergozante</span></span> que lo que te imaginas que ella tiene</div>
+</div>
+
+</div>)} / >
+
+<TitleContainer  title={<>the <span className='text-orange-400'>negative</span> comparison</>} / >
+
+<ExplanationContainer  explanation={<>you add <span className='text-orange-400'>less</span> to say that the amount is lower regardless if the word is short or long</>} example={(<div className="gap-2 flex flex-col items-center justify-center text-center">
+<div>
+	<div>you're <span className='text-orange-400'>less</span> green than me</div>
+	<div>eres menos <span className='text-orange-400'>menos</span> verde que mí</div>
+</div>
+<div>
+	<div>she's <span className='text-orange-400'>less</span> big than you</div>
+	<div>ella es <span className='text-orange-400'>menos</span> grande que vos</div>
+</div>
+
+
+<div>
+	<div>we have <span className='text-orange-400'>less</span> pink table than the other company's table</div>
+	<div>tenemos mesa <span className='text-orange-400'>menos</span> rosado que la mesa de la otra compania</div>
+</div>
+
+
+<div>
+	<div>they want to be <span className='text-orange-400'>less</span> wonderful than what they were before</div>
+	<div>ellos quieren ser <span className='text-orange-400'>menos</span> maravilloso que lo que eran antes</div>
+</div>
+
+</div>)} / >
+
+<TitleContainer  title={<>superlative</>} / >
+<Word word={[(<>superlative</>), (<>superior to others</>)]}/>
+
+<div>When the amount in the comparison is higher to every amount being compared, you have to interact with superlative adjetives.</div>
+<ExplanationContainer  explanation={<>
+	When the adjetive is short you have to add <span className='text-orange-400'>est</span> instead of <span className='text-blue-400'>er</span> when using superlative adjetives
+</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+
+<div>
+	<div>I'm the short<span className='text-orange-400'>est</span> boy in this house</div>
+	<div>soy el chico  <span className='text-orange-400'>más</span> enano de esta casa</div>
+	<div>I'm short<span className='text-blue-400'>er</span> than my brother-in-law</div>
+	<div>soy <span className='text-blue-400'>más</span> enano que mi cuñado</div>
+</div>
+
+
+
+<div>
+	<div>that one is the blue<span className='text-orange-400'>st</span> bird in the world</div>
+	<div>ese es el pajaro <span className='text-orange-400'>más</span> azul del mundo</div>
+	<div>that bird is blue<span className='text-blue-400'>r</span> than my bird</div>
+	<div>ese pajaro es <span className='text-blue-400'>más</span> azul que mi pajaro</div>
+</div>
+
+</div>)} / >
+
+	<ExplanationContainer  explanation={<>
+when the adjetives are long, you have to replace <span className='text-blue-400'>more</span> with  <span className='text-orange-400'>most</span> when using superlative adjetives
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+
+<div>
+	<div>you're the <span className='text-orange-400'>most</span> beautiful person in the bedroom</div>
+	<div>eres la <span className='text-orange-400'>más </span> hermosa persona del dormitorio</div>
+	<div>you're <span className='text-blue-400'>more</span> beautiful than me</div>
+	<div>eres <span className='text-blue-400'>más</span> hermosa que yo</div>
+</div>
+
+
+<div>
+	<div>she has the <span className='text-orange-400'>most</span> wonderful monkey in the zoo</div>
+	<div>ella tiene el mono <span className='text-orange-400'>más </span> maravilloso del zológico</div>
+	<div>we have <span className='text-blue-400'>more</span> wonderful monkeys than them</div>
+	<div>tenemos monos <span className='text-blue-400'>más</span> maravilloso que ellos</div>
+</div>
+
+
+
+	</div>)} / >
+
+	// continue here with the cases that you don't use the
+<ExplanationContainer  explanation={<>perhaps you notice that we use the article <span className='text-blue-400'>the</span> a lot of times. That’s because only one thing can be at the top of its category, so we use <span className='text-blue-400'>the</span> to show we’re talking about one specific thing.</>} example={(<div className="flex flex-col items-center justify-center text-center">
+
+<div>
+<div>you're <span className='text-blue-400'>the</span> cutest dog</div>
+<div>eres <span className='text-blue-400'>el</span> perro más tierno</div>
+</div>
+
+</div>)} / >
+
+	</>)}
