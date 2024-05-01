@@ -1,6 +1,8 @@
 import {ListOfWords} from './../../../list'
 import {ExplanationContainer, TitleContainer} from './../../../explanationUtilities'
 import { getNumberText } from './../../../randomizer/randomizer.js'
+import { extraNumber } from './../../../randomizer/number.js'
+
 
 const numbers = [
 	[(<><span className='text-red-300'>one</span></>),false],
@@ -61,7 +63,8 @@ return (<>
 	<article className="flex flex-col items-center justify-center text-center rounded-3xl bg-purple-400 p-2 text-black">
 	    <p>Type your number:</p><input onChange={(e) => {
 			let output = document.querySelector('output');
-			output.innerHTML =  getNumberText(Number(e.target.value), 'english', false, false, true );
+			output.innerHTML =  extraNumber(Number(e.target.value), 'english', false, false, true );
+			console.log(extraNumber(Number(e.target.value), 'spanish', false, false, true ));
 		}} id='number' className='p-2 rounded-3xl border-black border-2' type="number"/>
 		<output className='bg-purple-500 p-2 rounded-xl m-2' />
 	</article>
