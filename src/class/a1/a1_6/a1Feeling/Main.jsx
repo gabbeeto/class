@@ -16,17 +16,17 @@ import {ListOfWords} from './../../../vocabList';
 const feelings = [
 ['Tired', [Tired] ],
 ['Angry', [Angry] ],
-// ['Worried', [Worried] ],
+['Worried', [Worried] ],
 ['Sick', [Sick] ],
 ['Afraid', [Afraid] ],
-// ['Shocked', [Shocked] ],
+['Shocked', [Shocked] ],
 ['Surprised', [Surprised] ],
 ['Bored', [Bored] ],
 ['Sad', [Sad] ],
 ['Happy', [Happy] ],
 ['Confused', [Confused] ],
-// ['Embarrased', [Embarrased] ],
-// ['Dissapointed', [Dissapointed] ],
+['Embarrased', [Embarrased] ],
+['Dissapointed', [Dissapointed] ],
  ];
 
 export function A1Feeling(){
