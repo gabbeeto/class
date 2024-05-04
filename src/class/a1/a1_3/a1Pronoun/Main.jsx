@@ -70,7 +70,7 @@ return (<>
 	['tengo un avion verde', 'I have a green airplane'],
 	['odias los gatos marrones', 'you hate brown cats'],
 	['a mi me gustan los botes negros', 'I like black boats'],
-	['odio las motos purpuras', 'I hate purple motorbikes'],
+	['odio las motos purpuras', 'I hate purple motorcycles'],
 	['tengo 3 peces amarillos', 'I have 3 yellow fish'],
 	['tengo 4 perros verdes', 'I have 4 green dogs'],
 	['I like tea', 'a mí me gusta el te'],

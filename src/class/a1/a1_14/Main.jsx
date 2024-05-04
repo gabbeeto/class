@@ -2,5 +2,5 @@ import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest}
 
 export function A1_14(){
 // work on something someone,somewhere,somebody, this one, I'm the one, that one, anyone,everywhere, nowhere
-return (<> content </>);
+return (<> </>);
 }

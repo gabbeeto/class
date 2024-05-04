@@ -15,28 +15,28 @@ return (<>
 <Word word={[(<>He</>), (<>Él</>)]}/>
 <Word word={[(<>She</>), (<>Ella</>)]}/>
 
-<ExplanationContainer  explanation={<>En español, los pronombres 'él' y 'ella' se usan para remplazar a hombres o mujer cuando hablamos en tercera persona. Especialmente cuando ya sabemos de quien hablamos</>} example={(<>
+<ExplanationContainer  explanation={<>En español, los pronombres <span className='text-orange-400'>él</span>  y <span className='text-orange-400'>ella</span>  se usan para remplazar a <span className='text-blue-400'>hombres</span> o <span className='text-blue-400'>mujer</span>  cuando hablamos en tercera persona. Especialmente cuando ya sabemos de quien hablamos</>} example={(<>
 
-	<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>Maria cocina pollo</span><span>Ella cocina pollo</span></div>
-	<div className='flex flex-col bg-orange-700 rounded-2xl p-2'><span>Luis asesina patos</span><span>Él asesina patos</span></div>
-	<div className='flex flex-col bg-red-700 rounded-2xl p-2'><span>A rosalina le gusta mario bros pero a jorge le gusta el tetris</span><span>a ella le gusta mario bros pero a él le gusta el tetris</span></div>
+	<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span> <span className='text-blue-400'>Maria</span> cocina pollo</span><span> <span className='text-orange-400'>Ella</span>  cocina pollo</span></div>
+	<div className='flex flex-col bg-orange-700 rounded-2xl p-2'><span> <span className='text-blue-400'>Luis</span> asesina patos</span><span> <span className='text-orange-400'>Él</span>  asesina patos</span></div>
+	<div className='flex flex-col bg-red-700 rounded-2xl p-2'><span>A <span className='text-blue-400'>rosalina</span>  le gusta mario bros pero a <span className='text-blue-400'>jorge</span>  le gusta el tetris</span><span>a <span className='text-orange-400'>ella</span>  le gusta mario bros pero a <span className='text-orange-400'>él</span> le gusta el tetris</span></div>
 	</>)} / >
 
-	<ExplanationContainer  explanation={<>En inglés, 'he' y 'she' funcionan igual</>} example={(<>
-<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>Charlie likes chicken</span><span>He likes chicken</span></div>
-<div className='flex flex-col bg-orange-700 rounded-2xl p-2'><span>kate drinks water</span><span>she drinks water</span></div>
-<div className='flex flex-col bg-red-700 rounded-2xl p-2'><span>Gabriel likes Pokemon but Rosalina likes Minecraft</span>He likes Pokemon but She likes Minecraft<span></span></div>
+	<ExplanationContainer  explanation={<>En inglés, <span className='text-orange-400'>he</span> y  <span className='text-orange-400'>she</span> funcionan igual</>} example={(<>
+<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span><span className='text-blue-400'>Charlie</span>  likes chicken</span><span><span className='text-orange-400'>He</span> likes chicken</span></div>
+<div className='flex flex-col bg-orange-700 rounded-2xl p-2'><span> <span className='text-blue-400'>kate</span> drinks water</span><span> <span className='text-orange-400'>she</span>  drinks water</span></div>
+<div className='flex flex-col bg-red-700 rounded-2xl p-2'><span> <span className='text-blue-400'>Gabriel</span>  likes Pokemon but <span className='text-blue-400'>Rosalina</span>  likes Minecraft</span><span> <span className='text-orange-400'>He</span>  likes Pokemon but <span className='text-orange-400'>She </span> likes Minecraft</span></div>
 		</>)} / >
 
-	<ExplanationContainer  explanation={<>nota como cuando hablamos en 3ra persona en inglés le agregamos 's'. Quiero que veas como el 'have' se transforma en 'has' tambien</>} example={(<>
+	<ExplanationContainer  explanation={<>nota como cuando hablamos en 3ra persona en inglés le agregamos <span className='text-sky-400'>s</span> . Quiero que veas como el <span className='text-orange-400'>have</span>  se transforma en <span className='text-orange-400'>has</span> tambien</>} example={(<>
 
-		<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>I drink milk</span><span>she drink<span className='text-emerald-200'>s</span> milk</span></div>
-
-
-		<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>I have a dog</span><span>he has a dog</span></div>
+		<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>I drink milk</span><span>she drink<span className='text-sky-400'>s</span> milk</span></div>
 
 
-		<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>You hate Minecraft</span><span>he hate<span className='text-emerald-200'>s</span> Minecraft</span></div>
+		<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>I <span className='text-orange-400'> have</span> a dog</span><span>he <span className='text-orange-400'>has</span>  a dog</span></div>
+
+
+		<div className='flex flex-col bg-sky-700 rounded-2xl p-2'><span>You hate Minecraft</span><span>he hate<span className='text-sky-400'>s</span> Minecraft</span></div>
 </>)} / >
 
 	<Word word={[(<>The</>), (<>El/La/Los/Las</>)]}/>

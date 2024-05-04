@@ -22,7 +22,7 @@ const numbers = [
 	[(<><span className='text-red-300'>fifteen</span></>),false],
 	[(<>six<span className='text-red-300'>teen</span></>),false],
 	[(<>seven<span className='text-red-300'>teen</span></>),false],
-	[(<>eight<span className='text-red-300'>teen</span></>),false],
+	[(<>eigh<span className='text-red-300'>teen</span></>),false],
 	[(<>nine<span className='text-red-300'>teen</span></>),false],
 	[(<><span className='text-red-300'>twenty</span></>),false],
 	[(<><span className='text-red-300'>twenty</span> two</>), 22],
@@ -32,7 +32,7 @@ const numbers = [
 	[(<><span className='text-red-300'>fifty</span></>), 50],
 	[(<>six<span className='text-red-300'>ty</span></>), 60],
 	[(<>seven<span className='text-red-300'>ty</span></>), 70],
-	[(<>eight<span className='text-red-300'>ty</span></>), 80],
+	[(<>eigh<span className='text-red-300'>ty</span></>), 80],
 	[(<>nine<span className='text-red-300'>ty</span></>), 90],
 	[(<>a <span className='text-red-300'>hundred</span></>), 100],
 	[(<>one <span className='text-red-300'>hundred</span></>), 100],
@@ -59,6 +59,7 @@ console.log(getNumberText(1, 'english', false, false, true ))
 return (<>
 <ListOfWords list={numbers} name={'number'} />
 
+ // TODO : dasdasd  	
 <TitleContainer  title={<>test number</>} / >
 	<article className="flex flex-col items-center justify-center text-center rounded-3xl bg-purple-400 p-2 text-black">
 	    <p>Type your number:</p><input onChange={(e) => {
