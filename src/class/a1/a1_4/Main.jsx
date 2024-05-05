@@ -40,12 +40,31 @@ return (<>
 </>)} / >
 
 	<Word word={[(<>The</>), (<>El/La/Los/Las</>)]}/>
-	<Word word={[(<>The cat</>), (<>El gato</>)]}/>
-	<Word word={[(<>The cow</>), (<>La vaca</>)]}/>
-	<Word word={[(<>The dogs</>), (<>Los perros</>)]}/>
-	<Word word={[(<>The dogs</>), (<>Las perras</>)]}/>
-	<Word word={[(<>The fish</>), (<>Él pez</>)]}/>
-	<Word word={[(<>The fish</>), (<>Los peces</>)]}/>
+	<Word word={[(<><span className='text-orange-400'>The</span>  cat</>), (<><span className='text-orange-400'>El</span> gato</>)]}/>
+	<Word word={[(<><span className='text-orange-400'>The</span> cow</>), (<><span className='text-orange-400'>La</span> vaca</>)]}/>
+	<Word word={[(<><span className='text-orange-400'>The</span> dogs</>), (<><span className='text-orange-400'>Los</span>  perros</>)]}/>
+	<Word word={[(<><span className='text-orange-400'>The</span> dogs</>), (<><span className='text-orange-400'>Las</span> perras</>)]}/>
+	<Word word={[(<><span className='text-orange-400'>The</span> fish</>), (<><span className='text-orange-400'>Él</span> pez</>)]}/>
+	<Word word={[(<><span className='text-orange-400'>The</span> fish</>), (<><span className='text-orange-400'>Los</span> peces</>)]}/>
+
+	<ExplanationContainer  explanation={<>cuando hablamos de algo especifico usamos <span className='text-orange-400'>the</span></>} example={(<div className="flex flex-col items-center justify-center text-center">
+		<div>
+			<span className='text-orange-400'>the</span> cats eat banana(me estoy refiriendo a unos tipos de gatos en especifico, no todos)
+		</div>
+		<div>
+			<span className='text-orange-400'>los</span> gatos comen banana
+		</div>
+	</div>)} / >
+
+
+	<ExplanationContainer  explanation={<>pero ten en cuenta que cuando hablamos en general, nosotros no usamos usamos <span className='text-orange-400'>the</span> como los articulos en español</>} example={(<div className="flex flex-col items-center justify-center text-center">
+		<div>
+			 cats eat fish(hablo en general, los gatos comen pescado)
+		</div>
+		<div>
+			<span className='text-orange-400'>los</span> gatos comen pescado
+		</div>
+	</div>)} / >
 
 	<ListOfTest list={
 		[

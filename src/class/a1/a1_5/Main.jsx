@@ -1,4 +1,6 @@
 import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest} from './../../explanationUtilities'
+import driveAndRideImg from './driveAndRide.png';
+import inAndOnImg from './in and on.png';
 
 export function A1_5(){
 return (<> 
@@ -8,25 +10,40 @@ return (<>
 	<Word word={[(<><span className="textSize-3">To</span> run</>), (<>correr</>)]}/>
 	<Word word={[(<><span className="textSize-3">To</span> drive</>), (<>conducir/manejar/andar(vehiculo con motor)</>)]}/>
 	<Word word={[(<><span className="textSize-3">To</span> ride </>), (<>Montar animal o conducir (moto/vehiculo sin motor)</>)]}/>
+	<div className="flex flex-col items-center justify-center text-center">
+	<img src={driveAndRideImg} alt="drive and ride" className="p-2 rounded-xl" />
+	</div>
 
-	<TitleContainer  title={<>pronoun</>} / >
-	<Word word={[(<>we</>), (<>nosotros</>)]}/>
-
-	<TitleContainer  title={<>adverbs and other words</>} / >
-	<Word word={[(<>and</>), (<>y</>)]}/>
-	<Word word={[(<>on</>), (<>sobre/encima/en</>)]}/>
-
-	<Word word={[(<>in</>), (<>adentro/en</>)]}/>
-	<Word word={[(<>to</>), (<>hacia/a/para</>)]}/>
-
-	<TitleContainer  title={<>examples</>} / >
-	<Word word={[(<>she goes to school</>), (<>ella va a la escuela</>)]}/>
-	<Word word={[(<>the cat and the dog hate cows</>), (<>la perra y el gato odian la vaca</>)]}/>
-	<Word word={[(<>I go to school</>), (<>voy a la escuela</>)]}/>
+	<TitleContainer  title={<>examples for riding and driving</>} / >
 	<Word word={[(<>I ride a bike</>), (<>ando en vicicleta</>)]}/>
 	<Word word={[(<>I ride a motorbike</>), (<>ando en moto</>)]}/>
 	<Word word={[(<>I ride a horse</>), (<>monto un caballo / ando en caballo</>)]}/>
 	<Word word={[(<>I drive a truck</>), (<>manejo un auto</>)]}/>
+
+	<TitleContainer  title={<>new pronoun</>} / >
+	<Word word={[(<>we</>), (<>nosotros</>)]}/>
+
+	<TitleContainer  title={<>adverbs and other words</>} / >
+	<div className="flex flex-col items-center justify-center text-center gap-4">
+	<div>
+	<Word word={[(<>and</>), (<>y</>)]}/>
+	<Word word={[(<>the cat <span className='text-orange-400'>and</span>  the dog hate cows</>), (<>la perra <span className='text-orange-400'>y</span> el gato odian la vaca</>)]}/>
+	</div>
+
+	<div className="flex flex-col items-center justify-center text-center">
+	<Word word={[(<>on</>), (<>sobre/encima/en</>)]}/>
+	<Word word={[(<>in</>), (<>adentro/en</>)]}/>
+	<img src={inAndOnImg} alt="in and on image"/>
+	<Word word={[(<>the cat is <span className='text-orange-400'>on</span> the table</>), (<>el gato está <span className='text-orange-400'>en</span> la mesa</>)]}/>
+	<Word word={[(<>the dog is <span className='text-orange-400'>in</span> the bathroom</>), (<>el perro está <span className='text-orange-400'>en</span> el baño</>)]}/>
+	</div>
+
+	<div>
+	<Word word={[(<>to</>), (<>hacia/a/para</>)]}/>
+	<Word word={[(<>I go <span className='text-orange-400'>to</span> school</>), (<>voy <span className='text-orange-400'>a</span> la escuela</>)]}/>
+	</div>
+	</div>
+
 <TitleContainer  title={<>Exercises</>} / >
 	<ListOfTest list={
 		[
