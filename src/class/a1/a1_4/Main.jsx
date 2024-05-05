@@ -57,7 +57,7 @@ return (<>
 	</div>)} / >
 
 
-	<ExplanationContainer  explanation={<>pero ten en cuenta que cuando hablamos en general, nosotros no usamos usamos <span className='text-orange-400'>the</span> como los articulos en español</>} example={(<div className="flex flex-col items-center justify-center text-center">
+	<ExplanationContainer  explanation={<>pero ten en cuenta que cuando hablamos en general, nosotros no usamos usamos <span className='text-orange-400'>the</span> como los articulos que usamos en español( <span className='text-orange-400'>el</span>,<span className='text-orange-400'>la</span>,<span className='text-orange-400'>los</span>,<span className='text-orange-400'>las</span> )</>} example={(<div className="flex flex-col items-center justify-center text-center">
 		<div>
 			 cats eat fish(hablo en general, los gatos comen pescado)
 		</div>
@@ -76,6 +76,7 @@ return (<>
 		[(<>Como manzana</>), (<>I eat apple</>)],
 		[(<>Él come banana</>), (<>He eats banana</>)],
 		[(<>Comes banana</>), (<>You eat banana</>)],
+		[(<>los monos comen banana</>), (<>monkeys eat banana</>)],
 		[(<>El caballo y Maria comen carne</>), (<>The horse and Maria eat meat</>)],
 		[(<>Los peces toman té</>), (<>The fish drink tea</>)],
 		[(<>Él pez toma té</>), (<>The fish drinks tea</>)],
