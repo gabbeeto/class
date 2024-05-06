@@ -49,7 +49,7 @@ return (<>
 
 	<ExplanationContainer  explanation={<>cuando hablamos de algo especifico usamos <span className='text-orange-400'>the</span></>} example={(<div className="flex flex-col items-center justify-center text-center">
 		<div>
-			<span className='text-orange-400'>the</span> cats eat banana(me estoy refiriendo a unos tipos de gatos en especifico, no todos)
+			<span className='text-orange-400'>the</span> cats eat banana(me estoy refiriendo a unos tipos de gatos en especifico, no en general)
 		</div>
 		<div>
 			<span className='text-orange-400'>los</span> gatos comen banana
@@ -65,6 +65,26 @@ return (<>
 			<span className='text-orange-400'>los</span> gatos comen pescado
 		</div>
 	</div>)} / >
+
+<ExplanationContainer  explanation={<>puedes tambien confundir <span className='text-orange-400'>the</span> con <span className='text-blue-400'>he</span> por la traduccion es <span className='text-orange-400'>él</span> o <span className='text-blue-400'>el</span> para ambas ocaciones. <span className='text-orange-400'>el</span>(<span className='text-orange-400'>the</span>) va siempre acompañado de un <span className='text-purple-400'>sujeto/noun </span>  porque se habla de ese <span className='text-purple-400'>sujeto</span> en especifico mientras que <span className='text-blue-400'>él</span>(<span className='text-blue-400'>he</span>) nunca va acompañado de nada porque es para remplazar un hombre/chico como <span className='text-blue-400'>él</span></>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+	<div>
+	<span className='text-orange-400'>the</span> <span className='text-purple-400'>dog</span> eats apple
+	</div>
+	<div>
+	<span className='text-orange-400'>el</span> <span className='text-purple-400'>perro</span> come manzana
+	</div>
+</div>
+<div>
+	<div>
+	<span className='text-blue-400'>he</span> eats apple
+	</div>
+	<div>
+	<span className='text-blue-400'>él</span> come manzana
+	</div>
+</div>
+
+</div>)} / >
 
 	<ListOfTest list={
 		[
@@ -82,7 +102,7 @@ return (<>
 		[(<>Él pez toma té</>), (<>The fish drinks tea</>)],
 		[(<>Ella tiene cicuenta autos</>), (<>She has fifty cars</>)],
 		[(<>Amo los aviones</>), (<>I love airplanes</>)],
-		[(<>Ella ama las motos</>), (<>She loves motorbikes</>)],
+		[(<>Ella ama las motos</>), (<>She loves motorcycles</>)],
 		[(<>Odias Minecraft</>), (<>I hate Minecraft</>)],
 		[(<>Él odia My Little Pony</>), (<>He hates My Little Pony</>)],
 		[(<>tengo empanadas</>), (<>I have empanadas</>)],

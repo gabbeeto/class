@@ -15,10 +15,10 @@ return (<>
 	</div>
 
 	<TitleContainer  title={<>examples for riding and driving</>} / >
-	<Word word={[(<>I ride a bike</>), (<>ando en vicicleta</>)]}/>
-	<Word word={[(<>I ride a motorbike</>), (<>ando en moto</>)]}/>
-	<Word word={[(<>I ride a horse</>), (<>monto un caballo / ando en caballo</>)]}/>
-	<Word word={[(<>I drive a truck</>), (<>manejo un auto</>)]}/>
+	<Word word={[(<>I ride a bike</>), (<>manejo una vici/ando en vicicleta</>)]}/>
+	<Word word={[(<>I ride a motorbike</>), (<>manejo una moto/ando en moto</>)]}/>
+	<Word word={[(<>I ride a horse</>), (<>monto un caballo/ando en caballo</>)]}/>
+	<Word word={[(<>I drive a truck</>), (<>manejo un camion/ando en camion</>)]}/>
 
 	<TitleContainer  title={<>new pronoun</>} / >
 	<Word word={[(<>we</>), (<>nosotros</>)]}/>
@@ -31,7 +31,7 @@ return (<>
 	</div>
 
 	<div className="flex flex-col items-center justify-center text-center">
-	<Word word={[(<>on</>), (<>sobre/encima/en</>)]}/>
+	<Word word={[(<>on</>), (<>sobre/encima de/en</>)]}/>
 	<Word word={[(<>in</>), (<>adentro/en</>)]}/>
 	<img src={inAndOnImg} alt="in and on image"/>
 	<Word word={[(<>the cat is <span className='text-orange-400'>on</span> the table</>), (<>el gato está <span className='text-orange-400'>en</span> la mesa</>)]}/>
@@ -41,6 +41,7 @@ return (<>
 	<div>
 	<Word word={[(<>to</>), (<>hacia/a/para</>)]}/>
 	<Word word={[(<>I go <span className='text-orange-400'>to</span> school</>), (<>voy <span className='text-orange-400'>a</span> la escuela</>)]}/>
+	<Word word={[(<>from Buenos Aires <span className='text-orange-400'>to</span> Entre rios</>), (<>desde <span className='text-orange-400'>hasta</span> Entre rios</>)]}/>
 	</div>
 	</div>
 
@@ -48,7 +49,7 @@ return (<>
 	<ListOfTest list={
 		[
 		[(<>comemos manzana</>), (<>we eat apple</>)],
-		[(<>caminamos en la vereda</>), (<>we walk on the sideway</>)],
+		[(<>caminamos en la vereda</>), (<>we walk on the sidewalk</>)],
 		[(<>ella camina en el autopista</>), (<>she walks on the highway</>)],
 		[(<>ella camina en la casa</>), (<>she walks in the house</>)],
 		[(<>voy a la playa</>), (<>I go to the beach</>)],

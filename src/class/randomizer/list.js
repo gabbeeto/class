@@ -303,7 +303,7 @@ const a1Spanish_4Foods = [
 'tomate',
 'huevo',
 'manzana',
-'papas',
+'papa',
 ];
 
 
