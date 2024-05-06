@@ -38,7 +38,7 @@ const hashContent = {
 	"#a1_1": ['Nouns and adjetive', <A1_1 />],
 	"#a1vehicle": ['Vehicles', < A1Vehicle />],
 	"#a1pronoun": ['Pronoun and verbs', < A1Pronoun />],
-	'#a1food' : ['Foods', < A1Food / >], 
+	'#a1food' : ['Food', < A1Food / >], 
 	"#a1_4": ['Food and Third Person Singular in present tense', <A1_4 />],
 	"#a1_5": ['The movement class', <A1_5 />],
 	'#a1place' : ['Places', < A1Place / >], 
@@ -81,7 +81,7 @@ return (
 	< ClassPortal hash="#a1vehicle" title='Vehicles'/>
 	< ClassPortal hash="#a1pronoun" title='Pronoun and verbs'/>
 	<div>a1_4</div>
-	< ClassPortal hash='#a1food' title='Foods' />
+	< ClassPortal hash='#a1food' title='Food' />
 	< ClassPortal hash="#a1_4" title='Food and Third Person Singular in present tense'/>
 	<div>a1_5</div>
 	< ClassPortal hash='#a1place' title='Places' />
