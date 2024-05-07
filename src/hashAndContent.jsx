@@ -55,7 +55,7 @@ const hashContent = {
 	"#a1_12": ['family members and the possesive pronoun', <A1_12 />],
 	'#a1insideplace' : ['Inside the Places', < A1InsidePlace / >], 
 	"#a1_13": ['the adverb class(adverb of frequency and the adverb ly)', <A1_13 />],
-	"#a1_14": ['', <A1_14 />],
+	"#a1_14": ['the \'one\' class', <A1_14 />],
 	"#a1_15": ['adjetives and comparison', <A1_15 />],
 	"#a1_16": ['how to talk about time', <A1_16 />],
 	"#a1_17": ['the date class', <A1_17 />],
