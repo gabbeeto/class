@@ -1,4 +1,5 @@
-import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest} from './../../explanationUtilities'
+import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest, TinyExplanationContainer } from './../../explanationUtilities'
+
 import thisBirdImg from './thisBird.png';
 import thisOneImg from './thisOne.png';
 
@@ -206,7 +207,7 @@ there's less specificity when you don't include the <span className='text-blue-4
 	<div className="flex flex-col items-center justify-center text-center p-5 ">
 		<img src={whichFruitImg} className='rounded-full h-96' alt="this one"/>
 	</div>
-	<div>.. or you can ask.. </div>
+	<TinyExplanationContainer  explanation={<>.. or you can ask.. </>} / >
 	<div className="flex flex-col items-center justify-center text-center  p-5">
 		<img src={whichOneImg} className='rounded-full h-96 ' alt="this fruit"/>
 	</div>
@@ -222,7 +223,7 @@ there's less specificity when you don't include the <span className='text-blue-4
 
 	<Word word={[(<>used</>), (<>usado</>)]}/>
 	<ExplanationContainer  explanation={<> <span className='text-blue-400'>one</span> is also used to replace other <span className='text-blue-400'>nouns</span> when you or the other person/people know what you talk about</>} example={(
-		<div className="flex flex-col items-center justify-center text-center">
+		<div className="flex flex-col items-center justify-center text-center gap-4">
 
 		<div>
 			<div>
@@ -231,9 +232,71 @@ there's less specificity when you don't include the <span className='text-blue-4
 			<div>
 				you're the <span className='text-blue-400'>one</span> 
 			</div>
-
 		</div>
 		
+
+		<div>
+			<div>
+				give me the beautiful <span className='text-blue-400'>cat</span> 
+			</div>
+			<div>
+				give me the beautiful <span className='text-blue-400'>one</span> 
+			</div>
+		</div>
+
 	</div>)} / >
+
+
+	<TitleContainer  title={<> <span className='text-amber-400'>every</span> , <span className='text-amber-400'>some</span>, <span className='text-amber-400'>no</span> and <span className='text-amber-400'>any</span></>} / >
+<Word word={[(<>mixed</>), (<>mesclado</>)]}/>
+<Word word={[(<>thing</>), (<>cosa</>)]}/>
+<TinyExplanationContainer  explanation={<>We use <span className='text-blue-400'>some</span> and <span className='text-blue-400'>any</span> for talking about indefinite numbers or amounts of things.</>} / >
+
+<ExplanationContainer  explanation={<> <span className='text-blue-400'>Some</span>  is used for positive sentences</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+	<div>I can give you <span className='text-blue-400'>some</span> potatoes</div>
+	<div>puedo darte <span className='text-blue-400'>algunas</span> papas</div>
+</div>
+
+
+<div>
+	<div>I want <span className='text-blue-400'>some</span> tables!</div>
+	<div>quiero <span className='text-blue-400'>algunas</span> mesas!</div>
+</div>
+
+
+<div>
+	<div>eating <span className='text-blue-400'>some</span> vegetable is not fun!</div>
+	<div>comer <span className='text-blue-400'>algunos</span> vegetales no es divertido!</div>
+</div>
+
+</div>)} / >
+
+
+	<ExplanationContainer  explanation={<><span className='text-blue-400'>Any</span> is used in interrogative sentences or negative sentences </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+<div>
+	<div>Can you get <span className='text-blue-400'>any</span> carrot?</div>
+	<div>¿Podés obtener <span className='text-blue-400'>alguna</span> zanahoria?</div>
+</div>
+
+<div>
+	<div>Do you have any <span className='text-blue-400'>any</span> doors?</div>
+	<div>¿Tenés <span className='text-blue-400'>algunas</span> puerta?</div>
+</div>
+
+
+<div>
+	<div>I don't have <span className='text-blue-400'>any</span> pen</div>
+	<div>No tengo <span className='text-blue-400'>ninguna</span> lapicera</div>
+</div>
+
+
+<div>
+	<div>She doesn't want <span className='text-blue-400'>any</span> animal</div>
+	<div>Ella no quiere <span className='text-blue-400'>ningun</span> animal</div>
+</div>
+	</div>)} / >
+
 	</>);
 }

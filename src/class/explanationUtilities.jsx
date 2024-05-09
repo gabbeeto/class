@@ -34,6 +34,15 @@ outputs[id].innerHTML = inputs[id].value
 	</>);
 }
 
+export function TinyExplanationContainer({explanation ,color = "purple"}){
+let currentColor = allTheColors[color];
+return (
+<section className={`text-center p-1 rounded-xl ${currentColor[0]}`} >
+	{explanation}
+</section>
+)
+}
+
 export function ExplanationContainer({explanation, color = 'green', example = 'example'}){
 
 let currentColor = allTheColors[color]
@@ -64,7 +73,7 @@ return (<section className={`p-1 flex  gap-2 items-center justify-center ${curre
 	</section>)
 }
 
-export function TinyExplanation({title, explanation, example, color = 'green'}){
+export function TinyExplanation({title, explanation, example, color = 'orange'}){
 
 let currentColor = allTheColors[color]
 
