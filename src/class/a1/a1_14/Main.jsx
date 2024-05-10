@@ -250,9 +250,31 @@ there's less specificity when you don't include the <span className='text-blue-4
 	<TitleContainer  title={<> <span className='text-amber-400'>every</span> , <span className='text-amber-400'>some</span>, <span className='text-amber-400'>no</span> and <span className='text-amber-400'>any</span></>} / >
 <Word word={[(<>mixed</>), (<>mesclado</>)]}/>
 <Word word={[(<>thing</>), (<>cosa</>)]}/>
-<TinyExplanationContainer  explanation={<>We use <span className='text-blue-400'>some</span> and <span className='text-blue-400'>any</span> for talking about indefinite numbers or amounts of things.</>} / >
+<Word word={[(<>while</>), (<>mientras</>)]}/>
+<Word word={[(<>also</>), (<>tambien</>)]}/>
+<Word word={[(<>special</>), (<>especial</>)]}/>
+
+<ExplanationContainer  explanation={<>while we use <span className='text-blue-400'>a</span> for singular nouns, for plural or uncountable nouns  We use <span className='text-blue-400'>some</span> and <span className='text-blue-400'>any</span>. Specially for talking about things with indefinite amount </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+<div>
+	<div>I want <span className='text-blue-400'>an</span> apple</div>
+	<div>yo quiero <span className='text-blue-400'>una</span> manzana</div>
+</div>
+
+
+<div>
+	<div>I want <span className='text-blue-400'>three</span> apples </div>
+	<div>yo quiero <span className='text-blue-400'>tres</span> manzanas</div>
+</div>
+
+<div>
+	<div>I want <span className='text-blue-400'>some</span> apples</div>
+	<div>quiero <span className='text-blue-400'>algunas</span> manzanas</div>
+</div>
+	</div>)} / >
 
 <ExplanationContainer  explanation={<> <span className='text-blue-400'>Some</span>  is used for positive sentences</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
 <div>
 	<div>I can give you <span className='text-blue-400'>some</span> potatoes</div>
 	<div>puedo darte <span className='text-blue-400'>algunas</span> papas</div>
@@ -266,23 +288,23 @@ there's less specificity when you don't include the <span className='text-blue-4
 
 
 <div>
-	<div>eating <span className='text-blue-400'>some</span> vegetable is not fun!</div>
+	<div>eating <span className='text-blue-400'>some</span> vegetables is not fun!</div>
 	<div>comer <span className='text-blue-400'>algunos</span> vegetales no es divertido!</div>
 </div>
 
 </div>)} / >
 
 
-	<ExplanationContainer  explanation={<><span className='text-blue-400'>Any</span> is used in interrogative sentences or negative sentences </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+	<ExplanationContainer  explanation={<><span className='text-blue-400'>Any</span> is used in interrogative sentences or negative sentences</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 
 <div>
-	<div>Can you get <span className='text-blue-400'>any</span> carrot?</div>
-	<div>¿Podés obtener <span className='text-blue-400'>alguna</span> zanahoria?</div>
+	<div>does she want <span className='text-blue-400'>any</span> ideas?</div>
+	<div>¿ella quiere <span className='text-blue-400'>algunas</span> ideas?</div>
 </div>
 
 <div>
-	<div>Do you have any <span className='text-blue-400'>any</span> doors?</div>
-	<div>¿Tenés <span className='text-blue-400'>algunas</span> puerta?</div>
+	<div>Do you have any <span className='text-blue-400'>any</span> fruits?</div>
+	<div>¿Tenés <span className='text-blue-400'>algunas</span> fruta?</div>
 </div>
 
 
@@ -296,7 +318,51 @@ there's less specificity when you don't include the <span className='text-blue-4
 	<div>She doesn't want <span className='text-blue-400'>any</span> animal</div>
 	<div>Ella no quiere <span className='text-blue-400'>ningun</span> animal</div>
 </div>
+
 	</div>)} / >
+
+<ExplanationContainer  explanation={<>When we use some in a question, but it's only used when we limit what we offer to the other person. </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+<div>
+	<div>Can I get you <span className='text-blue-400'>some</span>thing to drink? – Coffee, or tea?</div>
+	<div>puedo obtenerte <span className='text-blue-400'>alguna</span> cosa para tomar? - cafe o te?</div>
+</div>
+
+<div>
+	<div>Can I get you <span className='text-blue-400'>any</span>thing to drink? <span className='text-orange-400'>(there are a lot of drinks)</span></div>
+	<div>puedo obtenerte <span className='text-blue-400'>alguna</span> cosa para tomar? <span className='text-orange-400'>(hay un monton de bebidas)</span></div>
+</div>
+
+</div>)} / >
+
+<ExplanationContainer  explanation={<>Notice how <span className='text-blue-400'>any</span> is used for negating when there's a lack of that thing(the english equevalent for the spanish word <span className='text-blue-400'>ningun/ninguno/ninguna</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+	<div>She doesn't have <span className='text-blue-400'>any</span> houses</div>
+	<div>Ella no tiene <span className='text-blue-400'>algunas</span>(literal translation) casas</div>
+	<div>Ella no tiene <span className='text-blue-400'>ninguna</span>(proper translation) casa</div>
+</div>
+<div>
+	<div>You don't have <span className='text-blue-400'>any</span> fire</div>
+	<div>Vos no tenes <span className='text-blue-400'>algun</span>(literal translation) fuego</div>
+	<div>Vos no tenés <span className='text-blue-400'>ningun</span>(proper translation) fuego</div>
+</div>
+</div>)} / >
+
+<ExplanationContainer  explanation={<>we use <span className='text-blue-400'>every</span> when all the amount is present. we use <span className='text-blue-400'>every</span> as if it was a singular noun</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+<div>
+	<div> <span className='text-blue-400'>every</span> cat is great </div>
+	<div> <span className='text-blue-400'>todos</span> los gatos son geniales </div>
+</div>
+
+
+<div>
+	<div> <span className='text-blue-400'>every</span> computer has keyboards </div>
+	<div> <span className='text-blue-400'>todas</span> las computadora tienen teclado </div>
+</div>
+</div>)} / >
+
+
 
 	</>);
 }
