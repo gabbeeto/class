@@ -321,7 +321,7 @@ there's less specificity when you don't include the <span className='text-blue-4
 
 	</div>)} / >
 
-<ExplanationContainer  explanation={<>When we use some in a question, but it's only used when we limit what we offer to the other person. </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<ExplanationContainer  explanation={<>we use <span className='text-blue-400'>some</span> in a question sometimes, but it's only used when we limit what we offer to the other person. </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 
 <div>
 	<div>Can I get you <span className='text-blue-400'>some</span>thing to drink? – Coffee, or tea?</div>
@@ -335,7 +335,7 @@ there's less specificity when you don't include the <span className='text-blue-4
 
 </div>)} / >
 
-<ExplanationContainer  explanation={<>Notice how <span className='text-blue-400'>any</span> is used for negating when there's a lack of that thing(the english equevalent for the spanish word <span className='text-blue-400'>ningun/ninguno/ninguna</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<ExplanationContainer  explanation={<>Notice how <span className='text-blue-400'>any</span> is used when there's a lack of that thing(the english equivalent for the spanish word <span className='text-blue-400'>ningun/ninguno/ninguna</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 <div>
 	<div>She doesn't have <span className='text-blue-400'>any</span> houses</div>
 	<div>Ella no tiene <span className='text-blue-400'>algunas</span>(literal translation) casas</div>
@@ -348,21 +348,68 @@ there's less specificity when you don't include the <span className='text-blue-4
 </div>
 </div>)} / >
 
-<ExplanationContainer  explanation={<>we use <span className='text-blue-400'>every</span> when all the amount is present. we use <span className='text-blue-400'>every</span> as if it was a singular noun</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+	<Word word={[(<><span className="textSize-3">To</span> Matter</>), (<>importar</>)]}/>
+	<Word word={[(<>no matter which</>), (<>sin importar cual</>)]}/>
+<ExplanationContainer  explanation={<>
+if you use <span className='text-blue-400'>any</span> with positive nouns is like saying "not matter which"(it's the spanish equivalent of <span className='text-blue-400'>cualquier</span>, <span className='text-blue-400'>cualquiera</span>)
+</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div className="flex flex-col items-center justify-center text-center gap-2">
+	<div>
+	<div>she can kill <span className='text-blue-400'>any</span> cat</div>
+	<div>ella puede matar <span className='text-blue-400'>cualquier</span> gato</div>
+	</div>
+
+
+	<div>
+	<div>she can kill cats <span className='text-blue-400'>no matter which</span></div>
+	<div>ella puede matar gatos <span className='text-blue-400'>sin importar cual</span> </div>
+	</div>
+</div>
+
+
+<div >
+	<div>I want <span className='text-blue-400'>any</span>thing</div>
+	<div>quiero <span className='text-blue-400'>cualquier</span> cosa</div>
+</div>
+
+
+<div >
+	<div>Amanda likes <span className='text-blue-400'>any</span> dog</div>
+	<div>a amanda le gusta <span className='text-blue-400'>cualquier</span> perro</div>
+</div>
+
+</div>)} / >
+
+<ExplanationContainer  explanation={<>we use <span className='text-blue-400'>every</span> when all the amount is present. we use <span className='text-blue-400'>every</span> in <span className='text-orange-400'>singular</span>(the spanish equivalent <span className='text-blue-400'>todos</span> is used in <span className='text-purple-400'>plural</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 
 <div>
-	<div> <span className='text-blue-400'>every</span> cat is great </div>
-	<div> <span className='text-blue-400'>todos</span> los gatos son geniales </div>
+	<div> <span className='text-blue-400'>every</span><span className='text-orange-400'> cat is</span> great </div>
+	<div> <span className='text-blue-400'>todos</span><span className='text-purple-400'> los gatos</span> <span className='text-purple-400'>son</span>  geniales </div>
 </div>
 
 
 <div>
-	<div> <span className='text-blue-400'>every</span> computer has keyboards </div>
-	<div> <span className='text-blue-400'>todas</span> las computadora tienen teclado </div>
+	<div> <span className='text-blue-400'>every</span> <span className='text-orange-400'>computer has</span> keyboards </div>
+	<div> <span className='text-blue-400'>todas</span> <span className='text-purple-400'>las computadoras tienen</span> teclado </div>
 </div>
 </div>)} / >
 
 
+
+	<ExplanationContainer  explanation={<>we use <span className='text-orange-400'>no</span> to negate that you have something(just like <span className='text-orange-400'>not any</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center">
+<div>
+		<div>I have <span className='text-orange-400'>no</span> cat</div>
+		<div> <span className='text-orange-400'>no</span> tengo <span className='text-orange-400'>ningun</span> gato</div>
+</div>
+	</div>)} / >
+
+	<ExplanationContainer  explanation={<>notice how you have to negate <span className='text-orange-400'>any</span> so you can say the same</>} example={(<div className="flex flex-col items-center justify-center text-center">
+<div>
+	<div>the cat wants <span className='text-orange-400'>no</span> fish</div>
+	<div>the cat does <span className='text-orange-400'>not</span> want <span className='text-orange-400'>any</span> fish</div>
+	<div>el gato <span className='text-orange-400'>no</span> quiere <span className='text-orange-400'>ningun</span> pescado</div>
+</div>
+	</div>)} / >
 
 	</>);
 }
