@@ -12,12 +12,17 @@ export function A1_6(){
 		<Word word={[(<>they</>), (<>ellos/ellas(hablando de otras personas pero más de 1)</>)]}/>
 
 		<TitleContainer  title={<>adjetivos que terminan con -ed y -ing</>} / >
-		<ExplanationContainer  explanation={<>adjetivos que terminan con -ed como:tir<span className='text-orange-500'>ed</span>, bor<span className='text-orange-500'>ed</span>, worr<span className='text-orange-500'>ied</span>, surpris<span className='text-orange-500'>ed</span>, confus<span className='text-orange-500'>ed</span>, etc.. Pueden convertirse en otras palabras terminando con 'ing' para decir que ese sentimiento le causan a otras personas como: bor<span className='text-sky-500'>ing</span>, worry<span className='text-sky-500'>ing</span>, surpris<span className='text-sky-500'>ing</span>, confus<span className='text-sky-500'>ing</span> </>} example={(<><div>bor<span className='text-sky-500'>ing</span>  dog</div>
-			<div>bor<span className='text-orange-500'>ed</span> dog</div></>)} / >
+		<ExplanationContainer  explanation={<>adjetivos que terminan con -ed como:tir<span className='text-orange-500'>ed</span>, bor<span className='text-orange-500'>ed</span>, worr<span className='text-orange-500'>ied</span>, surpris<span className='text-orange-500'>ed</span>, confus<span className='text-orange-500'>ed</span>, etc.. Pueden convertirse en otras palabras terminando con 'ing' para decir que ese sentimiento le causan a otras personas como: bor<span className='text-sky-500'>ing</span>, worry<span className='text-sky-500'>ing</span>, surpris<span className='text-sky-500'>ing</span>, confus<span className='text-sky-500'>ing</span> </>} example={(<>
 
-		<ExplanationContainer  explanation={<>'boring dog'(perro aburrido) es un perro que hace sentir 'bored'(aburrido) a otros perros,mientras que 'bored cat' significa que el gato está aburrido, no que hace sentir a los demas aburrido</>} example={(<>I feel tir<span className='text-orange-500'>ed</span>. The dog is tir<span className='text-sky-500'>ing</span></>)} / >
+			<div>bor<span className='text-sky-500'>ing</span>  dog(es un perro que hace sentir otros perros aburrido)</div>
+			<div>bor<span className='text-orange-500'>ed</span> dog(ese perro se siente aburrido)</div>
 
-		<ExplanationContainer  explanation={<>lo mismo con las otras palabras, 'a worrying fish' significa 'un pez preocupante' porque preocupa a los demas mientras que 'a worried fish' es un pescado que está aburrido, no aburre a los demas.</>} example={(<>
+
+			</>)} / >
+
+		<ExplanationContainer  explanation={<> 'bor<span className='text-sky-400'>ing</span>  dog'(perro aburrido) es un perro que hace sentir 'bor<span className='text-orange-400'>ed</span>'(aburrido) a otros perros,mientras que 'bor<span className='text-orange-400'>ed</span> cat' significa que el gato está aburrido, no que hace sentir a los demas aburrido</>} example={(<>I feel tir<span className='text-orange-500'>ed</span>. The dog is tir<span className='text-sky-500'>ing</span></>)} / >
+
+		<ExplanationContainer  explanation={<>lo mismo con las otras palabras. 'a worry<span className='text-orange-400'>ing</span> fish' significa 'un pez preocupante' porque preocupa a los demas mientras que 'a worri<span className='text-blue-400'>ed</span>  fish' es un pescado que está preocupado, no preocupa a los demas.</>} example={(<>
 			<div>the bor<span className='text-orange-500'>ed</span> cat hates the bor<span className='text-sky-500'>ing</span> dog</div>
 			<div>the surpris<span className='text-sky-500'>ing</span> cat surprises the surpris<span className='text-orange-500'>ed</span> fly</div>
 			</>)} / >
