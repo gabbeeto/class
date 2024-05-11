@@ -11,7 +11,6 @@ import thisOneFruitImg from './thisOneFruit.png';
 import thisFruitImg from './thisFruit.png';
 
 export function A1_14(){
-// work on something someone,somewhere,somebody, this one, I'm the one, that one, anyone,everywhere, nowhere
 return (<> 
 
 <TitleContainer  title={<>'one' replaces noun</>} / >
@@ -350,6 +349,7 @@ there's less specificity when you don't include the <span className='text-blue-4
 
 	<Word word={[(<><span className="textSize-3">To</span> Matter</>), (<>importar</>)]}/>
 	<Word word={[(<>no matter which</>), (<>sin importar cual</>)]}/>
+// give more examples
 <ExplanationContainer  explanation={<>
 if you use <span className='text-blue-400'>any</span> with positive nouns is like saying "not matter which"(it's the spanish equivalent of <span className='text-blue-400'>cualquier</span>, <span className='text-blue-400'>cualquiera</span>)
 </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
@@ -395,6 +395,32 @@ if you use <span className='text-blue-400'>any</span> with positive nouns is lik
 </div>)} / >
 
 
+<ExplanationContainer  explanation={<> <span className='text-blue-400'>each</span> is like <span className='text-blue-400'>every</span>, but we use it to talk about the <span className='text-orange-400'>noun</span> individually</>} example={(<div className="flex flex-col items-center justify-center text-center">
+
+<div>
+<div> <span className='text-blue-400'>each</span>  <span className='text-orange-400'>cat</span>  is different </div>
+<div> <span className='text-blue-400'>cada</span>  <span className='text-orange-400'>gata</span> es diferente </div>
+</div>
+
+
+
+<div>
+	<div>I killed <span className='text-blue-400'>each</span>  <span className='text-orange-400'>women</span>  in the house</div>
+	<div> yo maté a <span className='text-blue-400'>cada</span>  <span className='text-orange-400'>gata</span></div>
+</div>
+
+</div>)} / >
+
+<ExplanationContainer  explanation={<>
+<span className='text-blue-400'>each</span> can also be used as <span className='text-blue-400'>every person/animal/object individually</span>
+	</>} example={(<div className="flex flex-col items-center justify-center text-center">
+<div>
+<div>get one cookie <span className='text-blue-400'>each</span></div>
+<div>obtengan una galletita <span className='text-blue-400'>cada uno</span></div>
+<div> </div>
+		</div>
+
+</div>)} / >
 
 	<ExplanationContainer  explanation={<>we use <span className='text-orange-400'>no</span> to negate that you have something(just like <span className='text-orange-400'>not any</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center">
 <div>
