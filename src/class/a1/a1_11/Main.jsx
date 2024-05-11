@@ -426,6 +426,32 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	<Word word={[(<>where is the pen on?</>), (<>en donde está la lapicera?</>)]}/>
 	<Word word={[(<>where does the train go onto?</>), (<>en donde va el tren?</>)]}/>
 
+		<TitleContainer  title={<>how to give instructions</>} / >
+		<ExplanationContainer  explanation={<>solo teñés que quitar el <span className='text-blue-400'>sustantivo</span> para dar instrucciones a alguien</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+	<div className="flex flex-col items-center justify-center text-center gap-2">
+			<div>
+				<div> <span className='text-blue-400'>you</span> go to my house</div>
+				<div> <span className='text-blue-400'>vos</span> vas a mi casa </div>
+			</div>
+			<div>
+				<div> go to my house</div>
+				<div> ve a mi casa </div>
+			</div>
+	</div>
+
+
+	<div className="flex flex-col items-center justify-center text-center gap-2">
+			<div>
+				<div> <span className='text-blue-400'>he</span> cooks chicken</div>
+				<div> <span className='text-blue-400'>el</span> cocina pollo </div>
+			</div>
+			<div>
+				<div> cook chicken</div>
+				<div> cociná pollo </div>
+			</div>
+	</div>
+
+		</div>)} / >
 	<TitleContainer  title={<>exercise</>} / >
 	
 <div>translate:</div>
@@ -433,10 +459,12 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	[
 	[(<>where is the car?</>), (<>donde está el auto?</>)],
 	[(<>when do you go to your house?</>), (<>cuando vas a tu casa?</>)],
+	[(<>write with the pencil</>), (<>escribe con la lapicera</>)],
 	[(<>who is this for?</>), (<>para quien es esto?</>)],
 	[(<>how many buildings are there?</>), (<>cuantos edificios hay?</>)],
 	[(<>how long does it take to create this Minecraft House?</>), (<>cuanto tiempo toma en crear esta casa de Minecraft</>)],
 	[(<>which city is the square in?</>), (<>en cual ciudad está la plaza?</>)],
+	[(<>walk in the sidewalk!</>), (<>caminá en la vereda!</>)],
 	[(<>how much salt do you want?</>), (<>cuanta sal querés?</>)],
 	[(<>how many hamburguers do you need to cook</>), (<>cuantas hamburguesas necesitas cocinar?</>)],
 	[(<>is eating carrot bad for you</>), (<>es comer zanahoria malo para vos?</>)],
@@ -448,6 +476,7 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	[(<>how happy are they?</>), (<>que tan feliz están ellos?</>)],
 	[(<>whose pencil is this?</>), (<>de quien es este lapiz?</>)],
 	[(<>who do you like to be with</>), (<>porque quiere andar en vici en el autopista?</>)],
+	[(<>read the book</>), (<>lee el libro</>)],
 	[(<>who is the green princess?</>), (<>quien es la princesa verde?</>)],
 	[(<>why does he want to ride a bike on the highway</>), (<>porque quiere andar en vici en el autopista?</>)],
 	[(<>who wants to walk on the road?</>), (<>quien quiere caminar en la carretera?</>)],
@@ -455,10 +484,11 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	[(<>where is the hospital?</>), (<>donde está el hospital?</>)],
 	[(<>are there pinapple on the sidewalk?</>), (<>hay anana en la vereda?</>)],
 	[(<>do you like to eat lettuce and strawberry?</>), (<>te gusta comer lechuga y frutilla?</>)],
+	[(<>use the computer</>), (<>usa la computadora</>)],
 	[(<>Maria doesn't like to eat onion. Why do you?</>), (<>A maria no le gusta comer cebolla. Porque a vos te gusta?</>)],
 	]
 } / >
-	<div>answer(don't expect the answer to be the same)</div>
+	<div>answer(don't expect the answer to have the same answer in these exercises)</div>
 <ListOfTest list={
 	[
 	[(<>do you read books?</>), (<>No, I do not read books</>)],
