@@ -389,13 +389,18 @@ if you use <span className='text-blue-400'>any</span> with positive nouns is lik
 
 
 <div>
+	<div> <span className='text-blue-400'>every</span><span className='text-orange-400'> sibling wants</span> to be a youtuber in this family </div>
+	<div> <span className='text-blue-400'>todos/todas</span> <span className='text-purple-400'>los hermanos/hermanas quieren</span>  ser youtuber en esta family </div>
+</div>
+
+<div>
 	<div> <span className='text-blue-400'>every</span> <span className='text-orange-400'>computer has</span> keyboards </div>
 	<div> <span className='text-blue-400'>todas</span> <span className='text-purple-400'>las computadoras tienen</span> teclado </div>
 </div>
 </div>)} / >
 
 
-<ExplanationContainer  explanation={<> <span className='text-blue-400'>each</span> is like <span className='text-blue-400'>every</span>, but we use it to talk about the <span className='text-orange-400'>noun</span> individually</>} example={(<div className="flex flex-col items-center justify-center text-center">
+<ExplanationContainer  explanation={<> <span className='text-blue-400'>each</span> is like <span className='text-blue-400'>every</span>, but we use it to talk about the <span className='text-orange-400'>noun</span> individually</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
 
 <div>
 <div> <span className='text-blue-400'>each</span>  <span className='text-orange-400'>cat</span>  is different </div>
@@ -409,33 +414,241 @@ if you use <span className='text-blue-400'>any</span> with positive nouns is lik
 	<div> yo maté a <span className='text-blue-400'>cada</span>  <span className='text-orange-400'>gata</span></div>
 </div>
 
+
+<div>
+		<div>I play Minecraft with <span className='text-blue-400'>each</span>  <span className='text-orange-400'>parent</span>  <span className='text-blue-400'>each</span>  <span className='text-orange-400'>night</span>
+		</div>
+	<div>yo juego Minecraft con <span className='text-blue-400'>cada</span>  <span className='text-orange-400'>padre/madre</span>  <span className='text-blue-400'>cada</span>  <span className='text-orange-400'>noche</span>
+		 </div>
+
+</div>
+
 </div>)} / >
 
 <ExplanationContainer  explanation={<>
 <span className='text-blue-400'>each</span> can also be used as <span className='text-blue-400'>every person/animal/object individually</span>
-	</>} example={(<div className="flex flex-col items-center justify-center text-center">
+	</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+
 <div>
-<div>get one cookie <span className='text-blue-400'>each</span></div>
-<div>obtengan una galletita <span className='text-blue-400'>cada uno</span></div>
-<div> </div>
-		</div>
+	<div>get one cookie <span className='text-blue-400'>each</span></div>
+	<div>obtengan una galletita <span className='text-blue-400'>cada uno</span></div>
+</div>
+
+
+<div>
+	<div>it costs 10$ <span className='text-blue-400'>each</span></div>
+	<div>cuestan 10$ <span className='text-blue-400'>cada uno</span></div>
+</div>
 
 </div>)} / >
 
-	<ExplanationContainer  explanation={<>we use <span className='text-orange-400'>no</span> to negate that you have something(just like <span className='text-orange-400'>not any</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center">
+	<ExplanationContainer  explanation={<>we use <span className='text-orange-400'>no</span> to negate that you have something(just like <span className='text-orange-400'>not any</span>)</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
 <div>
 		<div>I have <span className='text-orange-400'>no</span> cat</div>
 		<div> <span className='text-orange-400'>no</span> tengo <span className='text-orange-400'>ningun</span> gato</div>
 </div>
+
+
+<div>
+		<div><span className='text-orange-400'>no</span> monkey eats noodles</div>
+		<div> <span className='text-orange-400'>ningun</span> mono come fideos</div>
+</div>
+
 	</div>)} / >
 
-	<ExplanationContainer  explanation={<>notice how you have to negate <span className='text-orange-400'>any</span> so you can say the same</>} example={(<div className="flex flex-col items-center justify-center text-center">
+	<ExplanationContainer  explanation={<>notice you have to negate <span className='text-orange-400'>any</span> to say the exact same</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
 <div>
 	<div>the cat wants <span className='text-orange-400'>no</span> fish</div>
 	<div>the cat does <span className='text-orange-400'>not</span> want <span className='text-orange-400'>any</span> fish</div>
+
 	<div>el gato <span className='text-orange-400'>no</span> quiere <span className='text-orange-400'>ningun</span> pescado</div>
+		</div>
+
+<div>
+	<div>in this city, <span className='text-orange-400'>no</span> truck is fast.</div>
+	<div>in this city, <span className='text-orange-400'>any</span> truck is <span className='text-orange-400'>not</span> fast.</div>
+	<div>en esta ciudad, <span className='text-orange-400'>ningun</span> camion rapido.</div>
 </div>
+
+
 	</div>)} / >
+
+	<TitleContainer  title={<> <span className='text-blue-400'>every</span> , <span className='text-blue-400'>no</span>, <span className='text-blue-400'>any</span>, <span className='text-blue-400'>some</span> + <span className='text-orange-400'>one</span>/<span className='text-orange-400'>body</span></>} / >
+
+<ExplanationContainer  explanation={<>
+words like <span className='text-blue-400'>every</span>,<span className='text-blue-400'>no</span>,<span className='text-blue-400'>any</span>, and <span className='text-blue-400'>some</span> can be used with <span className='text-orange-400'>body</span> to talk about people
+	</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+		<div> <span className='text-blue-400'>every</span><span className='text-orange-400'>body</span>  can do that </div>
+		<div> <span className='text-blue-400'>todas</span><span className='text-orange-400'> las personas</span>  pueden hacer eso </div>
+		<div> <span className='text-blue-400'>todos</span>  pueden hacer eso </div>
+		<div></div>
+</div>
+
+
+<div>
+		<div> <span className='text-blue-400'>no</span><span className='text-orange-400'>body</span> can do that </div>
+		<div> <span className='text-blue-400'>ninguna</span> <span className='text-orange-400'>persona</span>  puede hacer eso </div>
+		<div> <span className='text-blue-400'>nadie</span> puede hacer eso </div>
+		<div></div>
+</div>
+
+
+<div>
+		<div> does <span className='text-blue-400'>any</span><span className='text-orange-400'>body</span> go to school on saturday? </div>
+		<div> <span className='text-blue-400'>alguna</span> <span className='text-orange-400'>persona</span> va a la escuela los sabados? </div>
+		<div> <span className='text-blue-400'>alguien</span> va a la escuela los sabados? </div>
+		<div></div>
+</div>
+
+
+<div>
+		<div> I don't hate <span className='text-blue-400'>any</span><span className='text-orange-400'>body</span></div>
+		<div> no odio a <span className='text-blue-400'>ninguna</span><span className='text-orange-400'> persona</span></div>
+		<div> no odio a <span className='text-blue-400'>nadie</span></div>
+</div>
+
+
+<div>
+		<div><span className='text-blue-400'>some</span><span className='text-orange-400'>body</span> is an imposter among us</div>
+		<div><span className='text-blue-400'>alguna</span><span className='text-orange-400'> persona</span> es un impostor entre nosotros</div>
+		<div><span className='text-blue-400'>alguien</span> es un impostor entre nosotros</div>
+</div>
+
+
+</div>)} / >
+
+
+
+<ExplanationContainer  explanation={<>
+ when it comes to talking to people, it's the same case with <span className='text-orange-400'>one</span> </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+		<div> <span className='text-blue-400'>every</span><span className='text-orange-400'>one</span>  can do that </div>
+		<div> <span className='text-blue-400'>todas</span><span className='text-orange-400'> las personas</span>  pueden hacer eso </div>
+		<div> <span className='text-blue-400'>todos</span>  pueden hacer eso </div>
+		<div></div>
+</div>
+
+
+<div>
+		<div> <span className='text-blue-400'>no</span><span className='text-orange-400'>one</span> can do that </div>
+		<div> <span className='text-blue-400'>ninguna</span> <span className='text-orange-400'>persona</span>  puede hacer eso </div>
+		<div> <span className='text-blue-400'>nadie</span> puede hacer eso </div>
+		<div></div>
+</div>
+
+
+<div>
+		<div> does <span className='text-blue-400'>any</span><span className='text-orange-400'>one</span> go to school on saturday? </div>
+		<div> <span className='text-blue-400'>alguna</span> <span className='text-orange-400'>persona</span> va a la escuela los sabados? </div>
+		<div> <span className='text-blue-400'>alguien</span> va a la escuela los sabados? </div>
+		<div></div>
+</div>
+
+
+<div>
+		<div> I don't hate <span className='text-blue-400'>any</span><span className='text-orange-400'>one</span></div>
+		<div> no odio a <span className='text-blue-400'>ninguna</span><span className='text-orange-400'> persona</span></div>
+		<div> no odio a <span className='text-blue-400'>nadie</span></div>
+</div>
+
+
+<div>
+		<div><span className='text-blue-400'>some</span><span className='text-orange-400'>one</span> is an imposter among us</div>
+		<div><span className='text-blue-400'>alguna</span><span className='text-orange-400'> persona</span> es un impostor entre nosotros</div>
+		<div><span className='text-blue-400'>alguien</span> es un impostor entre nosotros</div>
+</div>
+
+
+</div>)} / >
+
+
+	<TitleContainer  title={<> <span className='text-blue-400'>every</span> , <span className='text-blue-400'>no</span>, <span className='text-blue-400'>any</span>, <span className='text-blue-400'>some</span> + <span className='text-orange-400'>where</span></>} / >
+
+<ExplanationContainer  explanation={<>
+words like <span className='text-blue-400'>every</span>,<span className='text-blue-400'>no</span>,<span className='text-blue-400'>any</span>, and <span className='text-blue-400'>some</span> can be used with <span className='text-orange-400'>where</span> to talk about places
+	</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+		<div> it's wonderful <span className='text-blue-400'>every</span><span className='text-orange-400'>where</span></div>
+		<div> es maravilloso en <span className='text-blue-400'>todos</span><span className='text-orange-400'> los lugares</span></div>
+		<div> es maravilloso en <span className='text-blue-400'>todos</span><span className='text-orange-400'> lados</span></div>
+</div>
+
+
+<div>
+		<div> <span className='text-blue-400'>no</span><span className='text-orange-400'>where</span> is perfect</div>
+		<div>en <span className='text-blue-400'>ningun</span> <span className='text-orange-400'>lugar</span> es perfecto </div>
+		<div>en <span className='text-blue-400'>ningun</span> <span className='text-orange-400'>lado</span> es perfecto </div>
+</div>
+
+
+<div>
+		<div>Can you find your keys <span className='text-blue-400'>any</span> <span className='text-orange-400'>where</span>?</div>
+		<div>podés encontrar tus llaves en  <span className='text-blue-400'>algun</span> <span className='text-orange-400'>lugar</span>?</div>
+		<div>podés encontrar tus llaves en  <span className='text-blue-400'>algun</span> <span className='text-orange-400'>lado</span>?</div>
+</div>
+
+
+<div>
+		<div> I don't like <span className='text-blue-400'>any</span><span className='text-orange-400'>where</span></div>
+		<div> no me gusta <span className='text-blue-400'>ningun</span> <span className='text-orange-400'>lado</span></div>
+</div>
+
+
+<div>
+		<div>there's dancing cat <span className='text-blue-400'>some</span><span className='text-orange-400'>where</span></div>
+		<div>hay un gato bailarin en <span className='text-blue-400'>algun</span><span className='text-orange-400'> lugar</span></div>
+		<div>hay un gato bailarin en <span className='text-blue-400'>algun</span><span className='text-orange-400'> lado</span></div>
+</div>
+
+
+</div>)} / >
+
+
+	<TitleContainer  title={<> <span className='text-blue-400'>every</span> , <span className='text-blue-400'>no</span>, <span className='text-blue-400'>any</span>, <span className='text-blue-400'>some</span> + <span className='text-orange-400'>thing</span></>} / >
+
+<ExplanationContainer  explanation={<>
+words like <span className='text-blue-400'>every</span>,<span className='text-blue-400'>no</span>,<span className='text-blue-400'>any</span>, and <span className='text-blue-400'>some</span> can be used with <span className='text-orange-400'>things</span> to talk about things(alright, this is funny.. I know..)
+	</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div>
+		<div> <span className='text-blue-400'>every</span><span className='text-orange-400'>thing</span> is corrupted</div>
+		<div> <span className='text-blue-400'>todas</span><span className='text-orange-400'> los cosas</span> están corruptas</div>
+		<div> <span className='text-blue-400'>todo</span> está corrupto</div>
+</div>
+
+
+<div>
+		<div> <span className='text-blue-400'>no</span><span className='text-orange-400'>thing</span> is good in here</div>
+		<div><span className='text-blue-400'>ninguna</span> <span className='text-orange-400'>cosa</span> es bueno acá</div>
+		<div><span className='text-blue-400'>nada</span> es bueno acá</div>
+</div>
+
+
+<div>
+		<div>is  <span className='text-blue-400'>any</span><span className='text-orange-400'>thing</span> good in here?</div>
+		<div>es  <span className='text-blue-400'>alguna</span><span className='text-orange-400'>cosa</span> buena acá?</div>
+		<div>es  <span className='text-blue-400'>algo</span> buena acá?</div>
+</div>
+
+
+<div>
+		<div> I don't want to do <span className='text-blue-400'>any</span><span className='text-orange-400'>thing</span></div>
+		<div> no quiero hacer <span className='text-blue-400'>nada</span></div>
+</div>
+
+
+<div>
+		<div> <span className='text-blue-400'>some</span><span className='text-orange-400'>thing</span> is off</div>
+		<div> <span className='text-blue-400'>alguna</span><span className='text-orange-400'> cosa</span> está mal(alguna cosa no encaja)</div>
+		<div> <span className='text-blue-400'>algo</span> está mal(algo no encaja)</div>
+</div>
+
+
+</div>)} / >
+
+
 
 	</>);
 }
