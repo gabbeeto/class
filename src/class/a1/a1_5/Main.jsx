@@ -16,7 +16,7 @@ return (<>
 
 	<TitleContainer  title={<>examples for riding and driving</>} / >
 	<Word word={[(<>I ride a bike</>), (<>manejo una vici/ando en vicicleta</>)]}/>
-	<Word word={[(<>I ride a motorbike</>), (<>manejo una moto/ando en moto</>)]}/>
+	<Word word={[(<>I ride a motorcycle</>), (<>manejo una moto/ando en moto</>)]}/>
 	<Word word={[(<>I ride a horse</>), (<>monto un caballo/ando en caballo</>)]}/>
 	<Word word={[(<>I drive a truck</>), (<>manejo un camion/ando en camion</>)]}/>
 
