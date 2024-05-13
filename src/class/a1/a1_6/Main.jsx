@@ -16,6 +16,14 @@ export function A1_6(){
 				<Word word={[(<> <span className='text-blue-400'>she worries</span> </>), (<> <span className='text-blue-400'>ella se preocupa</span> </>)]}/>
 			</div>
 
+
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> concern</>), (<>preocuparse(más elegante que to worry)</>)]}/>
+				<Word word={[(<><span className='text-blue-400'>I concern</span> to people </>), (<> <span className='text-blue-400'>yo preocupo</span> a la gente </>)]}/>
+				<Word word={[(<><span className='text-blue-400'>I concern</span> </>), (<> <span className='text-blue-400'>yo me preocupo</span> </>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>she concerns</span> </>), (<> <span className='text-blue-400'>ella se preocupa</span> </>)]}/>
+			</div>
+
 			<div>
 				<Word word={[(<><span className="textSize-3">To</span> surprise</>), (<>sorprender/sorprenderse</>)]}/>
 				<Word word={[(<> <span className='text-blue-400'>you surprise</span> </>), (<> <span className='text-blue-400'>vos te sorprendes</span></>)]}/>
@@ -37,6 +45,14 @@ export function A1_6(){
 				<Word word={[(<> <span className='text-blue-400'>you bore</span> </>), (<> <span className='text-blue-400'> te aburres</span></>)]}/>
 				<Word word={[(<> <span className='text-blue-400'>you bore</span> </>), (<> <span className='text-blue-400'>aburres</span></>)]}/>
 			</div>
+
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> facinate</>), (<>facinar</>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>you facinate</span> </>), (<> <span className='text-blue-400'> tú te facinas</span></>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>you facinate</span> </>), (<> <span className='text-blue-400'>tú facinas</span></>)]}/>
+			</div>
+
+
 		</div>
 		<TitleContainer  title={<>Pronoun</>} / >
 		<Word word={[(<>they</>), (<>ellos/ellas(hablando de otras personas pero más de 1)</>)]}/>
@@ -63,6 +79,7 @@ export function A1_6(){
 		<li><Word word={[(<span className="text-white">concern<span className='text-orange-500'>ed</span></span>), (<span className="text-white">concern<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">surpris<span className='text-orange-500'>ed</span></span>), (<span className="text-white">surpris<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">bor<span className='text-orange-500'>ed</span></span>), (<span className="text-white">bor<span className='text-sky-500'>ing</span></span>)]}/></li>
+		<li><Word word={[(<span className="text-white">facinat<span className='text-orange-500'>ed</span></span>), (<span className="text-white">facinat<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">interest<span className='text-orange-500'>ed</span></span>), (<span className="text-white">interest<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">disappoint<span className='text-orange-500'>ed</span></span>), (<span className="text-white">disappoint<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">shock<span className='text-orange-500'>ed</span></span>), (<span className="text-white">shock<span className='text-sky-500'>ing</span></span>)]}/></li>
@@ -72,6 +89,7 @@ export function A1_6(){
 		<TitleContainer  title={<>exersices</>} / >
 		<ListOfTest list={
 			[
+				[(<>Lautaro feels facinated</>), (<>lautaro se siente facinado</>)],
 				[(<>ellas se sienten cansada</>), (<>they feel tired</>)],
 				[(<>ella se siente cansada</>), (<>she feels tired</>)],
 				[(<>they feel happy</>), (<>ellas se sienten feliz</>)],
@@ -81,9 +99,11 @@ export function A1_6(){
 				[(<>la gallina purpura confunde</>), (<>the purple chicken confuses </>)],
 				[(<> nos sentimos feliz </>), (<>we feel happy</>)],
 				[(<>el shockea </>), (<>he shocks </>)],
+				[(<>ella se siente facinada</>), (<>ella se siente facinada</>)],
 				[(<>ellos schockean </>), (<>they shock </>)],
 				[(<>ella shockea </>), (<>she shocks </>)],
 				[(<>ellas shockean </>), (<>they shock </>)],
+				[(<>the facinaring dog eats rice</>), (<>el perro facinante come arroz</>)],
 				[(<>el caballo decepcionante </>), (<>the disappointing horse </>)],
 				[(<>el vaca decepcionada </>), (<>the disappointed cow</>)],
 				[(<>the embarrasing orange chicken</>), (<>la gallina naranja avergonzante</>)],
