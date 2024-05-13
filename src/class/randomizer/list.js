@@ -95,7 +95,7 @@ const a1_6Feelings = [
 'sad',
 'confused',
 'embarrased',
-'dissapointed',
+'disappointed',
 'worrying',
 'shocking',
 'boring',

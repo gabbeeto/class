@@ -649,6 +649,9 @@ words like <span className='text-blue-400'>every</span>,<span className='text-bl
 </div>)} / >
 
 
-
+<ExplanationContainer  explanation={<>
+hello world
+</>} example={(<div className="flex flex-col items-center justify-center text-center">
+</div>)} / >
 	</>);
 }

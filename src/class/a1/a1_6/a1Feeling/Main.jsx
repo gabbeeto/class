@@ -26,7 +26,7 @@ const feelings = [
 ['Happy', [Happy] ],
 ['Confused', [Confused] ],
 ['Embarrased', [Embarrased] ],
-['Dissapointed', [Dissapointed] ],
+['Disappointed', [Dissapointed] ],
  ];
 
 export function A1Feeling(){

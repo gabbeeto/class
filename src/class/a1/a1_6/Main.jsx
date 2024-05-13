@@ -3,11 +3,41 @@ import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest}
 export function A1_6(){
 	return (<> 
 		<TitleContainer  title={<>Verb</>} / >
-		<Word word={[(<><span className="textSize-3">To</span> feel</>), (<>sentir</>)]}/>
-		<Word word={[(<><span className="textSize-3">To</span> worry</>), (<>preocupar</>)]}/>
-		<Word word={[(<><span className="textSize-3">To</span> surprise</>), (<>sorprender</>)]}/>
-		<Word word={[(<><span className="textSize-3">To</span> confuse</>), (<>confundir</>)]}/>
+		<div className="flex flex-col items-center justify-center text-center gap-4">
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> feel</>), (<>sentir/sentirse</>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>I feel</span>  bored</>), (<> <span className='text-blue-400'>me siento</span>  aburrido</>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>you feel</span>  bored</>), (<> <span className='text-blue-400'>te sientes</span>  aburrido</>)]}/>
+			</div>
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> worry</>), (<>preocuparse</>)]}/>
+				<Word word={[(<><span className='text-blue-400'>I worry</span> to people </>), (<> <span className='text-blue-400'>yo preocupo</span> a la gente </>)]}/>
+				<Word word={[(<><span className='text-blue-400'>I worry</span> </>), (<> <span className='text-blue-400'>yo me preocupo</span> </>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>she worries</span> </>), (<> <span className='text-blue-400'>ella se preocupa</span> </>)]}/>
+			</div>
 
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> surprise</>), (<>sorprender/sorprenderse</>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>you surprise</span> </>), (<> <span className='text-blue-400'>vos te sorprendes</span></>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>you surprise</span> to me </>), (<><span className='text-blue-400'>vos</span> me <span className='text-blue-400'>sorprendes</span> a mí </>)]}/>
+			</div>
+
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> confuse</>), (<>confundirse/confundir</>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>I confuse</span></>), (<> <span className='text-blue-400'>me confundo</span> </>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>I confuse</span> to you</>), (<> <span className='text-blue-400'>yo</span> te <span className='text-blue-400'>confundo</span> a tí </>)]}/>
+			</div>
+
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> disappoint</>), (<>decepcionar</>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>he dissapoints</span> </>), (<> <span className='text-blue-400'>él decepciona</span> </>)]}/>
+			</div>
+			<div>
+				<Word word={[(<><span className="textSize-3">To</span> bore</>), (<>aburrir/aburrirse</>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>you bore</span> </>), (<> <span className='text-blue-400'> te aburres</span></>)]}/>
+				<Word word={[(<> <span className='text-blue-400'>you bore</span> </>), (<> <span className='text-blue-400'>aburres</span></>)]}/>
+			</div>
+		</div>
 		<TitleContainer  title={<>Pronoun</>} / >
 		<Word word={[(<>they</>), (<>ellos/ellas(hablando de otras personas pero más de 1)</>)]}/>
 
@@ -34,7 +64,7 @@ export function A1_6(){
 		<li><Word word={[(<span className="text-white">surpris<span className='text-orange-500'>ed</span></span>), (<span className="text-white">surpris<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">bor<span className='text-orange-500'>ed</span></span>), (<span className="text-white">bor<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">interest<span className='text-orange-500'>ed</span></span>), (<span className="text-white">interest<span className='text-sky-500'>ing</span></span>)]}/></li>
-		<li><Word word={[(<span className="text-white">dissapoint<span className='text-orange-500'>ed</span></span>), (<span className="text-white">dissapoint<span className='text-sky-500'>ing</span></span>)]}/></li>
+		<li><Word word={[(<span className="text-white">disappoint<span className='text-orange-500'>ed</span></span>), (<span className="text-white">disappoint<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">shock<span className='text-orange-500'>ed</span></span>), (<span className="text-white">shock<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">embarras<span className='text-orange-500'>ed</span></span>), (<span className="text-white">embarras<span className='text-sky-500'>ing</span></span>)]}/></li>
 		<li><Word word={[(<span className="text-white">confus<span className='text-orange-500'>ed</span></span>), (<span className="text-white">confus<span className='text-sky-500'>ing</span></span>)]}/></li>
@@ -54,8 +84,8 @@ export function A1_6(){
 				[(<>ellos schockean </>), (<>they shock </>)],
 				[(<>ella shockea </>), (<>she shocks </>)],
 				[(<>ellas shockean </>), (<>they shock </>)],
-				[(<>el caballo decepcionante </>), (<>the dissapointing horse </>)],
-				[(<>el vaca decepcionada </>), (<>the dissapointed cow</>)],
+				[(<>el caballo decepcionante </>), (<>the disappointing horse </>)],
+				[(<>el vaca decepcionada </>), (<>the disappointed cow</>)],
 				[(<>the embarrasing orange chicken</>), (<>la gallina naranja avergonzante</>)],
 				[(<>me siento aburrido en el bosque aburrido </>), (<>I feel bored in the boring forest</>)],
 				[(<>el perro feliz sorprende </>), (<>the happy dog surprises</>)],
