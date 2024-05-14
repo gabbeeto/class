@@ -452,6 +452,29 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	</div>
 
 		</div>)} / >
+<ExplanationContainer  explanation={<>Si querés dar una instruccion negativa tambien le agregas el <span className='text-orange-400'>do not</span> </>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
+
+<div>
+	<div>
+		read a book
+	</div>
+	<div>
+	 <span className='text-orange-400'>do not </span> read a book
+	</div>
+</div>
+
+
+<div>
+	<div>
+		eat vegetables
+	</div>
+	<div>
+	 <span className='text-orange-400'>don't </span> eat vegetables
+	</div>
+</div>
+
+</div>)} / >
+
 	<TitleContainer  title={<>exercise</>} / >
 	
 <div>translate:</div>
@@ -459,11 +482,12 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	[
 	[(<>where is the car?</>), (<>donde está el auto?</>)],
 	[(<>when do you go to your house?</>), (<>cuando vas a tu casa?</>)],
-	[(<>write with the pencil</>), (<>escribe con la lapicera</>)],
+	[(<>write with the pencil</>), (<>escribe con el lapiz</>)],
 	[(<>who is this for?</>), (<>para quien es esto?</>)],
 	[(<>how many buildings are there?</>), (<>cuantos edificios hay?</>)],
 	[(<>how long does it take to create this Minecraft House?</>), (<>cuanto tiempo toma en crear esta casa de Minecraft</>)],
 	[(<>which city is the square in?</>), (<>en cual ciudad está la plaza?</>)],
+	[(<>don't write with the pen</>), (<>no escribas con la lapicera</>)],
 	[(<>walk in the sidewalk!</>), (<>caminá en la vereda!</>)],
 	[(<>how much salt do you want?</>), (<>cuanta sal querés?</>)],
 	[(<>how many hamburguers do you need to cook</>), (<>cuantas hamburguesas necesitas cocinar?</>)],
@@ -472,6 +496,7 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	[(<>how does he write books?</>), (<>como él escribe libros?</>)],
 	[(<>why do we study English?</>), (<>porque aprendemos inglés?</>)],
 	[(<>where is the book on?</>), (<>en donde está el libro?</>)],
+	[(<>DO NOT NOT WALK ON THE HIGHWAY BECAUSE I AM ANGRY!</>), (<>NO CAMINAS EN EL AUTOPISTA PORQUE ESTOY ENOJADA!</>)],
 	[(<>what does your teacher teach about?</>), (<>acerca de que enseña tu profesor?</>)],
 	[(<>how happy are they?</>), (<>que tan feliz están ellos?</>)],
 	[(<>whose pencil is this?</>), (<>de quien es este lapiz?</>)],
@@ -485,6 +510,7 @@ cuando preguntas se agrega se agrega el <span className='text-orange-400'>do</sp
 	[(<>are there pinapple on the sidewalk?</>), (<>hay anana en la vereda?</>)],
 	[(<>do you like to eat lettuce and strawberry?</>), (<>te gusta comer lechuga y frutilla?</>)],
 	[(<>use the computer</>), (<>usa la computadora</>)],
+	[(<>don't read books</>), (<>no leas libros</>)],
 	[(<>Maria doesn't like to eat onion. Why do you?</>), (<>A maria no le gusta comer cebolla. Porque a vos te gusta?</>)],
 	]
 } / >
