@@ -1,5 +1,7 @@
 import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest, TinyExplanationContainer } from './../../explanationUtilities'
 
+import countableAndUncountable from './countableAndUncountable.png';
+
 import thisBirdImg from './thisBird.png';
 import thisOneImg from './thisOne.png';
 
@@ -13,7 +15,7 @@ import thisFruitImg from './thisFruit.png';
 export function A1_14(){
 return (<> 
 
-<TitleContainer  title={<>'one' replaces noun</>} / >
+<TitleContainer  title={<>'one' as a replacement for nouns</>} / >
 	<Word word={[(<>like</>), (<>como</>)]}/>
 	<Word word={[(<>accompanied by</>), (<>acompañado por</>)]}/>
 
@@ -246,7 +248,142 @@ there's less specificity when you don't include the <span className='text-blue-4
 	</div>)} / >
 
 
-	<TitleContainer  title={<> <span className='text-amber-400'>every</span> , <span className='text-amber-400'>some</span>, <span className='text-amber-400'>no</span> and <span className='text-amber-400'>any</span></>} / >
+<TitleContainer  title={<>uncountable nouns</>} / >
+
+<TinyExplanationContainer  explanation={<><span className='text-orange-400'>Uncountable nouns</span> are nouns that can't be counted.</>} / >
+
+<div className="flex flex-col items-center justify-center text-center">
+	<img src={countableAndUncountable} className="p-2 rounded-xl 2xl" alt=""/>
+</div>
+	<ExplanationContainer  explanation={<>
+ they're usually treated as a <span className='text-purple-400'>singular</span> noun
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+<div> <span className='text-orange-400'>rice</span>  <span className='text-purple-400'>is</span> good for you</div>
+<div> the <span className='text-orange-400'>milk</span>  <span className='text-purple-400'>wants</span> to kill you </div>
+<div> the <span className='text-orange-400'>music</span>  <span className='text-purple-400'>does</span> not heal your trauma </div>
+
+	</div>)} / >
+
+	<ExplanationContainer  explanation={<>you can not use <span className='text-purple-400'>numbers</span> with <span className='text-orange-400'>uncountable nouns</span> and we can't use <span className='text-purple-400'>a</span> like the countable nouns  but we can use <span className='text-amber-400'>a "something"(algo) of</span> </>} example={(<div className="flex flex-col items-center justify-center text-center gap-6">
+
+
+<div className="flex items-center flex-col justify-center text-center gap-1">
+	<div>
+			<div>
+				<span className='bg-red-800 text-white'>A WATER</span> Don't say this!!
+			</div>
+			<div>
+				<span className='bg-red-800 text-white'>una agua</span> No digas esto!!
+			</div>
+	</div>
+	<div>
+			<div>
+				<span className='text-amber-400'>a bottle of</span> water 👌
+			</div>
+			<div>
+				<span className='text-amber-400'>una botella de</span> agua 👌
+			</div>
+	</div>
+</div>
+
+<div className="flex flex-col items-center justify-center text-center gap-1">
+	<div>
+		<div>
+			<span className='bg-red-800 text-white'>A SALT</span> Don't say this!!
+		</div>
+
+		<div>
+			<span className='bg-red-800 text-white'>UNA SAL</span> No digas esto!!
+		</div>
+	</div>
+
+	<div>
+		<div>
+			<span className='text-amber-400'>a grain of</span> salt 👌
+		</div>
+
+		<div>
+			<span className='text-amber-400'>un grano de</span> sal 👌
+		</div>
+	</div>
+</div>
+
+<div className="flex flex-col items-center justify-center text-center gap-1">
+	<div>
+		<div>
+			<span className='bg-red-800 text-white'>A BREAD</span> Don't say this!!
+		</div>
+		<div>
+			<span className='bg-green-800 text-white'>Un Pan</span> en español está bien pero en inglés pan es incontable asi que está mal en inglés!!
+		</div>
+	</div>
+	<div>
+		<div>
+			<span className='text-amber-400'>a piece of</span> bread 👌
+		</div>
+		<div>
+			<span className='text-amber-400'>un pedaso de</span> pan 👌
+		</div>
+	</div>
+</div>
+
+<div><span className='bg-red-800 text-white'>THIRTEEN BREADS</span> Don't say this!!</div>
+
+<div className="flex flex-col items-center justify-center text-center gap-1">
+	<div>
+		<span className='text-amber-400'>a lot of</span> salt 👌
+	</div>
+
+	<div>
+		<span className='text-amber-400'>un monton de</span> sal 👌
+	</div>
+</div>
+
+<div className="flex flex-col items-center justify-center text-center gap-1">
+	<div>
+		<span className='text-amber-400'>a little bit of</span> sugar 👌
+	</div>
+
+	<div>
+		<span className='text-amber-400'>un poco de</span> azucar 👌
+	</div>
+</div>
+
+<div>
+	<div>
+		<span className='text-amber-400'>a bit of</span> tea 👌
+	</div>
+
+	<div>
+		<span className='text-amber-400'>un poco de</span> té 👌
+	</div>
+</div>
+	</div>)} / >
+
+	<ExplanationContainer  explanation={<><span className='text-purple-400'>how much</span> is used for <span className='text-orange-400'>uncountable nouns</span>  instead of <span className='text-purple-400'>how many</span></>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+<div>
+	<div>
+		<span className='text-purple-400'>how much</span> <span className='text-orange-400'>water</span>  do you have?
+	</div>
+
+	<div>
+		<span className='text-purple-400'>cuanta</span> <span className='text-orange-400'>agua</span>  tenés?
+	</div>
+</div>
+
+<div>
+	<div>
+		<span className='text-purple-400'>how much</span> <span className='text-orange-400'>music</span>  do you listen?
+	</div>
+	<div>
+		<span className='text-purple-400'>cuanta</span> <span className='text-orange-400'>musica</span>  escuchas?
+	</div>
+</div>
+
+	</div>)} / >
+
+	<TitleContainer  title={<> <span className='text-amber-400'>indifinite pronouns</span> </>} / >
 <Word word={[(<>mixed</>), (<>mesclado</>)]}/>
 <Word word={[(<>thing</>), (<>cosa</>)]}/>
 <Word word={[(<>while</>), (<>mientras</>)]}/>
@@ -269,6 +406,11 @@ there's less specificity when you don't include the <span className='text-blue-4
 <div>
 	<div>I want <span className='text-blue-400'>some</span> apples</div>
 	<div>quiero <span className='text-blue-400'>algunas</span> manzanas</div>
+</div>
+
+<div>
+	<div>I want <span className='text-blue-400'>some</span> wanter</div>
+	<div>quiero <span className='text-blue-400'>algo</span> de agua</div>
 </div>
 	</div>)} / >
 
@@ -349,7 +491,6 @@ there's less specificity when you don't include the <span className='text-blue-4
 
 	<Word word={[(<><span className="textSize-3">To</span> Matter</>), (<>importar</>)]}/>
 	<Word word={[(<>no matter which</>), (<>sin importar cual</>)]}/>
-// give more examples
 <ExplanationContainer  explanation={<>
 if you use <span className='text-blue-400'>any</span> with positive nouns is like saying "not matter which"(it's the spanish equivalent of <span className='text-blue-400'>cualquier</span>, <span className='text-blue-400'>cualquiera</span>)
 </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
@@ -641,17 +782,79 @@ words like <span className='text-blue-400'>every</span>,<span className='text-bl
 
 <div>
 		<div> <span className='text-blue-400'>some</span><span className='text-orange-400'>thing</span> is off</div>
-		<div> <span className='text-blue-400'>alguna</span><span className='text-orange-400'> cosa</span> está mal(alguna cosa no encaja)</div>
-		<div> <span className='text-blue-400'>algo</span> está mal(algo no encaja)</div>
+		<div> <span className='text-blue-400'>alguna</span><span className='text-orange-400'> cosa</span> está/anda mal(alguna cosa no encaja, alguna cosa es inusual)</div>
+		<div> <span className='text-blue-400'>algo</span> está/anda mal(algo no encaja,alguna cosa es inusual)</div>
 </div>
 
 
 </div>)} / >
 
+	
 
-<ExplanationContainer  explanation={<>
-hello world
-</>} example={(<div className="flex flex-col items-center justify-center text-center">
-</div>)} / >
+<TitleContainer  title={<>summary</>} / >	
+<div className="flex flex-col items-center justify-center text-center gap-2">
+	<div>
+		<Word word={[(<><span className='text-orange-400'>every</span>thing</>), (<><span className='text-orange-400'>todas las</span> cosas/todo</>)]}/>
+		<Word word={[(<><span className='text-orange-400'>some</span>thing</>), (<><span className='text-orange-400'>alguna</span> cosa/algo</>)]}/>
+		<Word word={[(<> <span className='text-orange-400'>any</span>thing?</>), (<> ¿<span className='text-orange-400'>alguna</span>  cosa?/¿Algo?</>)]}/>
+		<Word word={[(<> <span className='text-orange-400'>any</span>thing</>), (<> <span className='text-orange-400'>cualquier</span>  cosa</>)]}/>
+		<Word word={[(<><span className='text-orange-400'>not + any</span>thing</>), (<> <span className='text-orange-400'>ninguna</span> cosa/ nada</>)]}/>
+		<Word word={[(<> <span className='text-orange-400'>no</span>thing</>), (<> <span className='text-orange-400'>ninguna</span> cosa/ nada</>)]}/>
+	</div>
+	<Word word={[(<> <span className='text-orange-400'>some</span>where</>), (<> <span className='text-orange-400'>algun</span> lugar / <span className='text-orange-400'>algun</span>  lado</>)]}/>
+	<Word word={[(<> <span className='text-orange-400'>some</span>one</>), (<> <span className='text-orange-400'>alguna</span> persona / <span className='text-orange-400'>alguien</span></>)]}/>
+	<Word word={[(<> <span className='text-orange-400'>some</span>body</>), (<> <span className='text-orange-400'>alguna</span> persona / <span className='text-orange-400'>alguien</span></>)]}/>
+	<Word word={[(<> <span className='text-orange-400'>some</span> pigs</>), (<> <span className='text-orange-400'>algunos</span> chanchos </>)]}/>
+</div>
+
+<TitleContainer  title={<>exersize</>} / >	
+	<Word word={[(<><span className="textSize-3">To</span> know</>), (<>saber/conocer</>)]}/>
+	<Word word={[(<><span className="textSize-3">To</span> live</>), (<>vivir</>)]}/>
+	<Word word={[(<><span className="textSize-3">To</span> heal</>), (<>curar</>)]}/>
+	<Word word={[(<>duro/dificil</>), (<>curar</>)]}/>
+	<Word word={[(<>wound</>), (<>herida</>)]}/>
+	<ListOfTest list={
+		[
+		[(<div>can someone give me some salt</div>), (<div>puede alguien darme algo de sal</div>)],
+		[(<div>there's a lot of milk in this house</div>), (<div>hay un monton leche en esta casa</div>)],
+		[(<div>somebody is better than you in this house but you don't know who</div>), (<div>alguien es mejor que vos en esta casa pero vos no sabes quien</div>)],
+		[(<div>is anybody in here?</div>), (<div>está alguien aquí?</div>)],
+		[(<div>I hate everybody in this square</div>), (<div>odio a todos en esta plaza</div>)],
+		[(<div>you don't want to be anywhere.. You're so irritating</div>), (<div>no querés estar en ningun lugar.. Sos muy irritante</div>)],
+		[(<div>my grandmother doesn't want anyone in her building</div>), (<div>my abuela no quiere a nadie en el edificio de ella</div>)],
+		[(<div>everytime I go to your house, I feel dissapointed</div>), (<div>cada vez que voy a tu casa, me siento decepcionada</div>)],
+		[(<div>you can go to the produce store but there's nowhere I can go because I don't have an airplane and I live in an island</div>), (<div>vos podés ir a la verduleria pero no hay ningun lugar que yo pueda ir porque no tengo un avion y vivo en una isla</div>)],
+		[(<div>everyone can go to the hair salon</div>), (<div>todos pueden ir a la peluqueria</div>)],
+		[(<div>it's disappointing that we have to go to the grocery store</div>), (<div>es decepcionante que tengamos que ir a la tienda de comestibles</div>)],
+		[(<div>the butcher shop is somewhere in the street </div>), (<div>la carniceria está en algun lado en la calle</div>)],
+		[(<div>the highway is not anywhere</div>), (<div>el autopista no está en ningun lado</div>)],
+		[(<div>is there any barber shop in this forest?. I don't think there is one</div>), (<div>hay alguna barberia en este bosque?. no creo que halla uno</div>)],
+		[(<div>I'm not afraid of any cat</div>), (<div>no tengo miedo de ningun gato</div>)],
+		[(<div>her mother's cousin is not happy with any sibling</div>), (<div>la prima de la madre de ella no está feliz con ninguna hermana</div>)],
+		[(<div>his son is nothing for me </div>), (<div>el hijo de él no es nada para mí</div>)],
+		[(<div>our uncle does not like anything </div>), (<div>a nuestro tio no le gusta nada</div>)],
+		[(<div>is there anything their aunt can cook in the cyan sidewalk?. I can't cook anything in the street </div>), (<div>hay algo que la tia de ellas pueda cocinar en la vereda cian?. yo no puedo cocinar nada en la calle</div>)],
+		[(<div>anything can be great if you put a lot of effort </div>), (<div>cualquier cosa puede ser genial si ponés mucho esfuerzo</div>)],
+		[(<div>we can go to the beach or the river or  anywhere you want to</div>), (<div>podemos ir a la playa o al rio o a cualquier lugar que quieras ir</div>)],
+		[(<div>any hospital is good enough to heal your wound</div>), (<div>cualquier hospital es lo suficiente bueno para curar tu herida</div>)],
+		[(<div>anything is possible if you try hard enough</div>), (<div>cualquier cosa es possible si intentas lo suficiente duro</div>)],
+		[(<div>I'm worried about this. is there any monkey in this zoo?. I don't want to this zoo to be disappointing </div>), (<div>estoy preocupada por esto. hay algun mono en este zologico?. no quiero que este zologico sea decepcionante</div>)],
+		[(<div>I hate to be with everyone else</div>), (<div>odio estar con todos los demas</div>)],
+		[(<div>is somebody else right here? </div>), (<div>hay alguien más acá mismo?</div>)],
+		[(<div>something is off </div>), (<div>algo anda mal</div>)],
+		[(<div>I like it here sometimes </div>), (<div>me gusta acá aveces</div>)],
+		[(<div>how many times do you go to the forest? I usually go three times to the forest every year </div>), (<div>cuantas veces vas al bosque?. usualmente voy tres veces al bosque cada año</div>)],
+		[(<div>how many cookies do each of you eat? </div>), (<div>cuantas galletitas comen cada uno de ustedes?</div>)],
+		[(<div>you get one animal each </div>), (<div>ustedes obtienen un animal cada uno</div>)],
+		[(<div>each person is capable of going to the school</div>), (<div>cada persona es capaz de ir a la escuela</div>)],
+		[(<div className="flex flex-col items-center justify-center text-center"><div>-which turtle do you like the most?</div>
+		<div>-I like this one</div>	</div>), (<div className="flex flex-col items-center justify-center text-center"><div>-cual tortuga te gusta más?</div>
+		<div>-me gusta este</div>	</div>)],
+		[(<div className="flex flex-col items-center justify-center text-center"><div>-which one do you prefer?</div>
+		<div>-I prefer this car</div>	</div>), (<div className="flex flex-col items-center justify-center text-center"><div>-cual preferis?</div>
+		<div>-prefiero este auto</div>	</div>)],
+		[(<div>I know you equally like every cat but I like the big one the most.</div>), (<div>sé que te gustan todos los gatos igualmente pero a mí me gusta el grande más</div>)],
+		]
+	} / >
 	</>);
 }
