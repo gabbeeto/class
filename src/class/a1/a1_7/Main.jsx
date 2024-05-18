@@ -128,11 +128,14 @@ export function A1_7() {
 				[(<>ellos son avergozante</>), (<>they are embarrasing</>)],
 				[(<>nosotros somos aburrido</>), (<>we are boring</>)],
 				[(<>nosotros tenemos ocho años</>), (<>we are eight years old</>)],
+				[(<>ella tiene sed</>), (<>she is thirsty</>)],
+				[(<>they are hungry</>), (<>ellas tienen hambre</>)],
 				[(<>nosotros estamos aburrido</>), (<>we are bored</>)],
 				[(<>julia está enferma</>), (<>Julia is sick</>)],
 				[(<>he is angry</>), (<>el está enojado</>)],
 				[(<>Mario tiene cuarenta y tres años</>), (<>Mario is forty and three years old</>)],
 				[(<>esto es genial</>), (<>this is great</>)],
+				[(<>Maria and julia are 20 years old</>), (<>Maria y julia tienen 20 años</>)],
 			]
 		} />
 
@@ -175,7 +178,10 @@ export function A1_7() {
 				[(<>ella tiene quince años </>), (<>she's 15 years old</>)],
 				[(<>ellas están en el baño</>), (<>they're in the bathroom</>)],
 				[(<>those buildings are gray</>), (<>esos edificios son verde</>)],
+				[(<>tengo veinti-seis años</>), (<>I'm twenty-six years old</>)],
+				[(<>tenemos hambre</>), (<>we are hungry</>)],
 				[(<>tu gallina verde está en el atico</>), (<>your green chicken is in the atic</>)],
+				[(<>he's thirsty</>), (<>él tiene sed</>)],
 				[(<>mi pez está en mi piesa</>), (<>my fish is in my bedroom</>)],
 				[(<>esos edificios son amarillo</>), (<>those building are yellow</>)],
 				[(<>estoy en el pasillo </>), (<>I'm in the hallway</>)],
