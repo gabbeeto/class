@@ -65,7 +65,7 @@ export function A1_7() {
 		<Word word={[(<><span className='text-purple-500'>Julia and Martina</span> eat rice</>), (<><span className='text-purple-500'>Julia y Martina</span> comen arroz</>)]} />
 		<Word word={[(<><span className='text-purple-500'>we</span> drink water</>), (<><span className='text-purple-500'>nosotros</span> tomatos agua</>)]} />
 
-	<TinyExplanationContainer  explanation={<>esto es el presente simple pero hay pocos verbos que funcionan diferente como el verbo 'to be', "to can," "to may," " to must," "to shall"</>} / >
+	<TinyExplanationContainer  explanation={<>Esto es el presente simple, pero hay pocos verbos que funcionan diferente.. Como por ejemplo el verbo 'to be', "to can," "to may," " to must," "to shall"</>} / >
 
 		<TitleContainer title={<>verb 'to be' explanation</>} />
 		<Word word={[(<><span className="textSize-3">To</span> be</>), (<>Estar / Ser</>)]} />
@@ -80,7 +80,8 @@ export function A1_7() {
 		<TinyExplanationContainer  explanation={<>en el resto de situaciones se usa 'are'.</>} / >
 		<Word word={[(<>we <span className='bg-red-500'>are</span> happy</>), (<>nosotros somos feliz</>)]} />
 		<Word word={[(<>they <span className='bg-red-500'>are</span> happy</>), (<>ellos son feliz</>)]} />
-		<Word word={[(<>Julia and Marco <span className='bg-red-500'>are</span> happy</>), (<>Julia y Marco son feliz</>)]} />
+		<Word word={[(<>Julia and Marco <span className='bg-red-500'>are</span> happy</>), (<>Julia y Marco son feliz</>)]} /
+	>
 		<Word word={[(<>you <span className='bg-red-500'>are</span> happy</>), (<>ustedes son feliz</>)]} />
 		<Word word={[(<>you <span className='bg-red-500'>are</span> happy</>), (<>ustedes están feliz</>)]} />
 		<Word word={[(<>you <span className='bg-red-500'>are</span> happy</>), (<>tú eres feliz</>)]} />
@@ -91,9 +92,23 @@ export function A1_7() {
 			<div>I am twenty years old</div>
 		</>)} />
 
-		<ExplanationContainer explanation={<>despues de decir tienes la opcion de agregar 'old' que significa 'viejo/antiguo/anciano'</>} example={(<><div>he is twenty eight</div>
-			<div>he is twenty eight old</div>
+		<ExplanationContainer explanation={<>despues de decir tienes la opcion de agregar <span className='text-orange-400'> years old</span> que significa 'años de viejo/años de antiguedad'</>} example={(<><div>he is twenty eight</div>
+			<div>he is twenty eight <span className='text-orange-400'>years old</span> </div>
 		</>)} />
+
+<ExplanationContainer  explanation={<>tambien hay situaciones en donde se usa el verb <span className='text-orange-400'>to be</span> en inglés pero  en español usariamos el verb  <span className='text-blue-400'>to have</span></>} example={(<div className="flex flex-col items-center justify-center text-center gap-3">
+<div>
+	<div> <span className='text-orange-400'>I am</span>  thirsty</div>
+	<div> <span className='text-orange-400'>estoy</span>  sediento</div>
+	<div> <span className='text-blue-400'>tengo</span>  sed</div>
+</div>
+
+<div>
+	<div> <span className='text-orange-400'>you are</span>  hungry</div>
+	<div> <span className='text-orange-400'>estás</span>  ambrienta</div>
+	<div> <span className='text-blue-400'>tenés</span>  hambre</div>
+</div>
+</div>)} / >
 
 		<Word word={[(<><span className="textSize-3">To </span> be eight years old</>), (<>ser ochos años de antiguedad / tener ochos años</>)]} />
 		<Word word={[(<><span className="textSize-3">To </span> be two years old</>), (<>ser dos años de antiguedad / tener dos años</>)]} />

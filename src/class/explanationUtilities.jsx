@@ -37,9 +37,11 @@ outputs[id].innerHTML = inputs[id].value
 export function TinyExplanationContainer({explanation ,color = "purple"}){
 let currentColor = allTheColors[color];
 return (
-<section className={`text-center p-1 rounded-xl ${currentColor[0]}`} >
+	<div className={`flex items-center flex-col justify-center text-center p-2 ${currentColor[0]} `}>
+<section className={`flex flex-col items-center justify-center text-center w-5/6 p-2  rounded-xl ${currentColor[0]}`} >
 	{explanation}
 </section>
+</div>
 )
 }
 
@@ -47,8 +49,8 @@ export function ExplanationContainer({explanation, color = 'green', example = 'e
 
 let currentColor = allTheColors[color]
 
-	return (<section className={`p-1 flex flex-col gap-1 items-center justify-center ${currentColor[0]} p-2 rounded-xl`}>
-	<p className={`textSize-3 ${currentColor[1]} rounded-xl p-2`}>{explanation}</p>
+	return (<section className={` flex flex-col gap-1 items-center justify-center ${currentColor[0]} p-2 rounded-xl`}>
+	<p className={`textSize-3 ${currentColor[1]} rounded-xl p-2 w-5/6`}>{explanation}</p>
 	<p className={`textSize-6 ${currentColor[1]} rounded-xl p-2`}>{example}</p>
 	</ section>
 	)
@@ -68,9 +70,15 @@ export function Word({word, color = 'orange'}){
 
 let currentColor = allTheColors[color]
 
-return (<section className={`p-1 flex  gap-2 items-center justify-center ${currentColor[0]} p-2 rounded-xl textSize-2 m-1`} >
-	<span className="text-cyan-200 ">{word[0]}</span> = <span className="text-purple-200">{word[1]}</span>
-	</section>)
+return (
+
+<div className="flex flex-col items-center justify-center text-center"
+endsnippet>
+	<section className={`p-1 flex  gap-2 items-center justify-center ${currentColor[0]} p-2 w-5/6 rounded-xl textSize-2 m-1`} >
+	<span className="text-cyan-200 ">{word[0]}</span> = <span className="text-purple-200 ">{word[1]}</span>
+	</section> 
+</div>
+)
 }
 
 export function TinyExplanation({title, explanation, example, color = 'orange'}){
