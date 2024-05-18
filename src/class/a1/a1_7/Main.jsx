@@ -114,6 +114,27 @@ export function A1_7() {
 		<Word word={[(<><span className="textSize-3">To </span> be two years old</>), (<>ser dos años de antiguedad / tener dos años</>)]} />
 		<Word word={[(<><span className="textSize-3">To </span> be thirsty</>), (<>Estar sediento / tener sed</>)]} />
 		<Word word={[(<><span className="textSize-3">To </span> be hungry</>), (<>Estar hambriento / tener hambre</>)]} />
+
+	<TitleContainer  title={<>the remaining exceptions</>} / >
+	<ExplanationContainer  explanation={<>la otras excepciones son el verb <span className='text-orange-400'>to can</span> , <span className='text-orange-400'>to must</span> , <span className='text-orange-400'>to may</span>. Esos funcionan de manera diferente en otros aspectos. <span className='text-purple-400'>En tercera persona singular</span> , no se le agrega <span className='text-blue-400'>s</span> como los otros verbos</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+<div>
+		<div><span className='text-purple-400'>she</span> <span className='text-orange-400'>can</span>  eat rice</div>
+		<div> <span className='text-purple-400'>ella</span>  puede comer arroz</div>
+</div>
+
+
+<div>
+		<div><span className='text-purple-400'>Romina</span> <span className='text-orange-400'>must</span>  eat rice</div>
+		<div> <span className='text-purple-400'>Romina</span>  debe comer arroz</div>
+</div>
+
+<div>
+<div> <span className='text-purple-400'>he</span>  eat<span className='text-blue-400'>s</span> a house</div>
+<div><span className='text-purple-400'>él</span> come una casa</div>
+</div>
+		</div>)} / >
+
 		<TitleContainer title={<>exercise</>} />
 		<ListOfTest list={
 			[

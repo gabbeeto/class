@@ -33,11 +33,6 @@ return (<>
 </div>
 		</div>)} / >
 
-	<ExplanationContainer  explanation={<>esto no tiene nada que ver con el verbo infinitivo pero esos mismos verbos('to can', 'to must', 'to may') funcionan de manera diferente en otros aspectos. en tercera persona singular, no se le agrega s como los otros verbos</>} example={(<>
-
-<div>he can eat rice</div>
-<div>he eat<span className='text-red-400'>s</span> a house</div>
-		</>)} / >
 
 	<ExplanationContainer  explanation={<>la segunda excepcion es cuando el verbo está en el principio de la oracion, para usar el infinitivo, tenés que agregar 'ing' al verbo </>} example={(<>
 		<div><span className='text-sky-400'>eating</span> rice is cool</div>
