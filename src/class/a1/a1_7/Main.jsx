@@ -174,8 +174,8 @@ export function A1_7() {
 		<TitleContainer title={<>possesive pronouns</>} />
 		<Word word={[(<>my</>), (<>mi(de mí)</>)]} />
 		<Word word={[(<>your</>), (<>tu(de vos)</>)]} />
-		<Word word={[(<>my cat</>), (<>mi casa(casa de mí)</>)]} />
-		<Word word={[(<>your cat</>), (<>tu casa(casa de vos)</>)]} />
+		<Word word={[(<>my cat</>), (<>mi gato(gato de mí)</>)]} />
+		<Word word={[(<>your hourse</>), (<>tu casa(casa de vos)</>)]} />
 
 		<TitleContainer title={<>exercise with abbreviations</>} />
 		<ListOfTest list={
