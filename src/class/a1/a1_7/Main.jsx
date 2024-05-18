@@ -112,6 +112,8 @@ export function A1_7() {
 
 		<Word word={[(<><span className="textSize-3">To </span> be eight years old</>), (<>ser ochos años de antiguedad / tener ochos años</>)]} />
 		<Word word={[(<><span className="textSize-3">To </span> be two years old</>), (<>ser dos años de antiguedad / tener dos años</>)]} />
+		<Word word={[(<><span className="textSize-3">To </span> be thirsty</>), (<>Estar sediento / tener sed</>)]} />
+		<Word word={[(<><span className="textSize-3">To </span> be hungry</>), (<>Estar hambriento / tener hambre</>)]} />
 		<TitleContainer title={<>exercise</>} />
 		<ListOfTest list={
 			[
