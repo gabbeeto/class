@@ -115,6 +115,22 @@ export function A1_7() {
 		<Word word={[(<><span className="textSize-3">To </span> be thirsty</>), (<>Estar sediento / tener sed</>)]} />
 		<Word word={[(<><span className="textSize-3">To </span> be hungry</>), (<>Estar hambriento / tener hambre</>)]} />
 
+
+	<Word word={[(<>fun fact</>), (<>dato curioso</>)]}/>
+<ExplanationContainer  explanation={<>Fun fact.. Las palabras <span className='text-amber-400'>boring</span> y <span className='text-red-400'>bored</span> se pueden diferenciar más con el verb <span className='text-blue-400'>to be</span>  en español</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+	<div>
+		<div>she <span className='text-blue-400'>is</span> <span className='text-amber-400'>boring</span></div>
+		<div>ella <span className='text-blue-400'>es</span> <span className='text-amber-400'>aburrida</span></div>
+	</div>
+
+
+	<div>
+		<div>she <span className='text-blue-400'>is</span> <span className='text-red-400'>bored</span> </div>
+		<div>ella <span className='text-blue-400'>está</span> <span className='text-red-400'>aburrida</span></div>
+	</div>
+
+</div>)} / >
+
 	<TitleContainer  title={<>the remaining exceptions</>} / >
 	<ExplanationContainer  explanation={<>la otras excepciones son el verb <span className='text-orange-400'>to can</span> , <span className='text-orange-400'>to must</span> , <span className='text-orange-400'>to may</span>. Esos funcionan de manera diferente en otros aspectos. <span className='text-purple-400'>En tercera persona singular</span> , no se le agrega <span className='text-blue-400'>s</span> como los otros verbos</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 
