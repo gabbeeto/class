@@ -811,7 +811,7 @@ words like <span className='text-blue-400'>every</span>,<span className='text-bl
 	<Word word={[(<><span className="textSize-3">To</span> know</>), (<>saber/conocer</>)]}/>
 	<Word word={[(<><span className="textSize-3">To</span> live</>), (<>vivir</>)]}/>
 	<Word word={[(<><span className="textSize-3">To</span> heal</>), (<>curar</>)]}/>
-	<Word word={[(<>duro/dificil</>), (<>curar</>)]}/>
+	<Word word={[(<>hard</>), (<>duro/dificil</>)]}/>
 	<Word word={[(<>wound</>), (<>herida</>)]}/>
 	<ListOfTest list={
 		[
