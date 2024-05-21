@@ -38,7 +38,7 @@ export function TinyExplanationContainer({explanation ,color = "purple"}){
 let currentColor = allTheColors[color];
 return (
 	<div className={`flex items-center flex-col justify-center text-center p-2 ${currentColor[0]} `}>
-<section className={`flex flex-col items-center justify-center text-center w-5/6 p-2  rounded-xl ${currentColor[0]}`} >
+<section className={` items-center justify-center text-center w-5/6 p-2  rounded-xl ${currentColor[0]}`} >
 	{explanation}
 </section>
 </div>

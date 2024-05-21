@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest} from './../../explanationUtilities'
+import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest, TinyExplanationContainer} from './../../explanationUtilities'
 import rating1 from './rating1.png'
 import rating2 from './rating2.png'
 
@@ -291,6 +291,34 @@ export function A1_15() {
 
 		</div>)} />
 
+		<TitleContainer title={<>the <span className='text-orange-400'>negative</span>  superlative</>} />
+			
+		<ExplanationContainer explanation={<>you add <span className='text-orange-400'>least</span> to say that the amount is the lowest regardless if the word is short or long</>} example={(<div className="gap-2 flex flex-col items-center justify-center text-center">
+			<div>
+				<div>you're the <span className='text-orange-400'>least</span> green</div>
+				<div>eres el <span className='text-orange-400'>menos</span> verde</div>
+			</div>
+			<div>
+				<div>she's the <span className='text-orange-400'>least </span> big in the house </div>
+				<div>ella es la <span className='text-orange-400'>menos</span> grande de la casa </div>
+			</div>
+
+
+			<div>
+				<div>we have the <span className='text-orange-400'>least</span> compared to them</div>
+				<div>tenemos lo <span className='text-orange-400'>menos</span> comparado con ellos</div>
+			</div>
+
+
+			<div>
+				<div>I want to be the <span className='text-orange-400'>less</span> unhappy</div>
+				<div>quiero ser la <span className='text-orange-400'>menos</span> infeliz</div>
+			</div>
+
+		</div>)} />
+
+		<TitleContainer title={<>compartives and superlatives and <span className='text-blue-400'>the</span></>} />
+
 		<ExplanationContainer explanation={<>perhaps you notice that we use the article <span className='text-blue-400'>the</span> a lot of times. That’s because only one thing can be at the top of its category, so we use <span className='text-blue-400'>the</span> to show we’re talking about one specific thing.</>} example={(<div className="flex flex-col items-center justify-center text-center">
 
 			<div>
@@ -315,6 +343,106 @@ export function A1_15() {
 			</div>
 
 		</div>)} />
+
+		<TitleContainer title={<>good, bad and far</>} />
+
+		<TinyExplanationContainer explanation={<>when you compare you can not use <span className='text-orange-400'>gooder/goodest</span>, <span className='text-orange-400'>bader/badest</span> or <span className='text-orange-400'>farer/farest</span>. These verbs have irregular comparatives and superlatives </>} />
+
+
+		<ExplanationContainer explanation={<>to compare how good something is, you have to use <span className='text-orange-400'>better</span>, or the superlative <span className='text-orange-400'>best</span> </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+			<div>
+				<div>I'm <span className='text-orange-400'>better</span> ninja than you</div>
+				<div>soy <span className='text-orange-400'>mejor / más buen</span> ninja que vos</div>
+			</div>
+
+			<div>
+				<div>I'm the <span className='text-orange-400'>best</span> ninja</div>
+				<div>soy el <span className='text-orange-400'>mejor / más bueno</span> ninja</div>
+			</div>
+
+		</div>)} />
+
+		<ExplanationContainer explanation={<>to compare how bad something is you can use <span className='text-orange-400'>worse</span> or the superlative <span className='text-orange-400'>worst</span> </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+			<div>
+				<div>my game is <span className='text-orange-400'>worse</span> than that</div>
+				<div>mi juego es  <span className='text-orange-400'>peor/ más malo</span> que eso</div>
+			</div>
+
+
+			<div>
+				<div>he's the <span className='text-orange-400'>worst</span></div>
+				<div>él es el <span className='text-orange-400'>peor / más malo</span></div>
+			</div>
+
+		</div>)} />
+			
+
+		<ExplanationContainer explanation={<>to compare how far(lejos) something is you can use <span className='text-orange-400'>farther/furthe</span> or the superlatives <span className='text-orange-400'>farthest / furthest</span> </>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+			<div>
+				<div>I'm far but you're <span className='text-orange-400'>further</span> </div>
+				<div>estoy lejos pero vos estás <span className='text-orange-400'> más lejos</span> </div>
+			</div>
+
+
+			<div>
+				<div>I'm far but you're <span className='text-orange-400'>farther</span> </div>
+				<div>estoy lejos pero vos estás <span className='text-orange-400'> más lejos</span> </div>
+			</div>
+
+
+			<div>
+				<div> this is the <span className='text-orange-400'>furthest</span> I can reach </div>
+				<div>esto es lo <span className='text-orange-400'> más lejos</span> que puedo alcanzar </div>
+			</div>
+			
+			<div>
+				<div> this is the <span className='text-orange-400'>farthest</span> I can reach </div>
+				<div>esto es lo <span className='text-orange-400'> más lejos</span> que puedo alcanzar </div>
+			</div>
+
+		</div>)} />
+
+		<TitleContainer title={<>exercise</>} />
+
+		<Word word={[(<>fast</>), (<>rapido</>)]}/>
+		<Word word={[(<>slow</>), (<>lento</>)]}/>
+		<Word word={[(<>fat</>), (<>gordo</>)]}/>
+		<Word word={[(<>skinny</>), (<>flaco</>)]}/>
+		<Word word={[(<>easy</>), (<>facil</>)]}/>
+		<Word word={[(<>hard</>), (<>duro/dificil</>)]}/>
+		<Word word={[(<>difficult</>), (<>dificil</>)]}/>
+		<Word word={[(<>dumb</>), (<>tonto</>)]}/>
+		<ListOfTest list={
+			[
+				[(<div>this is my most adaptable animal</div>), (<div>este es mi animal más adaptable</div>)],
+				[(<div>he's more educated than me</div>), (<div>él es más educado que yo</div>)],
+				[(<div>my milkshake is better than your milkshake</div>), (<div>mi milkshake es mejor que tu milkshake</div>)],
+				[(<div>I'm the happiest one from the house</div>), (<div>soy el más feliz de la casa</div>)],
+				[(<div>I'm the fatest human </div>), (<div>soy el humano más gordo</div>)],
+				[(<div>this car is slower than your motorcycle </div>), (<div>este auto es máslento que tu moto</div>)],
+				[(<div>those helicopters from that building are the best!</div>), (<div>esos helipcoptero de esos edificios son lo mejor</div>)],
+				[(<div>this game is easier than almost everything.. You're awful!</div>), (<div>este juego es más facil que casi todo.. vos sos horrible!</div>)],
+				[(<div>the hardest game is not the one you play</div>), (<div>el juego más dificil no es el que vos jugas</div>)],
+				[(<div>I'm the worst youtuber</div>), (<div>soy el peor youtuber</div>)],
+				[(<div>turtles are one of the slowest animal</div>), (<div>las tortugas son uno de los animales más lento</div>)],
+				[(<div>chickens are the most delicious animals</div>), (<div>los pollos son los animales más delicioso</div>)],
+				[(<div>I'm further than what you think</div>), (<div>estoy más lejos de lo que crees</div>)],
+				[(<div>you're skinnier than me</div>), (<div>eres más flaco que yo</div>)],
+				[(<div>my grandfather is amazing</div>), (<div>mi abuelo es genial</div>)],
+				[(<div>the sidewalk is not greener on the other side</div>), (<div>la vereda no está más verde del otro lado</div>)],
+				[(<div>this bread is flawless.. It's the best I eat</div>), (<div>este pan es impecable.. Es lo mejor que como</div>)],
+				[(<div>she's more embarrasing than my friends</div>), (<div>ella es más vergonsoza que mis amigas</div>)],
+				[(<div>this place is more confusing than every square I visit</div>), (<div>este lugar es más confuso que todas las plazas que yo visito</div>)],
+				[(<div>I'm ok with that</div>), (<div>estoy bien con eso</div>)],
+				[(<div>I'm the dumbest human in the world</div>), (<div>soy el humano más tonto del mundo</div>)],
+				[(<div>this is the cutest monkey</div>), (<div>este es el mono más bonito</div>)],
+				[(<div>we're the worst</div>), (<div>somos los peores</div>)],
+				[(<div>can you find the tallest sheep?</div>), (<div>podés encontrar la objea más alta?</div>)],
+				[(<div>I'm short but not as short as you</div>), (<div>soy enano pero no como vos</div>)],
+			]
+		} />
 
 	</>)
 }
