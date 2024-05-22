@@ -1,121 +1,131 @@
-import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest} from './../../explanationUtilities'
+import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest, TinyExplanationContainer} from './../../explanationUtilities'
 
-import timeImage from './timeImage.png'
-import tellingTime from './tellingTime.png'
-
-export function A1_16(){
-return (<> 
-	<TitleContainer  title={<>parts of the day</>} / >
-	<img className='p-2 rounded-xl' src={timeImage} />
-	<TitleContainer  title={<>how to talk about time inside the 12 hour period</>} / >
-	<img className='p-2 rounded-xl' src={tellingTime} />
-	<div className="flex flex-col items-center gap-2 justify-center text-center">
-
-	<div>
-	<div>you can say <span className='text-blue-400'>the time is 5 o'clock</span> or you can just replace <span className='text-orange-400'>the time</span> with <span className='text-orange-400'>it</span> and just say <span className='text-blue-400'> <span className='text-orange-400'>it</span>'s 5 o'clock</span>  </div>
-
-	<Word word={[(<>it's five o'clock</>), (<>it's 3:00</>)]}/>
-	<Word word={[(<>the time is five o'clock</>), (<>it's 3:00</>)]}/>
-	</div>
-
-	<div>
-you can either say <span className='text-blue-400'>on the dot</span> or <span className='text-blue-400'>o'clock</span> if 
-		the minutes are precisely 0.
-
-	<Word word={[(<>it's six <span className='text-blue-400'>o'clock</span></>), (<>it's 6:<span className='text-blue-400'>00</span></>)]}/>
-	<Word word={[(<>it's six <span className='text-blue-400'>on the dot</span></>), (<>it's 6:<span className='text-blue-400'>00</span></>)]}/>
-	</div>
-
-	<div>you don't have to tell the minutes if you don't want to</div>
-		<div>
-	<Word word={[(<>it's five p.m</>), (<>it's from 5:00 p.m to 5:50 p.m</>)]}/>
-	<Word word={[(<>it's five in the afternoon</>), (<>it's from 5:00 p.m 5:50 p.m</>)]}/>
-		</div>
-
-	<div>In english, there are two ways in which you can tell the time when you also mention minutes</div>
-	<div >the analog way:</div>
-	<div>
-	<div> you often mention the <span className='text-orange-400'>minutes</span>  first and then the <span className='text-blue-400'>hour</span> </div>
-	<Word word={[(<>it's <span className='text-orange-400'>five</span> past <span className='text-blue-400'>three</span></>), (<>it's <span className='text-blue-400'>3</span>:<span className='text-orange-400'>05</span></>)]}/>
-	</div>
-	<div>
-if the minutes are less than 30, you can say <span className='text-blue-400'>it's [minute] <span className='text-orange-400'>past</span> [hour]</span> or <span className='text-blue-400'>it's [minute] <span className='text-orange-400'>after</span> [hour]</span>
-		</div>
-		<div>
-<Word word={[(<>it's five <span className='text-orange-400'>after</span> two</>), (<>it's 2:05</>)]}/>
-<Word word={[(<>it's twenty-five <span className='text-orange-400'>after</span> two</>), (<>it's 2:25</>)]}/>
+export function A1_16() {
+	return (<>
+		<TitleContainer title={<> <span className='text-red-400'>present continuous</span>  vs <span className='text-amber-400'>present simple</span>  in spanish</>} />
+		<TinyExplanationContainer explanation={<div className="flex flex-col items-center justify-center text-center gap-4">
 
 
-<Word word={[(<>it's five <span className='text-orange-400'>past</span> two</>), (<>it's 2:05</>)]}/>
-<Word word={[(<>it's twenty-five <span className='text-orange-400'>past</span> two</>), (<>it's 2:25</>)]}/>
-		</div>
-
-		<div>you can also use <span className='text-orange-400'>a quarter</span> to mean <span className='text-orange-400'>fifteen</span></div>
-	<div>
-
-<Word word={[(<>it's <span className='text-orange-400'>a quarter</span> after five</>), (<>5:<span className='text-orange-400'>15</span></>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>fifteen</span> after five</>), (<>5:<span className='text-orange-400'>15</span></>)]}/>
-		</div>	
-<div>when we reach the minute 30, we use <span className='text-orange-400'>half past</span> or <span className='text-orange-400'>thirty past</span> or <span className='text-orange-400'>thirty after</span>(do not say <span className='text-orange-400'>half after</span>) </div>
-	<div>
-<Word word={[(<>it's <span className='text-orange-400'>half</span> past nine</>), (<>it's 9:<span className='text-orange-400'>30</span></>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>thirty</span> past nine</>), (<>it's 9:<span className='text-orange-400'>30</span></>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>thirty after</span> nine</>), (<>it's 9:<span className='text-orange-400'>30</span></>)]}/>
-	</div>
-
-<div>after minute 30 we go backward. we count the minutes need to reach the next hour. you can either use <span className='text-orange-400'>to</span> or <span className='text-orange-400'>'till</span> which is a little bit more casual</div>	
-
-<div>
-	<Word word={[(<>it's five <span className='text-orange-400'>to</span> three</>), (<>it's 2:55</>)]}/>
-	<Word word={[(<>it's five <span className='text-orange-400'>'till</span> three</>), (<>it's 2:55</>)]}/>
-</div>
+			<div className="flex flex-col items-center justify-center text-center">
+				<span className='text-red-400'>estoy matando</span>
+				<span className='text-amber-400'>yo mato</span>
+			</div>
 
 
-<div>you can also use <span className='text-orange-400'>a quarter</span> to mean <span className='text-orange-400'>fifteen</span> right here</div>	
-<div>
-<Word word={[(<>it's <span className='text-orange-400'>a quarter</span> 'till five</>), (<>4:45</>)]}/>
-<Word word={[(<>it's <span className='text-orange-400'>fifteen</span> 'till five</>), (<>4:45</>)]}/>
-</div>
+			<div className="flex flex-col items-center justify-center text-center">
+				<span className='text-red-400'>ella está cocinando?</span>
+				<span className='text-amber-400'>ella cocina?</span>
+			</div>
 
-<div>the digital way:</div>
-<div>in the digital way, we start with the <span className='text-blue-400'>hour</span> and then say the <span className='text-orange-400'>minutes</span></div>
 
-<Word word={[(<>it's <span className='text-blue-400'>five</span> <span className='text-orange-400'>twenty five</span></>), (<>it's <span className='text-blue-400'>5</span>:<span className='text-orange-400'>25</span> </>)]}/>
-		<div>when the minutes are below ten, we use <span className='text-blue-400'>Oh</span> to mean 0</div>
-<Word word={[(<>it's eight <span className='text-blue-400'>oh</span> six</>), (<>it's 8:<span className='text-blue-400'>0</span>6</>)]}/>
-	<TitleContainer  title={<>how to speficy further time</>} / >
-<ExplanationContainer  explanation={<>the day takes 24 hours but we divide them in 12 hours and use p.m or a.m to talk about which section of day we're talking about. Just like spanish, from 00:00(military time) to noon(12:00 in military time) we use a.m and for the remaning hours we use the p.m the talk about  time</>} example={(<div className="flex flex-col items-center justify-center text-center gap-2">
-<div>
-<div>4 p.m</div>
-<div>16:00(military time)</div></div>
+			<div className="flex flex-col items-center justify-center text-center">
+				<span className='text-red-400'>él no está jugando a la pelota</span>
+				<span className='text-amber-400'>él no juega a la pelota</span>
+			</div>
 
-<div>
-<div>2 a.m</div>
-<div>2:00(military time)</div></div>
-	</div>)} / >
+		</div>} />
 
-<div> parts of the day </div>
-<Word word={[(<>morning</>), (<>from 2 a.m or the hour you wake up to noon</>)]}/>
-<Word word={[(<>noon</>), (<>12 p.m</>)]}/>
-<Word word={[(<>midday</>), (<>from 12 p.m 2 p.m</>)]}/>
-<Word word={[(<>afternoon</>), (<>from 12 p.m 6 p.m</>)]}/>
-<Word word={[(<>evening</>), (<>from 6 p.m or 9 p.m or when you go to sleep</>)]}/>
-<Word word={[(<>night</>), (<>where the sun sets to where the sun rises</>)]}/>
-<Word word={[(<>midnight</>), (<>12 a.m to 2 a.m</>)]}/>
+		<ExplanationContainer explanation={<>you only know how present simple works</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 
-<div>You can use parts of the day  like <span className='text-blue-400'>morning</span>, <span className='text-blue-400'>afternoon</span>, <span className='text-blue-400'>evening</span> to talk about time with the hours and minutes</div>
+			<div className="flex flex-col items-center justify-center text-center">
+				<div>yo mato</div>
+				<div>I kill</div>
+			</div>
 
-		<div>
-<Word word={[(<>it's ten in the morning</>), (<>it's 10 a.m</>)]}/>
-<Word word={[(<>it's ten in the evening</>), (<>it's 10 p.m</>)]}/>
-</div>
 
-		<div>
-<Word word={[(<>it's three in the morning</>), (<>it's 3 a.m</>)]}/>
-<Word word={[(<>it's three in the evening</>), (<>it's 3 a.m</>)]}/>
-<Word word={[(<>it's three in the afternoon</>), (<>it's 3 p.m</>)]}/>
-</div>
+			<div className="flex flex-col items-center justify-center text-center">
+				<span >ella cocina?</span>
+				<span >does she cook?</span>
+			</div>
 
-</div>
+
+			<div className="flex flex-col items-center justify-center text-center">
+				<span >él no juega a la pelota</span>
+				<span >he doesn't play football</span>
+			</div>
+
+		</div>)} />
+
+		<TitleContainer title={<>present continuous is easy if you know verb to be</>} />
+		<ExplanationContainer explanation={<>in order for you to use present continuous you have to add <span className='text-purple-400'>the pronoun</span> + <span className='text-sky-400'>the verb to be</span> + <span className='text-red-400'>main verb</span> + <span className='text-amber-400'>ing</span></>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+			<div>
+				<div>
+					<span className='text-purple-400'>she</span><span className='text-sky-400'>'s</span> <span className='text-red-400'>kill</span><span className='text-amber-400'>ing</span> cows
+				</div>
+
+				<div>
+					<span className='text-purple-400'>ella</span><span className='text-sky-400'> está</span> <span className='text-red-400'>mata</span><span className='text-amber-400'>ando</span> las vacas
+				</div>
+			</div>
+
+
+
+			<div>
+				<div>
+					<span className='text-purple-400'>you</span><span className='text-sky-400'> are</span> <span className='text-red-400'>cook</span><span className='text-amber-400'>ing</span> better than me
+				</div>
+				<div>
+					<span className='text-purple-400'>vos</span><span className='text-sky-400'> estás</span> <span className='text-red-400'>cocin</span><span className='text-amber-400'>ando</span> mejor que yo
+				</div>
+			</div>
+
+
+
+			<div>
+				<div>
+					<span className='text-purple-400'>he</span><span className='text-sky-400'> is</span> <span className='text-red-400'>sleep</span><span className='text-amber-400'>ing</span> on the bed
+				</div>
+				<div>
+					<span className='text-purple-400'>él</span><span className='text-sky-400'> está</span> <span className='text-red-400'>durmi</span><span className='text-amber-400'>endo</span> en la cama
+				</div>
+			</div>
+
+		</div>)} />
+
+
+		<ExplanationContainer explanation={<>
+
+			making questions and negating in present continuous is the same as the <span className='text-sky-400'>verb to be</span>
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+			<div>
+				<div> you <span className='text-sky-400'>are not</span> killing enough cows </div>
+				<div> vos <span className='text-sky-400'>no estás</span> matando suficientes vacas </div>
+			</div>
+
+			<div>
+				<div>  <span className='text-sky-400'>are </span> you my student?</div>
+				<div>  <span className='text-sky-400'>erés </span> tú mi estudiante?</div>
+			</div>
+
+
+		</div>)} />
+
+		<TitleContainer title={<>when to use <span className='text-sky-400'>present simple</span> or <span className='text-red-400'>present continuous</span> </>} />
+
+<TinyExplanationContainer  explanation={<div className="flex flex-col items-center justify-center text-center"> <span className='text-sky-400'>we do not eat banana</span> or <span className='text-red-400'>we are not eating banana</span> ??? </div>} / >
+
+		<ExplanationContainer explanation={<>we use <span className='text-sky-400'>present simple</span>  when we talk about Things that are always true</>} example={(<div className="flex flex-col items-center justify-center text-center">
+			<div>Water boils at 100 degrees</div>
+			<div>el agua hierbe a los 100 grados</div>
+		</div>)} />
+
+
+		
+		<ExplanationContainer explanation={<>we use <span className='text-red-400'>present continuous</span> when it's happening at the moment of speaking</>} example={(<div className="flex flex-col items-center justify-center text-center">
+			<div>The water is boiling now. can you turn off the burner?</div>
+			<div>el agua está hirbiendo ahora. podés apagar la hornalla?</div>
+		</div>)} />
+
+
+
+<ExplanationContainer  explanation={<>we use <span className='text-sky-400'>the present simple</span> to talk about daily routines or more perfomanent things that happens almost every day</>} example={(<div className="flex flex-col items-center justify-center text-center">
+
+<div>I wake up at 6 a.m</div>
+<div>me despierto a las 6 a.m</div>
+
+</div>)} / >
+
+
 	</>);
 }

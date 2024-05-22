@@ -57,8 +57,8 @@ const hashContent = {
 	"#a1_13": ['the adverb class(adverb of frequency and the adverb ly)', <A1_13 />],
 	"#a1_14": ['the \'one\' class', <A1_14 />],
 	"#a1_15": ['adjetives and comparison', <A1_15 />],
-	"#a1_16": ['how to talk about time', <A1_16 />],
-	"#a1_17": ['the date class', <A1_17 />],
+	"#a1_16": ['present continuous', <A1_16 />],
+	"#a1_17": ['How to talk about time', <A1_17 />],
 }
 
 function ClassPortal({hash,title}){
@@ -112,9 +112,9 @@ return (
 	<div>a1_15</div>
 	< ClassPortal hash="#a1_15" title="comparison(working on this class)" />  
 	<div>a1_16</div>
-	< ClassPortal hash="#a1_16" title="How to talk about time(working on this class)" />  
+	< ClassPortal hash="#a1_16" title="present continuous" />  
 	<div>a1_17</div>
-	< ClassPortal hash="#a1_17" title="the date class(working on this class)" />  
+	< ClassPortal hash="#a1_17" title="How to talk about time(working on this class)" />  
 	</>
 )
 
