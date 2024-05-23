@@ -103,7 +103,7 @@ export function A1_16() {
 
 		<TitleContainer title={<>when to use <span className='text-sky-400'>present simple</span> or <span className='text-red-400'>present continuous</span> </>} />
 
-<TinyExplanationContainer  explanation={<div className="flex flex-col items-center justify-center text-center"> <span className='text-sky-400'>we do not eat banana</span> or <span className='text-red-400'>we are not eating banana</span> ??? </div>} / >
+		<TinyExplanationContainer explanation={<div className="flex flex-col items-center justify-center text-center"> <span className='text-sky-400'>we do not eat banana</span> or <span className='text-red-400'>we are not eating banana</span> ??? </div>} />
 
 		<ExplanationContainer explanation={<>we use <span className='text-sky-400'>present simple</span>  when we talk about Things that are always true</>} example={(<div className="flex flex-col items-center justify-center text-center">
 			<div>Water boils at 100 degrees</div>
@@ -111,21 +111,24 @@ export function A1_16() {
 		</div>)} />
 
 
-		
+		<Word word={[(<><span className="textSize-3">To</span> happen</>), (<>suceder/pasar</>)]} />
+
 		<ExplanationContainer explanation={<>we use <span className='text-red-400'>present continuous</span> when it's happening at the moment of speaking</>} example={(<div className="flex flex-col items-center justify-center text-center">
 			<div>The water is boiling now. can you turn off the burner?</div>
 			<div>el agua está hirbiendo ahora. podés apagar la hornalla?</div>
 		</div>)} />
 
+		<Word word={[(<>daily routine</>), (<>rutina cotidiana</>)]} />
+
+		<ExplanationContainer explanation={<>we use <span className='text-sky-400'>the present simple</span> to talk about daily routine or more perfomanent things that happens almost every day</>} example={(<div className="flex flex-col items-center justify-center text-center">
+			<div>I wake up at 6 a.m and then I go to school..</div>
+			<div>me despierto a las 6 a.m y despues voy a la escuela..</div>
+		</div>)} />
 
 
-<ExplanationContainer  explanation={<>we use <span className='text-sky-400'>the present simple</span> to talk about daily routines or more perfomanent things that happens almost every day</>} example={(<div className="flex flex-col items-center justify-center text-center">
-
-<div>I wake up at 6 a.m</div>
-<div>me despierto a las 6 a.m</div>
-
-</div>)} / >
-
+		<TitleContainer title={<>fifty shades of <span className='text-orange-400'>so</span></>} />
+		<Word word={[(<>meaning</>), (<>significado</>)]}/>
+		<TinyExplanationContainer explanation={<> <span className='text-orange-400'>so</span> has multiple meanings </>} />
 
 	</>);
 }
