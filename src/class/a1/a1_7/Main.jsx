@@ -1,7 +1,7 @@
 import houseImg from './background.png'
 import pronounsimg from './thisThatTheseThose.png'
 import pronounsWithoutLetter from './thisThatTheseThoseWithoutLetter.png'
-import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest, TinyExplanationContainer } from './../../explanationUtilities'
+import {Word, TinyExplanation, ExplanationContainer, TitleContainer, ListOfTest, TinyExplanationContainer} from './../../explanationUtilities'
 
 export function A1_7() {
 	return (<>
@@ -49,6 +49,10 @@ export function A1_7() {
 		<div className="flex flex-col items-center justify-center text-center">
 			<div className="flex flex-col items-center justify-center text-center shrink-1 w-5/6 h5/6">
 				<img src={pronounsimg} className="rounded-xl" />
+				<Word word={[(<>this car</>), (<>este auto</>)]} />
+				<Word word={[(<>that car</>), (<>ese auto</>)]} />
+				<Word word={[(<>these cars</>), (<>estos autos</>)]} />
+				<Word word={[(<>those cars</>), (<>esos autos</>)]} />
 				<img src={houseImg} />
 				<img src={pronounsWithoutLetter} alt="" />
 			</div>
@@ -65,7 +69,7 @@ export function A1_7() {
 		<Word word={[(<><span className='text-purple-500'>Julia and Martina</span> eat rice</>), (<><span className='text-purple-500'>Julia y Martina</span> comen arroz</>)]} />
 		<Word word={[(<><span className='text-purple-500'>we</span> drink water</>), (<><span className='text-purple-500'>nosotros</span> tomatos agua</>)]} />
 
-	<TinyExplanationContainer  explanation={<>Esto es el presente simple, pero hay pocos verbos que funcionan diferente.. Como por ejemplo el verbo 'to be', "to can," "to may," " to must," "to shall"</>} / >
+		<TinyExplanationContainer explanation={<>Esto es el presente simple, pero hay pocos verbos que funcionan diferente.. Como por ejemplo el verbo 'to be', "to can," "to may," " to must," "to shall"</>} />
 
 		<TitleContainer title={<>verb 'to be' explanation</>} />
 		<Word word={[(<><span className="textSize-3">To</span> be</>), (<>Estar / Ser</>)]} />
@@ -73,15 +77,15 @@ export function A1_7() {
 		<div>con 'I'(yo en inglés) se usa 'am'</div>
 		<Word word={[(<>I <span className='bg-red-500'>am</span> Gabriel</>), (<>Soy Gabriel</>)]} />
 
-		<TinyExplanationContainer  explanation={<>en tercera persona singular(cuando hablás de alguien más pero solo una persona) se usa 'is' en inglés</>} / >
+		<TinyExplanationContainer explanation={<>en tercera persona singular(cuando hablás de alguien más pero solo una persona) se usa 'is' en inglés</>} />
 		<Word word={[(<>he <span className='bg-red-500'>is</span> happy</>), (<>él es feliz</>)]} />
 		<Word word={[(<>she <span className='bg-red-500'>is</span> happy</>), (<>ella está feliz</>)]} />
 		<Word word={[(<>Julia <span className='bg-red-500'>is</span> happy</>), (<>Julia está feliz</>)]} />
-		<TinyExplanationContainer  explanation={<>en el resto de situaciones se usa 'are'.</>} / >
+		<TinyExplanationContainer explanation={<>en el resto de situaciones se usa 'are'.</>} />
 		<Word word={[(<>we <span className='bg-red-500'>are</span> happy</>), (<>nosotros somos feliz</>)]} />
 		<Word word={[(<>they <span className='bg-red-500'>are</span> happy</>), (<>ellos son feliz</>)]} />
 		<Word word={[(<>Julia and Marco <span className='bg-red-500'>are</span> happy</>), (<>Julia y Marco son feliz</>)]} /
-	>
+		>
 		<Word word={[(<>you <span className='bg-red-500'>are</span> happy</>), (<>ustedes son feliz</>)]} />
 		<Word word={[(<>you <span className='bg-red-500'>are</span> happy</>), (<>ustedes están feliz</>)]} />
 		<Word word={[(<>you <span className='bg-red-500'>are</span> happy</>), (<>tú eres feliz</>)]} />
@@ -96,19 +100,19 @@ export function A1_7() {
 			<div>he is twenty eight <span className='text-orange-400'>years old</span> </div>
 		</>)} />
 
-<ExplanationContainer  explanation={<>tambien hay situaciones en donde se usa el verb <span className='text-orange-400'>to be</span> en inglés pero  en español usariamos el verb  <span className='text-blue-400'>to have</span></>} example={(<div className="flex flex-col items-center justify-center text-center gap-3">
-<div>
-	<div> <span className='text-orange-400'>I am</span>  thirsty</div>
-	<div> <span className='text-orange-400'>estoy</span>  sediento</div>
-	<div> <span className='text-blue-400'>tengo</span>  sed</div>
-</div>
+		<ExplanationContainer explanation={<>tambien hay situaciones en donde se usa el verb <span className='text-orange-400'>to be</span> en inglés pero  en español usariamos el verb  <span className='text-blue-400'>to have</span></>} example={(<div className="flex flex-col items-center justify-center text-center gap-3">
+			<div>
+				<div> <span className='text-orange-400'>I am</span>  thirsty</div>
+				<div> <span className='text-orange-400'>estoy</span>  sediento</div>
+				<div> <span className='text-blue-400'>tengo</span>  sed</div>
+			</div>
 
-<div>
-	<div> <span className='text-orange-400'>you are</span>  hungry</div>
-	<div> <span className='text-orange-400'>estás</span>  ambrienta</div>
-	<div> <span className='text-blue-400'>tenés</span>  hambre</div>
-</div>
-</div>)} / >
+			<div>
+				<div> <span className='text-orange-400'>you are</span>  hungry</div>
+				<div> <span className='text-orange-400'>estás</span>  ambrienta</div>
+				<div> <span className='text-blue-400'>tenés</span>  hambre</div>
+			</div>
+		</div>)} />
 
 		<Word word={[(<><span className="textSize-3">To </span> be eight years old</>), (<>ser ochos años de antiguedad / tener ochos años</>)]} />
 		<Word word={[(<><span className="textSize-3">To </span> be two years old</>), (<>ser dos años de antiguedad / tener dos años</>)]} />
@@ -116,48 +120,49 @@ export function A1_7() {
 		<Word word={[(<><span className="textSize-3">To </span> be hungry</>), (<>Estar hambriento / tener hambre</>)]} />
 
 
-	<Word word={[(<>fun fact</>), (<>dato curioso</>)]}/>
-<ExplanationContainer  explanation={<>Fun fact.. Las palabras <span className='text-amber-400'>boring</span> y <span className='text-red-400'>bored</span> se pueden diferenciar más con el verb <span className='text-blue-400'>to be</span>  en español</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
-	<div>
-		<div>she <span className='text-blue-400'>is</span> <span className='text-amber-400'>boring</span></div>
-		<div>ella <span className='text-blue-400'>es</span> <span className='text-amber-400'>aburrida</span></div>
-	</div>
+		<Word word={[(<>fun fact</>), (<>dato curioso</>)]} />
+		<ExplanationContainer explanation={<>Fun fact.. Las palabras <span className='text-amber-400'>boring</span> y <span className='text-red-400'>bored</span> se pueden diferenciar más con el verb <span className='text-blue-400'>to be</span>  en español</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+			<div>
+				<div>she <span className='text-blue-400'>is</span> <span className='text-amber-400'>boring</span></div>
+				<div>ella <span className='text-blue-400'>es</span> <span className='text-amber-400'>aburrida</span></div>
+			</div>
 
 
-	<div>
-		<div>she <span className='text-blue-400'>is</span> <span className='text-red-400'>bored</span> </div>
-		<div>ella <span className='text-blue-400'>está</span> <span className='text-red-400'>aburrida</span></div>
-	</div>
+			<div>
+				<div>she <span className='text-blue-400'>is</span> <span className='text-red-400'>bored</span> </div>
+				<div>ella <span className='text-blue-400'>está</span> <span className='text-red-400'>aburrida</span></div>
+			</div>
 
-</div>)} / >
+		</div>)} />
 
-	<TitleContainer  title={<>the remaining exceptions</>} / >
-	<ExplanationContainer  explanation={<>la otras excepciones son el verb <span className='text-orange-400'>to can</span> , <span className='text-orange-400'>to must</span> , <span className='text-orange-400'>to may</span>. Esos funcionan de manera diferente en otros aspectos. <span className='text-purple-400'>En tercera persona singular</span> , no se le agrega <span className='text-blue-400'>s</span> como los otros verbos</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+		<TitleContainer title={<>the remaining exceptions</>} />
+		<ExplanationContainer explanation={<>la otras excepciones son el verb <span className='text-orange-400'>to can</span> , <span className='text-orange-400'>to must</span> , <span className='text-orange-400'>to may</span>. Esos funcionan de manera diferente en otros aspectos. <span className='text-purple-400'>En tercera persona singular</span> , no se le agrega <span className='text-blue-400'>s</span> como los otros verbos</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
 
-<div>
-		<div><span className='text-purple-400'>she</span> <span className='text-orange-400'>can</span>  eat rice</div>
-		<div> <span className='text-purple-400'>ella</span>  puede comer arroz</div>
-</div>
+			<div>
+				<div><span className='text-purple-400'>she</span> <span className='text-orange-400'>can</span>  eat rice</div>
+				<div> <span className='text-purple-400'>ella</span>  puede comer arroz</div>
+			</div>
 
 
-<div>
-		<div><span className='text-purple-400'>Romina</span> <span className='text-orange-400'>must</span>  eat rice</div>
-		<div> <span className='text-purple-400'>Romina</span>  debe comer arroz</div>
-</div>
+			<div>
+				<div><span className='text-purple-400'>Romina</span> <span className='text-orange-400'>must</span>  eat rice</div>
+				<div> <span className='text-purple-400'>Romina</span>  debe comer arroz</div>
+			</div>
 
-<div>
-<div> <span className='text-purple-400'>he</span>  eat<span className='text-blue-400'>s</span> a house</div>
-<div><span className='text-purple-400'>él</span> come una casa</div>
-</div>
-		</div>)} / >
+			<div>
+				<div> <span className='text-purple-400'>he</span>  eat<span className='text-blue-400'>s</span> a house</div>
+				<div><span className='text-purple-400'>él</span> come una casa</div>
+			</div>
+		</div>)} />
 
 		<TitleContainer title={<>exercise</>} />
+		<Word word={[(<>Great</>), (<>genial</>)]} />
 		<ListOfTest list={
 			[
 				[(<>este perro es un perro feliz</>), (<>this dog is a happy dog</>)],
 				[(<>estoy en el pasillo</>), (<>I am in the hallway</>)],
 				[(<>esta casa es verde</>), (<>this house is green</>)],
-				[(<>I'm in the yellow kitchen</>), (<>estoy en la cocina amarilla</>)],
+				[(<>I am in the yellow kitchen</>), (<>estoy en la cocina amarilla</>)],
 				[(<>esta casa tiene nueve años</>), (<>this house is nine years old</>)],
 				[(<>la cocina está amarilla</>), (<>the kitchen is yellow</>)],
 				[(<>this cat is a angry cat</>), (<>este gato es un gato enojado</>)],
@@ -173,6 +178,7 @@ export function A1_7() {
 				[(<>julia está enferma</>), (<>Julia is sick</>)],
 				[(<>he is angry</>), (<>el está enojado</>)],
 				[(<>Mario tiene cuarenta y tres años</>), (<>Mario is forty and three years old</>)],
+				[(<>this is great</>), (<>esto es genial</>)],
 				[(<>esto es genial</>), (<>this is great</>)],
 				[(<>Maria and julia are 20 years old</>), (<>Maria y julia tienen 20 años</>)],
 			]
@@ -216,7 +222,7 @@ export function A1_7() {
 				[(<>estamos en el living</>), (<>we're in the living room</>)],
 				[(<>ella tiene quince años </>), (<>she's 15 years old</>)],
 				[(<>ellas están en el baño</>), (<>they're in the bathroom</>)],
-				[(<>those buildings are gray</>), (<>esos edificios son verde</>)],
+				[(<>those buildings are gray</>), (<>esos edificios son grises</>)],
 				[(<>tengo veinti-seis años</>), (<>I'm twenty-six years old</>)],
 				[(<>tenemos hambre</>), (<>we are hungry</>)],
 				[(<>tu gallina verde está en el atico</>), (<>your green chicken is in the atic</>)],
