@@ -221,13 +221,13 @@ export function A1_16() {
 				<div>I <span className='text-amber-400'>like</span> it</div>
 				<div>me <span className='text-amber-400'>gusta</span> </div>
 			</div>
-			
+
 
 			<div>
 				<div>I <span className='text-amber-400'>hate</span> you</div>
 				<div>yo te <span className='text-amber-400'>odio</span> </div>
 			</div>
-			
+
 
 			<div>
 				<div>I <span className='text-amber-400'>adore</span> this game</div>
@@ -248,11 +248,64 @@ export function A1_16() {
 
 		</div>)} />
 
-		// continue with the next ones
-// smell, taste (verbs describing the senses)
+		<ExplanationContainer explanation={<>
 
-// consist, contain, last (verbs describing permanent qualities)
+			<span className='text-red-400'>the present continuous</span> is not often used with verbs describing senses like <span className='text-amber-400'>smell</span> or <span className='text-amber-400'>taste</span>
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+			<div>
+				<div>the cake <span className='text-amber-400'>smells</span> good!</div>
+				<div>la torta <span className='text-amber-400'>huele</span> bien!</div>
+			</div>
 
-// promise, swear (speech act verbs)
+
+			<div>
+				<div>the rice <span className='text-amber-400'>tastes</span> delicious</div>
+				<div>el arroz <span className='text-amber-400'>sabe</span> delicioso</div>
+			</div>
+		</div>)} />
+
+
+		<ExplanationContainer explanation={<>
+
+			<span className='text-red-400'>the present continuous</span> is not often used with verbs describing permanent qualities like <span className='text-amber-400'>consist</span> , <span className='text-amber-400'>contain</span> or <span className='text-amber-400'>last</span>
+
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+			<div>
+				<div>Those batteries don’t <span className='text-amber-400'>last</span>  very long</div>
+				<div>esas baterias no <span className='text-amber-400'>duran</span> mucho tiempo</div>
+			</div>
+
+
+			<div>
+				<div>Each house <span className='text-amber-400'>contains</span> a lot rooms</div>
+				<div>cada casa <span className='text-amber-400'>contiene</span> un monton de habitaciones</div>
+			</div>
+
+
+			<div>
+				<div>Her responsibilities <span className='text-amber-400'>consist</span> of answering the phone </div>
+				<div>las responsabilidades de ella <span className='text-amber-400'>consiste</span>  de responder el celu </div>
+			</div>
+
+		</div>)} />
+
+
+		<ExplanationContainer explanation={<>
+
+			<span className='text-red-400'>the present continuous</span> is not often used with speech act verbs like <span className='text-amber-400'>promise</span> or <span className='text-amber-400'>swear</span>
+
+		</>} example={(<div className="flex flex-col items-center justify-center text-center gap-4">
+
+			<div>
+				<div> my friend is not here I <span className='text-amber-400'>swear</span></div>
+				<div>mi amigo no está acá lo <span className='text-amber-400'> juro</span></div>
+			</div>
+
+			<div>
+				<div>she's not here I <span className='text-amber-400'>promise</span></div>
+				<div>ella no está aquí lo <span className='text-amber-400'>prometo</span></div>
+			</div>
+
+		</div>)} />
 	</>);
 }
